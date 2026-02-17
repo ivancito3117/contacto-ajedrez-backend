@@ -425,3 +425,50 @@ def student_pedagogical_report(
     report["traffic_lights"] = build_traffic_lights(activity, performance)
 
     return report
+    
+    # ===============================
+# SYSTEM DOCS ENDPOINT
+# ===============================
+
+import pathlib
+
+@app.get("/system/docs")
+def system_docs():
+    """
+    Endpoint de autodescripción del sistema.
+    Permite que cualquier IA o desarrollador entienda la arquitectura del backend.
+    """
+
+    base = pathlib.Path(__file__).parent
+
+    docs = {}
+    docs_path = base / "docs"
+
+    if docs_path.exists():
+        for file in docs_path.glob("*.md"):
+            try:
+                docs[file.name] = file.read_text(encoding="utf-8")[:2000]
+            except Exception:
+                docs[file.name] = "No se pudo leer"
+
+    return {
+        "system": "Contacto Ajedrez Backend",
+        "version": "1.0",
+        "author": "Iván",
+        "description": "Backend pedagógico de análisis ajedrecístico",
+        "stack": [
+            "FastAPI",
+            "SQLAlchemy",
+            "PostgreSQL",
+            "Pydantic"
+        ],
+        "main_modules": [
+            "main.py → API endpoints",
+            "models.py → ORM models",
+            "schemas.py → validation schemas",
+            "db.py → database config",
+            "traffic_lights.py → pedagogical engine"
+        ],
+        "docs": docs
+    }
+
