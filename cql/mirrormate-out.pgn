@@ -1,0 +1,961 @@
+[Event "source unknown @2"]
+[Site "?"]
+[Date "1902.??.??"]
+[Round "?"]
+[White "Galitzky=A"]
+[Black "(+0332.74h6f5)"]
+[Result "1-0"]
+[EventDate "1902.??.??"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "4N3/1p6/1r1p3K/1P1P1k2/8/pP2PPpN/b2P2P1/8 w - - 0 1"]
+
+{@2: Ulrichsen=J HHdbIII#63618 13-2-2003 Game number 4333}
+1.d4 Bb1 2.Ng5 ( 2.Nf2 $1 {<cook JU>} 2...a2 3.Ng4 ) 2...Rxb5 ( 2...Bd3 3.Ne6 
+a2 4.N6g7# ) ( 2...Be4 3.Nxe4 a2 4.Nxg3# ) 3.Ne6 a2 4.N6g7# {CQL} 1-0
+
+
+[Event "Haarlems Dagblad @2"]
+[Site "?"]
+[Date "1921.10.22"]
+[Round "?"]
+[White "Mann=C"]
+[Black "(+4010.01e3g8)"]
+[Result "1-0"]
+[EventDate "1921.??.??"]
+[SetUp "1"]
+[PlyCount "59"]
+[FEN "6k1/8/8/8/Q7/Bp2K3/q7/8 w - - 0 1"]
+
+{@2: Van_Reek=J EBUR=1 5/1992 Game number 8102}
+1.Qe8+ Kg7 2.Bf8+ Kf6 3.Qe7+ Kg6 4.Qe6+ Kh5 5.Qh3+ Kg6 6.Qg4+ Kf6 7.Qg7+ Kf5 8.
+Qf7+ Ke5 9.Qd7 Kf6 10.Be7+ Kf7 11.Bh4+ Kg6 12.Qg4+ Kf7 13.Qf5+ Kg7 14.Bf6+ ( 
+14.Qf6+ $1 {<cook JR>} 14...Kg8 15.Qe6+ Kg7 ( 15...Kf8 16.Be7+ ) 16.Bf6+ Kg6 
+17.Be7+ Kg7 18.Qf6+ Kh7 19.Qf7+ Kh6 20.Bf6 ) 14...Kf7 15.Bg5+ Kg7 16.Qf6+ Kg8 
+17.Qe6+ Kg7 18.Bf6+ Kg6 19.Be5+ Kh5 20.Qf7+ Kh4 21.Qh7+ Kg5 22.Qg7+ Kf5 23.Qf6+
+Kg4 24.Qg6+ Kh4 25.Kf3 Qa8+ 26.Kf2 Qa2+ 27.Kf1 Qc2 28.Bf6+ Kh3 29.Qh5+ Kg3 30.
+Be5# {CQL} 1-0
+
+
+[Event "La Strat�gie"]
+[Site "?"]
+[Date "1921.??.??"]
+[Round "?"]
+[White "Rinck=H"]
+[Black "(+0800.03d3c1)"]
+[Result "1-0"]
+[EventDate "1921.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "1r6/1p6/6R1/4r3/3p3R/3Kp3/8/2k5 w - - 0 1"]
+
+{La Strategie/6 Game number 8168}
+1.Rh1+ ( 1.Rg1+ $2 Kb2 2.Kxd4 ( 2.Rxd4 e2 ) ( 2.Rh2+ e2 ) 2...Rbe8 ) ( 1.Rg2 $2
+e2 ) ( 1.Rh2 $2 e2 ) ( 1.Rb6 $2 e2 ) 1...Kb2 2.Rb6+ ( 2.Rgg1 $2 e2 3.Rb1+ Ka3 
+4.Ra1+ Kb4 $1 5.Kxd4 e1=Q ) 2...Ka2 $1 3.Rbb1 ( 3.Rhb1 $2 e2 ) 3...Ka3 ( 3...e2
+{<main>} 4.Ra1+ Kb2 ( 4...Kb3 5.Rhb1# ) 5.Rhb1# ) ( 3...Rc8 4.Ra1+ Kb2 5.Rhb1# 
+) 4.Ra1+ ( 4.Rb6 $2 Ka2 $1 5.Rbb1 Ka3 ) ( 4.Kxd4 $2 Rbe8 5.Ra1+ Kb2 6.Rhb1+ Kc2
+) 4...Kb4 $1 5.Kxd4 ( 5.Rhb1+ $2 Kc5 6.Ra5+ b5 ) 5...Rbe8 6.Rhb1# {CQL} 1-0
+
+
+[Event "La Strat�gie#1412"]
+[Site "?"]
+[Date "1928.??.??"]
+[Round "?"]
+[White "Hasek=J"]
+[Black "(+0031.12b5f4)"]
+[Result "1-0"]
+[EventDate "1928.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "8/2P2N2/1p6/1K6/5k2/8/4p3/2b5 w - - 0 1"]
+
+{La Strategie/1 Game number 12522}
+1.Ne5 Ke3 ( 1...Ke4 2.c8=Q e1=Q 3.Qc6+ ) 2.c8=Q e1=Q 3.Qh3+ Ke4 4.Qh7+ Ke3 5.
+Qh6+ Ke4 6.Qc6+ Ke3 7.Qf3+ Kd4 8.Nc6# {CQL} 1-0
+
+
+[Event "L'Echiquier"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Neishtadt=V"]
+[Black "(+4004.11f6g3)"]
+[Result "1-0"]
+[EventDate "1929.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "q7/8/5K2/1n5p/1Q6/5Nk1/P7/8 w - - 0 1"]
+
+{L'Echiquier/7 Game number 13212}
+1.Qh4+ Kg2 2.Qh2+ Kf1 3.Qg1+ Ke2 4.Qe1+ ( 4.Qg2+ $2 Ke3 $1 5.Qd2+ Kxf3 ) 4...
+Kd3 5.Qd2+ Ke4 ( 5...Kc4 6.Ne5+ Kc5 7.Nd7+ Kc4 ( 7...Kc6 8.Qg2+ ) 8.Nb6+ ) 6.
+Ng5# {CQL} 1-0
+
+
+[Event "L'Echiquier"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Rinck=H"]
+[Black "(+3102.00f1c1)"]
+[Result "1-0"]
+[EventDate "1929.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "8/2q5/8/8/1RNN4/8/8/2k2K2 w - - 0 1"]
+
+{L'Echiquier/6 Game number 13236}
+1.Ne2+ ( 1.Nb3+ $2 Kc2 2.Nd4+ ( 2.Na1+ Kc3 ) ( 2.Na3+ Kc3 ) ( 2.Ne3+ Kd3 ) 2...
+Kc3 ) ( 1.Nf3 $2 Qf4 ) 1...Kc2 ( 1...Kd1 {<main>} 2.Rb1+ ( 2.Ne3+ $2 Kd2 3.Nc4+
+Kd3 ) ( 2.Nb2+ $2 Kc2 3.Nd4+ Kc3 ) 2...Kc2 3.Rc1+ Kb3 ( 3...Kd3 {<main>} 4.Nb2+
+) 4.Nd2+ ) 2.Na3+ ( 2.Ne3+ $2 Kd2 $1 3.Nc4+ Kd3 4.Nc1+ ( 4.Nb2+ Kc2 5.Nd4+ Kc3 
+) ( 4.Rb3+ Ke4 5.Re3+ Kd5 ) 4...Kc3 5.Na2+ Kd4 6.Nd2+ Ke5 ) ( 2.Nd4+ $2 Kc3 3.
+Rb3+ Kxd4 ) ( 2.Ke1 $2 Kd3 ) ( 2.Rb2+ $2 Kd3 $1 3.Rd2+ ( 3.Rb3+ Ke4 $1 ) 3...
+Ke4 $1 4.Rd4+ Kf5 ) 2...Kd2 ( 2...Kd3 3.Rd4+ ) ( 2...Kd1 3.Rd4# ) 3.Rd4+ ( 3.
+Nb1+ $2 Ke3 4.Rb3+ Ke4 5.Nd2+ Kf5 ) ( 3.Rb2+ $2 Ke3 ) ( 3.Nc4+ $2 Kd3 ) 3...Ke3
+4.Nc4+ Kf3 5.Rh4 ( 5.Nd2+ $2 Ke3 6.Nc4+ ( 6.Ke1 Qc1+ 7.Nxc1 Kxd4 ) 6...Kf3 ) 
+5...Qb8 ( 5...Qf7 6.Ne5+ ) ( 5...Qc8 6.Rf4# ) ( 5...Qc5 6.Rf4# ) 6.Nd4+ ( 6.
+Nd2+ $2 Ke3 7.Ke1 Qc8 8.Nc4+ Kd3 $1 9.Rd4+ Kc2 10.Rd2+ Kb1 11.Nc3+ Kc1 $1 ) ( 
+6.Ng1+ $2 Kg3 ) 6...Kg3 7.Nf5+ Kf3 8.Nd2# {CQL} ( 8.Rh3+ $2 Kg4 ) ( 8.Nd4+ $2 
+Kg3 9.Nf5+ Kf3 ) 1-0
+
+
+[Event "De Schaakwereld#277"]
+[Site "?"]
+[Date "1939.06.16"]
+[Round "?"]
+[White "Wortel=N"]
+[Black "(+4010.04a4a8)"]
+[Result "1-0"]
+[EventDate "1939.??.??"]
+[SetUp "1"]
+[PlyCount "33"]
+[FEN "k4q2/8/2p5/7p/K3p3/7p/7Q/6B1 w - - 0 1"]
+
+{Game number 18962}
+1.Qc7 $1 Qb8 2.Qxc6+ Qb7 3.Qe8+ Qb8 4.Qxe4+ Qb7 5.Qe8+ Qb8 6.Qf7 $1 Qb7 ( 6...
+h4 7.Qd5+ Qb7 8.Qa5+ ) 7.Qg8+ Qb8 8.Qd5+ Qb7 9.Qa5+ Kb8 10.Bh2+ Kc8 11.Qc3+ Kd8
+12.Qh8+ Kd7 13.Qg7+ Kc6 14.Qf6+ Kd7 15.Qf7+ Kc6 16.Qe6+ Kc5 17.Bg1# {CQL} 1-0
+
+
+[Event "N�rodn� Listy"]
+[Site "?"]
+[Date "1940.??.??"]
+[Round "?"]
+[White "Prevorovsky=E"]
+[Black "(+4001.02e7e2)"]
+[Result "1-0"]
+[EventDate "1940.??.??"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "q7/4K3/4Q2p/8/p3N3/8/4k3/8 w - - 0 1"]
+
+{Narodni Listy/11 Game number 19749}
+1.Qa2+ Kf3 ( 1...Kd3 2.Qd2+ Kc4 3.Qc3+ ) 2.Qf2+ Kg4 3.Qg3+ Kf5 4.Nd6# {CQL} 1-0
+
+
+[Event "5.c Olympiad Schach"]
+[Site "?"]
+[Date "1960.??.??"]
+[Round "?"]
+[White "Dadunashvili=R"]
+[Black "(+0011.24d8d3)"]
+[Result "1-0"]
+[EventDate "1960.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "B2K3N/8/5p2/5p2/p4pP1/3k4/5P2/8 w - - 0 1"]
+
+{Schach/7 Game number 31148}
+1.gxf5 $1 ( 1.Bd5 $2 fxg4 2.Ng6 Kd4 3.Bg8 g3 ) 1...Kd4 $1 ( 1...Kc4 2.Ng6 a3 3.
+Nxf4 a2 4.Bd5+ ) 2.Ng6 a3 3.Nxf4 a2 4.Ne2+ Ke5 ( 4...Kc4 5.Bd5+ Kxd5 6.Nc3+ ) (
+4...Kc5 5.Nc1 a1=Q 6.Nb3+ ) 5.f4+ Kd6 ( 5...Kxf5 6.Nd4+ Kxf4 7.Nc2 ) 6.Nc3 a1=Q
+7.Ne4# {CQL} 1-0
+
+
+[Event "Shahmat"]
+[Site "?"]
+[Date "1966.??.??"]
+[Round "?"]
+[White "Ericsson=A"]
+[Black "(+0031.21g5c8)"]
+[Result "1-0"]
+[EventDate "1966.??.??"]
+[SetUp "1"]
+[PlyCount "23"]
+[FEN "2k5/2P5/6P1/5NK1/8/7p/4b3/8 w - - 0 1"]
+
+{Game number 35672}
+1.Ne7+ $1 ( 1.g7 $2 Bc4 2.Nd6+ Kxc7 3.Nxc4 h2 4.g8=Q h1=Q ) 1...Kxc7 2.Nd5+ Kd6
+3.g7 $1 ( 3.Ne3 $2 h2 4.Nf5+ Ke5 5.Ng3 Bc4 ) 3...h2 4.g8=Q h1=Q 5.Qb8+ $1 Ke6 
+6.Qe8+ Kd6 7.Qe7+ Kc6 8.Qc7+ Kb5 9.Qb6+ Kc4 10.Qb4+ Kd3 11.Qc3+ Ke4 12.Nf6# {
+CQL} 1-0
+
+
+[Event ".c 64#055 @2"]
+[Site "?"]
+[Date "1970.06.26"]
+[Round "?"]
+[White "Sokolov=L"]
+[Black "(+0031.22d2c4)"]
+[Result "1-0"]
+[EventDate "1970.??.??"]
+[SetUp "1"]
+[PlyCount "21"]
+[FEN "8/8/4P3/8/2kP2pp/2N5/3K4/7b w - - 0 1"]
+
+{EG#01624 @2: Ulrichsen=J EG=172 4/2008 Game number 38101}
+1.d5 Bxd5 2.Nxd5 h3 3.e7 h2 4.e8=Q h1=Q 5.Qa4+ Kc5 6.Qb4+ Kc6 7.Qb6+ ( 7.Qc4+ 
+$1 {<cook JU>} ) 7...Kd7 8.Qc7+ Ke6 9.Qe7+ Kf5 10.Qf6+ Ke4 11.Nc3# {CQL} 1-0
+
+
+[Event "Shakhmaty (Riga)#161 (s) @1 @2"]
+[Site "?"]
+[Date "1973.??.??"]
+[Round "?"]
+[White "Leonteva=N"]
+[Black "(+4371.34e2e5)"]
+[Result "1-0"]
+[EventDate "1973.??.??"]
+[SetUp "1"]
+[PlyCount "17"]
+[FEN "8/2bqp2Q/8/2P1k1P1/2B4N/4P1p1/2rpKp2/7b w - - 0 1"]
+
+{Game number 41167}
+1.Qh8+ ( 1.Ng6+ $1 {<cook HH>} 1...Kf5 2.Nf4+ Ke5 3.Qh8+ Ke4 4.Bd5+ Qxd5 5.
+Qxh1+ g2 6.Qxg2+ Kf5 7.Qxd5+ ) 1...Ke4 2.Qa8+ Ke5 3.Qa1+ Ke4 4.Qxh1+ Ke5 5.Qa1+
+( 5.Nf3+ $1 {<cook HH>} 5...Kf5 6.Qh7+ Kg4 7.Qh4+ Kf5 8.e4+ Kg6 9.Qh6# ) 5...
+Ke4 6.Qa8+ Ke5 7.Qh8+ Ke4 8.Qh7+ Ke5 9.Nf3# {CQL} 1-0
+
+
+[Event "Shakhmaty (Riga)#161 (v)"]
+[Site "?"]
+[Date "1973.??.??"]
+[Round "?"]
+[White "Leonteva=N"]
+[Black "(+4371.36e2e5)"]
+[Result "1-0"]
+[EventDate "1973.??.??"]
+[SetUp "1"]
+[PlyCount "25"]
+[FEN "8/2bqp2Q/6p1/2P1k1P1/2B4N/4P1p1/2rpKp1p/7b w - - 0 1"]
+
+{(c): Leonteva=N Shakhmaty (Riga)=6 1974 Game number 41168}
+1.Qg7+ $1 ( 1.Nxg6+ $2 Kf5 2.Nf4+ Ke5 3.Nd3+ Qxd3+ 4.Qxd3 f1=Q+ $1 ) 1...Ke4 2.
+Qxg6+ Ke5 3.Qg7+ Ke4 4.Qh7+ Ke5 5.Qh8+ Ke4 6.Qa8+ Ke5 7.Qa1+ Ke4 8.Qxh1+ Ke5 9.
+Qa1+ Ke4 10.Qa8+ Ke5 11.Qh8+ Ke4 12.Qh7+ Ke5 13.Nf3# {CQL} 1-0
+
+
+[Event "7.p WCCT1 Ty (tt)"]
+[Site "?"]
+[Date "1975.??.??"]
+[Round "2"]
+[White "Hurme=H"]
+[Black "(+3757.14c1d3)"]
+[Result "1-0"]
+[EventDate "1975.??.??"]
+[SetUp "1"]
+[PlyCount "19"]
+[FEN "8/8/BBp1r1r1/1R3p2/1p3P1q/3k1pNb/1n6/1nK5 w - - 0 1"]
+
+{EG#02835 Game number 42625}
+1.Rc5+ Nc4 ( 1...Kd4 2.Rc4+ Kd5 3.Rd4# ) ( 1...Ke3 2.Rxf5+ c5 3.Bxc5# ) 2.Bxc4+
+Kc3 3.Bxe6+ Kd3 4.Bc4+ Kc3 ( 4...Kd4 5.Rxc6+ Kc3 6.Be6+ Kd3 7.Rd6+ Kc3 8.Bd4+ 
+Kd3 9.Bf2+ Kc3 10.Be1+ Nd2 11.Bxd2# ) 5.Ba2+ Kd3 6.Bxb1+ Kd4 7.Rc2+ c5 ( 7...
+Kd5 8.Ba2+ Kd6 9.Rd2+ Ke7 10.Bd8+ ) 8.Bxc5+ Kd3 ( 8...Kd5 9.Ba2+ b3 ( 9...Kc6 
+10.Be7+ Kb7 ( 10...Kd7 11.Bxh4 Rg4 12.Rd2+ Kc6 13.Bd5+ Kb5 14.Nxf5 ) 11.Bxh4 
+Rg4 12.Bd5+ Ka6 ( 12...Kb8 13.Bf6 ) 13.Bd8 ) 10.Bxb3+ Kc6 11.Be7+ ) 9.Kd1 Qxg3 
+10.Rc1# {CQL} 1-0
+
+
+[Event "October Revolution JT"]
+[Site "?"]
+[Date "1978.??.??"]
+[Round "?"]
+[White "Mitrofanov=L"]
+[Black "(+3002.11d2a2)"]
+[Result "1-0"]
+[EventDate "1978.??.??"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "8/3P4/8/3N4/8/N7/kp1K4/q7 w - - 0 1"]
+
+{Game number 46032}
+1.Nb1 $1 Kb3 2.d8=Q Qxb1 3.Qb6+ Kc4 4.Ne3# {CQL} 1-0
+
+
+[Event "Schaakschild (Clubblad 'Boris Spassky')"]
+[Site "?"]
+[Date "1978.??.??"]
+[Round "?"]
+[White "Vandiest=J"]
+[Black "(+0010.11h5e8)"]
+[Result "1-0"]
+[EventDate "1978.??.??"]
+[SetUp "1"]
+[PlyCount "19"]
+[FEN "4k3/8/P7/7K/6B1/8/6p1/8 w - - 0 1"]
+
+{Schaakschild (Clubblad 'Boris Spassky')/6 Game number 46217}
+1.a7 g1=Q 2.a8=Q+ Ke7 ( 2...Kf7 3.Qb7+ ) 3.Qb7+ Kf6 ( 3...Kd6 4.Qd7+ ) ( 3...
+Kf8 4.Qc8+ Kg7 5.Qd7+ ) ( 3...Ke8 4.Qd7+ Kf8 5.Qd6+ ) 4.Qc6+ Kg7 ( 4...Ke7 5.
+Qd7+ ) 5.Qd7+ Kf8 ( 5...Kf6 6.Qe6+ Kg7 7.Qe7+ Kg8 8.Be6+ Kh8 9.Qf8+ ) ( 5...Kg8
+6.Qe8+ Kg7 7.Qe7+ ) 6.Qd6+ Ke8 ( 6...Kg8 7.Be6+ Kh7 ( 7...Kh8 8.Qf8+ Kh7 9.Bf5+
+) ( 7...Kg7 8.Qe7+ ) 8.Qd7+ ( 8.Qe7+ $2 Qg7 ) 8...Qg7 ( 8...Kh8 9.Qe8+ Kh7 10.
+Bf5+ Kg7 11.Qe7+ Kg8 12.Be6+ Kh8 13.Qf8+ Kh7 14.Bf5+ ) 9.Qd3+ Kh8 10.Qd8+ Kh7 
+11.Bf5+ ) 7.Bd7+ Kf7 8.Be6+ Kf6 ( 8...Kg7 9.Qe7+ ) 9.Bc4+ Kf5 ( 9...Kg7 10.Qh6#
+) 10.Bd3# {CQL} 1-0
+
+
+[Event "Canadian Chess Chat#047"]
+[Site "?"]
+[Date "1980.??.??"]
+[Round "?"]
+[White "Pogosyants=E"]
+[Black "(+0007.11b7b5)"]
+[Result "1-0"]
+[EventDate "1980.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "8/1K1N3n/8/1k4P1/2p5/8/8/7n w - - 0 1"]
+
+{Canadian Chess Chat/11 Game number 48164}
+1.g6 c3 2.g7 Nf6 ( 2...c2 3.g8=Q c1=Q 4.Qb3+ Ka5 5.Qb6+ Ka4 6.Nc5+ Ka3 7.Qb3# )
+3.Nxf6 c2 4.g8=Q c1=Q 5.Qb3+ Ka5 6.Ne4 Qg1 ( 6...Nf2 7.Qb6+ Ka4 8.Nc5+ Ka3 9.
+Qb3# ) 7.Qa3+ Kb5 8.Nd6# {CQL} 1-0
+
+
+[Event "1.c Ch�ron MT"]
+[Site "?"]
+[Date "1982.??.??"]
+[Round "?"]
+[White "Vandiest=J"]
+[Black "(+4010.03h7e8)"]
+[Result "1-0"]
+[EventDate "1982.??.??"]
+[SetUp "1"]
+[PlyCount "51"]
+[FEN "2B1k3/7K/8/7p/5p2/q4p2/8/1Q6 w - - 0 1"]
+
+{EG#06145 Game number 49954}
+1.Qb5+ Kf8 2.Qf5+ Ke7 3.Qd7+ Kf8 4.Qd8+ Kf7 5.Qg8+ Ke7 6.Qe6+ Kf8 7.Qf6+ Ke8 8.
+Kg6 Qe7 9.Qh8+ Qf8 10.Qe5+ Qe7 11.Be6 f2 12.Qh8+ Qf8 13.Qd4 Qe7 14.Bb3 Qh7+ 15.
+Kxh7 f1=Q 16.Kg7 Qg2+ ( 16...Ke7 17.Qc5+ Kd7 18.Kf7 Qa6 19.Bc4 Qh6 20.Qa7+ Kd8 
+21.Qb8+ Kd7 22.Bb5+ ) 17.Kf6 Qc6+ 18.Be6 Qb7 19.Qd6 Qb2+ 20.Kg6 Qb7 21.Bd5 Qb1+
+22.Kh6 f3 23.Qc7 Qg1 24.Bc6+ Kf8 25.Qd8+ Kf7 26.Bd5# {CQL} 1-0
+
+
+[Event "1.p L'Italia Scacchistica#398"]
+[Site "?"]
+[Date "1982.??.??"]
+[Round "?"]
+[White "Hoch=Y"]
+[Black "(+0800.10h7d7)"]
+[Result "1-0"]
+[EventDate "1982.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "8/3k3K/P1R5/8/8/1r6/3rR3/8 w - - 0 1"]
+
+{EG#06239 Game number 50028}
+1.a7 Ra3 $1 ( 1...Rh3+ 2.Kg7 Rg3+ 3.Rg6 Rxg6+ 4.Kxg6 Rd6+ 5.Kf7 Ra6 6.Re8 Rxa7 
+7.Re7+ ) 2.Rc3 $1 Rda2 $1 3.Rd2+ $1 Ke6 $1 4.Kg6 $1 ( 4.Re3+ $2 Kf7 $1 ) 4...
+Ra1 ( 4...Ke5 5.Re3+ Kf4 6.Rxa2 Rxa2 7.Re7 ) 5.Rd1 ( 5.a8=Q $2 Rg1+ 6.Rg2 Rxa8 
+7.Rxg1 Rg8+ ) 5...R1a2 6.a8=Q Rxa8 7.Re3# {CQL} 1-0
+
+
+[Event "4.c Schakend Nederland#1931 @1"]
+[Site "?"]
+[Date "1983.??.??"]
+[Round "?"]
+[White "Missiaen=R"]
+[Black "(+4010.00h4h8)"]
+[Result "1-0"]
+[EventDate "1983.??.??"]
+[SetUp "1"]
+[PlyCount "21"]
+[FEN "7k/8/8/8/7K/3B4/8/1Q4q1 w - - 0 1"]
+
+{Schakend Nederland/11 @1: Nunn=J Secrets of Pawnless Endings#188 1994 Game 
+number 51273}
+1.Qb8+ ( 1.Qxg1 $2 ) ( 1.Qb2+ Kg8 2.Bc4+ ( 2.Qb8+ $1 {<cook JN>} 2...Kf7 ( 2...
+Kg7 3.Qe5+ ) 3.Bc4+ $1 Ke7 ( 3...Kf6 4.Qd6+ Kg7 5.Qe5+ Kh7 ( 5...Kg6 6.Qe6+ ) 
+6.Bd3+ Kg8 7.Qe8+ Kg7 8.Qe7+ ) 4.Qc7+ $1 Ke8 5.Bb5+ $1 Kf8 6.Qf4+ Kg8 ( 6...Ke7
+7.Qe5+ $1 Kf8 8.Qf6+ Kg8 9.Bc4+ ) ( 6...Kg7 7.Qe5+ $1 ) 7.Bc4+ $1 Kh7 ( 7...Kg7
+8.Qe5+ ) 8.Qf7+ $1 Qg7 ( 8...Kh6 9.Qh5+ $1 Kg7 10.Qe5+ $1 ) 9.Bd3+ $1 Kh8 10.
+Qh5+ ) 2...Kh7 $1 ) 1...Qg8 ( 1...Kg7 2.Qe5+ Kf8 ( 2...Kh6 3.Qh8# ) 3.Qf6+ Kg8 
+( 3...Ke8 4.Bb5# ) 4.Qd8+ Kg7 5.Qe7+ Kg8 ( 5...Kh6 6.Qh7# ) 6.Bc4+ Kh8 7.Qf8+ 
+Kh7 8.Bd3+ ) 2.Qe5+ ( 2.Qc7 $2 Qf7 $1 3.Qe5+ Kg8 $1 4.Qg5+ Kf8 ) 2...Qg7 3.Qh5+
+( 3.Qe8+ $2 Qg8 4.Qh5+ Kg7 5.Qg6+ Kf8 6.Qd6+ Kg7 7.Kg5 Qf7 $1 ( 7...Kh8+ $2 8.
+Bg6 Qg7 9.Qb8+ Qg8 10.Qh2+ Kg7 11.Qh6# ) 8.Qd4+ Kf8 9.Bg6 Qe7+ 10.Kf5 Kg8 ) 
+3...Kg8 4.Bc4+ Kf8 5.Qf3+ $1 Ke8 6.Qa8+ ( 6.Bb5+ $2 Ke7 7.Qe4+ Kd8 8.Qa8+ Ke7 
+9.Qe8+ Kf6 10.Qc6+ Ke7 11.Qd7+ Kf6 12.Qd6+ Kf5 13.Bd3# ) 6...Ke7 7.Qb7+ Kf6 8.
+Qb6+ $1 ( 8.Qa6+ $2 Kf5 $1 ) 8...Ke7 ( 8...Kf5 9.Bd3+ Kf4 10.Qf2+ Ke5 11.Qb2+ )
+9.Qc7+ Kf6 10.Qd6+ Kf5 11.Bd3# {CQL} 1-0
+
+
+[Event "2.hm Rustavi Ty @2"]
+[Site "?"]
+[Date "1986.??.??"]
+[Round "?"]
+[White "Shigapov=I"]
+[Black "(+3111.33e1c5)"]
+[Result "1-0"]
+[EventDate "1986.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "8/8/4q3/2k5/1R1p2p1/1p2P1P1/2N3P1/1B2K3 w - - 0 1"]
+
+{EG#09241 @2: Campioli=M HHdbIII#15440 13-4-2004 Game number 54429}
+1.Rb5+ Kc4 2.Rxb3 d3 3.Rxd3 Kxd3 4.Nd4+ Kxe3 5.Bf5 ( 5.Nxe6 $2 ) ( 5.Nf5+ $1 {
+<cook MC>} ) 5...Qe5 6.Nc2# {CQL} 1-0
+
+
+[Event "2.hm Assiac MT New Statesman {and Natio"]
+[Site "?"]
+[Date "1987.??.??"]
+[Round "?"]
+[White "Bent=C"]
+[Black "(+4032.01e7e5)"]
+[Result "1-0"]
+[EventDate "1987.??.??"]
+[SetUp "1"]
+[PlyCount "9"]
+[FEN "8/4K3/6qN/4k2N/Q7/8/6bp/8 w - - 0 1"]
+
+{EG#07646 Game number 55445}
+1.Ng4+ Qxg4 ( 1...Kd5 2.Ngf6+ Kc5 3.Nd7+ Kd5 4.Nf4# ) 2.Qxg4 h1=Q 3.Qg7+ Kd5 ( 
+3...Ke4 4.Ng3+ ) ( 3...Kf5 4.Ng3+ ) 4.Qc3 $1 Bf3 ( 4...Qxh5 5.Qa5+ ) 5.Nf6# {
+CQL} 1-0
+
+
+[Event "64 Shakhmatnoye Obozrenye#40 @2"]
+[Site "?"]
+[Date "1987.??.??"]
+[Round "?"]
+[White "Olimpiev=B"]
+[Black "(+0432.01a5e6)"]
+[Result "1-0"]
+[EventDate "1987.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "5R2/1r6/1b2kp2/K6N/6N1/8/8/8 w - - 0 1"]
+
+{64 Shakhmatnoye Obozrenye/5 @2:64 Shakhmatnoye Obozrenye=11(826) 6/1989 Game 
+number 55687}
+1.Ka6 Rf7 $1 2.Re8+ $1 ( 2.Nf4+ $1 {<cook>} 2...Ke7 3.Rxf7+ Kxf7 4.Kxb6 ) 2...
+Kd7 3.Nhxf6+ Kd6 4.Ne4+ Kc7 $1 ( 4...Kd7 {<main>} 5.Ngf6+ Kc7 6.Nd5+ Kd7 7.
+Nef6+ $1 Kd6 8.Kxb6 Rxf6 9.Rd8+ $1 ( 9.Nxf6 $2 ) ) 5.Ne5 $1 Rg7 $1 6.Nc3 Bd4 7.
+Nb5# {CQL} 1-0
+
+
+[Event "3.hm Chess Life & Review#1539"]
+[Site "?"]
+[Date "1988.??.??"]
+[Round "?"]
+[White "Shirazi=K"]
+[Black "(+4583.02f2g8)"]
+[Result "1-0"]
+[EventDate "1988.??.??"]
+[SetUp "1"]
+[PlyCount "17"]
+[FEN "3qr1k1/3nb1pp/2b5/7Q/4R3/B7/5KR1/3B4 w - - 0 1"]
+
+{Chess Life & Review/5 EG#08230 Game number 56571}
+1.Qf7+ $1 ( 1.Bxe7 $2 Qb6+ $1 ( 1...Rxe7 $2 2.Bb3+ Kh8 ( 2...Kf8 3.Rf4+ ) 3.
+Qxh7+ Kxh7 4.Rh4# ) 2.Ke1 ( 2.Kg3 Nf6 ) 2...Rxe7 3.Rxe7 Qb4+ ) 1...Kxf7 2.Bb3+ 
+Kf6 ( 2...Kf8 3.Rf4+ Nf6 4.Rxf6+ gxf6 5.Rg8# ) ( 2...Bd5 3.Bxd5+ Kf6 4.Bb2+ Kf5
+5.Be6+ $1 Kxe4 6.Rg4+ Kd3 7.Bf5+ Kd2 8.Rd4# ) 3.Bb2+ Kf5 ( 3...Ne5 4.Rf4# ) 4.
+Be6+ $1 Kxe4 5.Rg4+ Kd3 6.Bf5+ Be4 7.Rxe4 $1 Kc2 8.Rb4+ Kd2 9.Rd4# {CQL} 1-0
+
+
+[Event "Gorkovskaja Pravda"]
+[Site "?"]
+[Date "1988.??.??"]
+[Round "?"]
+[White "Umnov=G Kozirev=V"]
+[Black "(+3131.21h6f8)"]
+[Result "1-0"]
+[EventDate "1988.??.??"]
+[SetUp "1"]
+[PlyCount "9"]
+[FEN "N4k2/1q1P4/6PK/b1pR4/8/8/8/8 w - - 0 1"]
+
+{Game number 56791}
+1.Nb6 $1 Bxb6 ( 1...Qxb6 2.Re5 $1 ) 2.g7+ Kf7 3.Kh7 $1 Qb8 $1 4.d8=N+ $1 Kf6 5.
+g8=N# $1 {CQL} 1-0
+
+
+[Event "Endgame Studies by Sansom#081"]
+[Site "?"]
+[Date "1990.??.??"]
+[Round "?"]
+[White "Sansom=C"]
+[Black "(+3124.44d8f6)"]
+[Result "1-0"]
+[EventDate "1990.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "3K2BN/6p1/5k2/1p3p1p/3P4/2P2P2/1RnP1B2/q7 w - - 0 1"]
+
+{composed 6-5-1962 Game number 58688}
+1.Ra2 Qf1 ( 1...Qh1 2.Ra6+ Kg5 3.Rg6+ Kf4 4.Bg3+ Kxf3 5.Bd5+ ) 2.Bh4+ g5 3.Ra7 
+gxh4 4.f4 Qxf4 5.Rf7+ Ke6 ( 5...Kg5 6.Rg7+ Kf6 7.Rg6# ) 6.Rf8+ Kd6 7.Rf6# {CQL}
+1-0
+
+
+[Event "Problemist Pribuzhja#139 (s)"]
+[Site "?"]
+[Date "1990.??.??"]
+[Round "?"]
+[White "Dashkovsky=O"]
+[Black "(+4001.02h4e6)"]
+[Result "1-0"]
+[EventDate "1990.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "4q3/5p2/1p2k3/8/4N2K/8/8/2Q5 w - - 0 1"]
+
+{Game number 58820}
+1.Qc4+ Ke5 ( 1...Ke7 2.Qb4+ ) 2.Qc3+ Ke6 3.Qb3+ Ke7 ( 3...Ke5 4.Qg3+ Ke6 5.Qd6+
+Kf5 6.Ng3# ) 4.Qb4+ Ke6 ( 4...Kd8 5.Qxb6+ Ke7 6.Qd6# ) 5.Qd6+ Kf5 6.Ng3# {CQL} 
+1-0
+
+
+[Event "3.c Bron MT Problemist Pribuzhja#2321"]
+[Site "?"]
+[Date "1992.03.18"]
+[Round "?"]
+[White "Pankov=V"]
+[Black "(+0031.21d6b6)"]
+[Result "1-0"]
+[EventDate "1992.??.??"]
+[SetUp "1"]
+[PlyCount "17"]
+[FEN "3N3b/7P/Pk1K4/6p1/8/8/8/8 w - - 0 1"]
+
+{EG#09007 Game number 60384}
+1.Nf7 g4 2.Nxh8 g3 3.Nf7 g2 4.h8=Q g1=Q 5.Qb2+ Kxa6 6.Kc6 Qh1+ ( 6...Qg6+ 7.Nd6
+) 7.Kc7 Ka5 8.Qa3+ Kb5 9.Nd6# {CQL} 1-0
+
+
+[Event ".c Boris JT"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Gogberashvili=M Neidze=V"]
+[Black "(+0301.31h6f8)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "9"]
+[FEN "3r1k2/8/6PK/4N3/4PP2/1p6/8/8 w - - 0 1"]
+
+{EG#09286 Game number 61103}
+1.Kh7 b2 2.g7+ Ke7 3.Nc6+ Kf6 4.Nxd8 b1=Q 5.g8=N# {CQL} 1-0
+
+
+[Event ".c Boris JT"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Hildebrand=A Ulrichsen=J"]
+[Black "(+0414.11a6b8)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "17"]
+[FEN "1k2n1rB/2R5/K7/6P1/8/7p/5N2/8 w - - 0 1"]
+
+{EG#09285 Game number 61104}
+1.Rb7+ $1 Kc8 ( 1...Ka8 2.Be5 Rg6+ 3.Rb6 ) 2.Bf6 Nxf6 3.gxf6 Rg2 $1 ( 3...h2 4.
+Rh7 Rg6 5.Ne4 ) 4.Nd3 $1 Rg6 5.Rb6 h2 ( 5...Kd8 6.Ne5 $1 h2 7.Rd6+ Kc7 8.Rc6+ 
+Kd8 9.f7 Rxc6+ 10.Nxc6+ Kd7 11.f8=Q h1=Q 12.Qe7+ Kxc6 13.Qb7+ ) 6.f7 Rxb6+ 7.
+Kxb6 h1=Q 8.f8=Q+ Kd7 9.Nc5# {CQL} 1-0
+
+
+[Event "1.hm Boris JT (c) (@2)"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Gurgenidze=D"]
+[Black "(+0004.31f1h7)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "23"]
+[FEN "8/5N1k/8/1P4P1/8/p7/7P/4nK2 w - - 0 1"]
+
+{(c): Van_Reek=J 11/1994 @2: Hornecker=S HHdbIV 30-6-2005 Game number 61179}
+1.b6 Nf3 ( 1...a2 2.b7 a1=Q 3.b8=Q ) 2.b7 Nxh2+ 3.Ke2 $1 ( 3.Kf2 $2 Ng4+ $1 4.
+Kg3 a2 5.b8=Q a1=Q 6.Kxg4 Qd1+ 7.Kf5 Qd7+ 8.Kf6 Qxf7+ $1 9.Kxf7 ) ( 3.Kg2 $2 a2
+4.b8=Q a1=Q ) 3...a2 4.b8=Q a1=Q 5.Qxh2+ Kg6 6.Ne5+ $1 Kxg5 7.Qg3+ Kf6 ( 7...
+Kf5 8.Qg6+ Kf4 9.Nd3# ) 8.Qg6+ ( 8.Qf4+ $1 {<minor dual SH>} ) 8...Ke7 9.Qf7+ (
+9.Qg7+ $1 Ke6 10.Qd7+ Kf6 11.Qf7+ Kg5 12.Qg6+ ) 9...Kd6 10.Qd7+ Kc5 11.Qc6+ Kd4
+( 11...Kb4 12.Nd3+ Kb3 13.Qb5+ Kc2 14.Qc4+ Qc3 15.Qa2+ ) 12.Nf3# {CQL} 1-0
+
+
+[Event "1.hm Boris JT @2"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Gurgenidze=D"]
+[Black "(+0004.22e2g4)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "21"]
+[FEN "8/5N2/5P2/7p/6kP/p7/4Kn2/8 w - - 0 1"]
+
+{EG#09283 @2: Roycroft=A EG=112 9/1994 @2: Hornecker=S HHdbIV 30-6-2005 Game 
+number 61180}
+1.Ne5+ Kh3 2.f7 a2 3.f8=Q a1=Q 4.Qf3+ Kxh4 5.Qxf2+ ( 5.Qf6+ $1 {<cook AR>} 5...
+Kh3 6.Qf5+ ) 5...Kg5 ( 5...Kh3 6.Qe3+ Kh4 7.Ng6+ Kg4 8.Qf4+ Kh3 9.Qh4+ Kg2 10.
+Nf4+ ) 6.Qg3+ Kf6 ( 6...Kf5 {<main>} 7.Qg6+ Kf4 8.Nd3# ) 7.Qg6+ ( 7.Qf4+ $1 {
+<minor dual SH>} ) 7...Ke7 8.Qf7+ Kd6 9.Qd7+ Kc5 10.Qc6+ Kd4 ( 10...Kb4 11.Nd3+
+Kb3 12.Qb5+ Kc2 13.Qc4+ Qc3 14.Qa2+ ) 11.Nf3# {CQL} 1-0
+
+
+[Event "1.p Boris JT (c)"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Grondijs=H"]
+[Black "(+3840.52f2f4)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "r7/3r4/R1R5/3p4/B2P1k1P/2pP3b/2P2K1P/q7 w - - 0 1"]
+
+{EG#09281 Game number 61202}
+1.Rf6+ ( 1.Rxa8 $2 Rf7 ) 1...Bf5 ( 1...Kg4 2.Bxd7+ Kxh4 3.Rh6+ Kg5 4.Rag6+ Kf4 
+5.Rh4+ ) 2.Rxf5+ $1 ( 2.Rxa8 $2 Qh1 ) 2...Kg4 $1 ( 2...Kxf5 3.Bxd7+ Kf4 4.Rf6# 
+) 3.Rxa8 Ra7 $1 ( 3...Rd8 4.Rg5+ Kxh4 ( 4...Kf4 5.Ra6 $1 ) 5.Rh5+ Kxh5 6.Be8+ 
+Rxe8 7.Rxa1 Rf8+ 8.Kg3 Rg8+ 9.Kf4 Rg2 10.Ke5 $1 Rxc2 11.Kxd5 Rxh2 12.Kc4 c2 13.
+Rc1 Kg5 14.Kc3 Kf5 15.Rxc2 ) ( 3...Rh7 4.Bd7 Qh1 5.Rg8+ Kxh4 6.Rf4+ Kh5 7.Be8+ 
+) 4.Rxa7 Kxf5 5.Ra6 $1 ( 5.Bd7+ $2 Kf4 6.Ba4 Kg4 $1 7.Bd7+ Kf4 8.Rxa1 ) 5...Kf4
+( 5...Kg4 6.Bd7+ Kf4 7.Rf6# ) 6.h3 $1 Kf5 7.Bd7+ Kf4 8.Rf6# {CQL} ( 8.Rxa1 $2 )
+1-0
+
+
+[Event "1.p Boris JT @2"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Grondijs=H"]
+[Black "(+3840.52f2f4)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "r7/3r4/R1R5/3p4/B2P1k1P/2pP3b/q1P2K1P/8 w - - 0 1"]
+
+{@2: The Problemist=11 7/1993 Game number 61203}
+1.Rf6+ ( 1.Rxa8 $2 Rf7 ) 1...Bf5 ( 1...Kg4 2.Bxd7+ Kxh4 3.Rh6+ Kg5 4.Rag6+ Kf4 
+5.Rh4+ ) 2.Rxf5+ $1 Kg4 3.Rxa8 $1 Ra7 $1 ( 3...Rd8 4.Rg5+ Kxh4 ( 4...Kf4 5.Ra6 
+) 5.Rh5+ $1 Kxh5 6.Be8+ Rxe8 7.Rxa2 ) 4.Rxa7 Kxf5 5.Ra6 $1 Kf4 6.h3 $1 Kf5 7.
+Bd7+ ( 7.Kf3 $1 {<cook>} ) ( 7.Ke3 $1 {<cook>} ) ( 7.Kg3 $1 {<cook>} ) 7...Kf4 
+8.Rf6# {CQL} 1-0
+
+
+[Event "2.hm Boris JT"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Roycroft=A Blundell=D"]
+[Black "(+0723.31g6b7)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "1r1n4/1k6/R3P1KB/5p2/2Pr2P1/8/8/3B4 w - - 0 1"]
+
+{EG#09284 Game number 61261}
+1.e7 Nc6 ( 1...Nf7 2.Be3 $1 ) 2.Rxc6 Kxc6 3.Ba4+ Kd6 4.Bf8 $1 Rxg4+ 5.Kxf5 Rg8 
+6.e8=N# $1 {CQL} ( 6.e8=Q+ $2 Rxf8+ ) 1-0
+
+
+[Event "2.p Boris JT (c)"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Pervakov=O"]
+[Black "(+4341.21a3c2)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "6BQ/2b5/8/1p5r/4N3/KP5q/2k2P2/8 w - - 0 1"]
+
+{EG#09282 Game number 61278}
+1.Qb2+ Kd3 2.Bh7 $1 ( 2.Nf6 $2 Qh1 $1 3.Nxh5 Qa8+ 4.Kb4 Qa5+ ) 2...b4+ $1 ( 
+2...Rxh7 3.Nc5# ) ( 2...Bd6+ 3.Nc5# ) 3.Kxb4 Ba5+ 4.Ka3 $1 ( 4.Ka4 $2 Qd7+ ) 
+4...Bb4+ $1 5.Kxb4 Rb5+ 6.Ka4 $1 ( 6.Kxb5 $2 Qd7+ ) 6...Ra5+ 7.Kxa5 Qf5+ $1 8.
+Nc5# $1 {CQL} ( 8.Bxf5 $2 ) 1-0
+
+
+[Event "Schach#13062 @1 @2"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Gurgenidze=D"]
+[Black "(+0200.14f4h1)"]
+[Result "1-0"]
+[EventDate "1993.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "6R1/8/6R1/8/5K2/p6p/Pp1p4/7k w - - 0 1"]
+
+{Schach/12 @1 @2: Schach/4 1994 Game number 61659}
+1.Rg1+ $1 ( 1.Rh6 $1 {<cook>} 1...h2 ( 1...Kh2 2.Rg3 ) 2.Rgh8 Kg1 3.Rxh2 Kf1 4.
+Rxd2 Kg1 5.Rd1+ Kg2 6.Rb1 Kf2 7.Rh2# ) 1...Kh2 2.Rb1 ( 2.R8g3 $1 {<cook>} 2...
+b1=Q 3.Rxb1 d1=Q 4.Rxh3+ Kxh3 5.Rxd1 ) 2...d1=Q 3.Rxd1 b1=Q 4.Rgd8 Qb4+ 5.R1d4 
+Qb7 6.Rd2+ Kg1 7.Rd1+ Kf2 8.R8d2# {CQL} 1-0
+
+
+[Event "1.hm Gambit (Romania)#017b (tw)"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "?"]
+[White "Gurgenidze=D"]
+[Black "(+0230.03d4b7)"]
+[Result "1-0"]
+[EventDate "1994.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "1b6/1k6/8/8/2RK4/p7/1pR3p1/8 w - - 0 1"]
+
+{EG#10602b Game number 62068}
+1.Rb4+ Ka8 2.Rxg2 a2 3.Rxb8+ Ka7 4.Rb7+ Ka6 5.Rb6+ Ka5 6.Rgg6 $1 ( 6.Rb5+ $2 
+Ka4 7.Rb4+ Kxb4 8.Rxb2+ Ka3 ) 6...b1=Q 7.Ra6+ Kb4 8.Rgb6# {CQL} 1-0
+
+
+[Event "Schakend Nederland#2384 (c) @2"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "?"]
+[White "Pallier=A"]
+[Black "(+0614.67a6c8)"]
+[Result "1-0"]
+[EventDate "1994.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "1Nk5/2P2p2/KP1r1p2/1P3p2/1Pp1Pp2/2Bp3p/2n3Pr/8 w - - 0 1"]
+
+{Schakend Nederland/9 (c): Pallier=A Schakend Nederland/3 1995 @2: Campioli=M 
+HHdbII#55482 26-1-1999 Game number 62440}
+1.Nc6 Rxc6 2.bxc6 hxg2 3.Bxf6 ( 3.b5 $1 {<cook MC>} 3...Rh8 4.e5 $1 fxe5 ( 4...
+g1=Q 5.b7+ Kxc7 6.Ba5+ Kb8 7.c7# ) 5.Bxe5 Nb4+ 6.Ka5 Nxc6+ 7.bxc6 g1=Q 8.b7# ) 
+3...g1=Q 4.b7+ Kxc7 5.Be5+ Kxc6 6.b8=N# {CQL} 1-0
+
+
+[Event "Schakend Nederland#2384 @3 @2"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "?"]
+[White "Pallier=A"]
+[Black "(+0614.66a6c8)"]
+[Result "1-0"]
+[EventDate "1994.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "1Nk5/2P2p2/KP1r1p2/1P3p2/1Pp1Pp2/2B4p/2n3Pr/8 w - - 0 1"]
+
+{Schakend Nederland/9 @2: De_Zeeuw=M Schakend Nederland/12 1994 @3: Schakend 
+Nederland/12 1994 @2: Campioli=M HHdbII#55481 26-1-1999 Game number 62441}
+1.Nc6 $1 ( 1.Ka7 $2 Rxb6 $1 2.Kxb6 hxg2 ) ( 1.e5 $2 Rxb6+ 2.Kxb6 hxg2 ) ( 1.Nd7
+$2 Rxd7 2.Ka7 Rxc7+ 3.bxc7 hxg2 ) ( 1.gxh3 $2 Nxb4+ $1 2.Bxb4 Ra2+ 3.Ba5 c3 ) 
+1...Rxc6 ( 1...hxg2 2.Na7+ Kd7 3.c8=Q+ Ke7 4.Nc6+ Rxc6 5.Qxc6 g1=Q 6.Bxf6+ Kf8 
+7.Qc8# ) 2.bxc6 hxg2 ( 2...Rxg2 3.Bxf6 $1 Nxb4+ 4.Kb5 Rg8 5.Be5 ( 5.Bd8 $2 Nxc6
+6.Kxc6 Rg6+ 7.Kc5 Rxb6 ) 5...Nxc6 6.Kxc6 Rg6+ 7.Bd6 Rxd6+ 8.Kxd6 Kb7 ( 8...h2 
+9.Kc6 h1=Q 10.b7# ) 9.Kd7 ) 3.Bxf6 $1 ( 3.b5 Rh8 $1 4.b7+ ( 4.Ba5 Nb4+ $1 5.
+Bxb4 ( 5.Ka7 g1=Q 6.Ka8 Qxb6 ) 5...g1=Q 6.Ba5 ( 6.b7+ Kxc7 7.Ba5+ Kd6 8.c7 Qg8 
+) 6...Qxb6+ $1 7.Bxb6 Rh3 $1 ) ( 4.e5 $1 {<cook>} 4...fxe5 5.Bxe5 Nb4+ 6.Ka5 
+Nxc6+ 7.bxc6 g1=Q 8.b7# ) 4...Kxc7 5.Ba5+ Kd6 6.c7 ( 6.Bb6 Nb4+ 7.Ka7 Nxc6+ 8.
+bxc6 Kxc6 ) 6...Nb4+ $1 7.Bxb4+ ( 7.Ka7 g1=Q+ ) 7...Kxc7 8.Bc5 c3 ) ( 3.b7+ $2 
+Kxc7 4.Bxf6 ( 4.b5 Rh8 $1 ) 4...Nxb4+ 5.Ka7 Nxc6+ ) 3...g1=Q ( 3...Nxb4+ $1 {
+<cook>} 4.Kb5 Nd3 $1 ( 4...Na6 5.b7+ $1 ( 5.Kxa6 $2 g1=Q 6.b7+ Kxc7 7.Be5+ ( 7.
+Bd8+ Kxc6 8.b8=Q Ra2+ 9.Ba5 Rxa5+ 10.Kxa5 Qa1+ 11.Kb4 Qb2+ ) 7...Kxc6 8.b8=Q 
+Ra2# ) 5...Kxc7 6.Be5+ Kd8 7.Kxa6 $1 g1=Q 8.b8=Q+ ) ( 4...g1=Q 5.b7+ Kxc7 6.
+Be5+ Kd8 7.b8=Q+ Ke7 8.Qd6+ Ke8 9.Qd7+ Kf8 10.Qd8# ) ) 4.b7+ $1 Kxc7 5.Be5+ $1 
+( 5.Bd8+ $2 Kxc6 6.b8=Q ( 6.b8=N+ Kd6 ) 6...Nxb4+ ) 5...Kxc6 6.b8=N# $1 {CQL} (
+6.b5+ $2 Kc5 ) 1-0
+
+
+[Event "EG"]
+[Site "?"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Blundell=D"]
+[Black "(+4010.01b8b6)"]
+[Result "1-0"]
+[EventDate "1996.??.??"]
+[SetUp "1"]
+[PlyCount "25"]
+[FEN "1K6/8/1k6/7q/8/1B6/6p1/1Q6 w - - 0 1"]
+
+{EG/7 EG#10346 after Vandiest=J b8b6 1995 Game number 63936}
+1.Bc4+ Ka5 2.Qa2+ Kb4 3.Qb3+ Kc5 4.Qb5+ Kd4 5.Qxh5 g1=Q 6.Qd5+ Kc3 7.Qd3+ Kb4 
+8.Qb3+ Kc5 9.Qb5+ Kd6 10.Qd5+ Ke7 11.Qe6+ Kd8 12.Qf6+ ( 12.Qd6+ $2 Ke8 13.Kc8 
+Qc5+ 14.Qxc5 ) 12...Kd7 13.Bb5# {CQL} 1-0
+
+
+[Event "Die Schwalbe#09538"]
+[Site "?"]
+[Date "1997.??.??"]
+[Round "?"]
+[White "Pallier=A"]
+[Black "(+0614.75a6c8)"]
+[Result "1-0"]
+[EventDate "1997.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "1Nk5/2P5/KP1r1p2/pP4p1/1P2P1P1/2Bp3p/2n3Pr/8 w - - 0 1"]
+
+{Die Schwalbe/4 Game number 64716}
+1.Nc6 Rxc6 2.bxc6 hxg2 ( 2...Nxb4+ 3.Bxb4 axb4 4.Ka7 Rxg2 5.b7+ Kxc7 6.b8=Q+ 
+Kxc6 7.Qb7+ Kd6 8.Qd5+ Ke7 9.e5 ) 3.Bxf6 ( 3.b5 $2 Rh7 ) ( 3.Ka7 $2 g1=Q ) 3...
+g1=Q 4.b7+ Kxc7 5.Be5+ Kxc6 6.b8=N# {CQL} 1-0
+
+
+[Event "EG (c)"]
+[Site "?"]
+[Date "1998.??.??"]
+[Round "?"]
+[White "Kovalenko=V"]
+[Black "(+3450.31h3d8)"]
+[Result "1-0"]
+[EventDate "1998.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "1r1k1BR1/8/1b1P4/4P3/3pP3/3B3K/8/4q3 w - - 0 1"]
+
+{EG/4 EG#10968 (c): Roycroft=A EG=137 7/2000 Game number 65562}
+1.e6 ( 1.Be7+ $2 Kd7 2.Bb5+ Ke6 3.Rxb8 Qh1+ 4.Kg3 Qg1+ 5.Kh4 Qh2+ 6.Kg5 Qxe5+ )
+( 1.Bg7+ $2 Kd7 2.Bb5+ Ke6 3.Rxb8 Qe3+ 4.Kg4 Qxe4+ 5.Kh5 Qf5+ ) 1...Qh1+ 2.Kg4 
+Qg2+ 3.Kf5 Qxg8 ( 3...Qf3+ 4.Kg6 Qg4+ 5.Kh7 Qh5+ 6.Bh6+ Qe8 7.Bg5+ Kc8 8.Ba6+ )
+4.e7+ Kc8 $1 5.Ba6+ ( 5.e8=Q+ $2 Kb7 6.Qd7+ Ka8 $1 7.Qa4+ Ba7 8.Qc6+ Rb7 ) 5...
+Kd7 ( 5...Rb7 6.e8=Q+ ) 6.Bb5+ Kxd6 ( 6...Kc8 7.e8=Q+ Kb7 8.Qd7+ Ka8 9.Bc6+ ) 
+7.e8=N# {CQL} ( 7.e8=Q+ $2 Qxf8+ $1 ) 1-0
+
+
+[Event "EG @3"]
+[Site "?"]
+[Date "1998.??.??"]
+[Round "?"]
+[White "Kovalenko=V"]
+[Black "(+3450.30h3d8)"]
+[Result "1-0"]
+[EventDate "1998.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "1r1k1BR1/8/1b1P4/4P3/4P3/3B3K/8/4q3 w - - 0 1"]
+
+{EG/4 EG#10968 after Roycroft=A Blundell=D g6b7 1993 @3: EG=129 7/1998 Game 
+number 65563}
+1.e6 ( 1.Bg7+ $2 Kd7 2.Bb5+ Ke6 3.Rxb8 Qe3+ 4.Kg4 Qxe4+ ) ( 1.Be7+ $2 Kd7 2.
+Bb5+ Ke6 3.Rxb8 Qh1+ 4.Kg3 Qg1+ 5.Kh4 Qh2+ 6.Kg5 Qxe5+ ) ( 1.Bb5 $2 Qh1+ 2.Kg4 
+Qg2+ 3.Kf5 Qxg8 ) 1...Qh1+ ( 1...Kc8 2.Ba6+ Rb7 3.Be7+ ) ( 1...Qe3+ 2.Kg4 Qxd3 
+3.Be7# ) 2.Kg4 Qg2+ 3.Kf5 Qxg8 ( 3...Qf3+ 4.Kg6 Qg4+ 5.Kh7 Qh5+ 6.Bh6+ Qe8 7.
+Bg5+ Kc8 8.Ba6+ ) ( 3...Qh3+ $1 {<cook>} 4.Ke5 ( 4.Kg6 Qxe6+ 5.Kh7 Bc5 ) ( 4.
+Kg5 Be3+ 5.Kf6 Bd4+ 6.e5 Qh4+ 7.Kf7 Qf4+ 8.Kg6 Qg3+ 9.Kf7 Qf3+ ) ( 4.Kf4 Be3+ 
+5.Ke5 Qh5+ ) ( 4.Rg4 Qxd3 ) 4...Qh5+ 5.Kf4 Qh4+ ) 4.e7+ Kc8 ( 4...Ke8 5.Bb5+ 
+Kf7 6.Bc4+ Ke8 7.Bxg8 Bd8 ( 7...Kd7 8.Be6+ ) 8.Ke6 Bxe7 9.Bxe7 Rb7 10.Bf7# ) 5.
+Ba6+ ( 5.e8=Q+ $2 Kb7 6.Qd7+ Ka8 7.Qa4+ Ba7 8.Qc6+ Rb7 ) 5...Kd7 6.Bb5+ Kxd6 ( 
+6...Kc8 7.e8=Q+ Kb7 8.Qd7+ Ka8 9.Bc6+ ) 7.e8=N# {CQL} ( 7.e8=Q+ $2 Qxf8+ ) 1-0
+
+
+[Event "2.p WCCC Ty (tt) @3"]
+[Site "?"]
+[Date "1999.??.??"]
+[Round "?"]
+[White "Aloni=H"]
+[Black "(+4357.36e5d8)"]
+[Result "1-0"]
+[EventDate "1999.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "1Nrk1B2/1q5P/4P1b1/p2PK3/8/p6p/n2pQ1pp/3B1n2 w - - 0 1"]
+
+{@3: Hornecker=S HHdbIII#04376 9-7-2004 Game number 66147}
+1.h8=Q $1 Qb2+ 2.Kf4 Qxh8 3.e7+ Kc7 4.d6+ $1 Kxd6 5.Qe6+ $1 ( 5.e8=N+ $2 Kd5 ) 
+5...Kxe6 ( 5...Kc5 $1 {<cook SH>} ) 6.Bb3+ Kd6 7.e8=N# {CQL} 1-0
+
+
+[Event ".c Suomen Teht�v�niekat#2294"]
+[Site "?"]
+[Date "2002.04.20"]
+[Round "?"]
+[White "Maricic=Z"]
+[Black "(+0041.11e7b7)"]
+[Result "1-0"]
+[EventDate "2002.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "6bB/Pk2K1N1/8/8/2p5/8/8/8 w - - 0 1"]
+
+{EG#15499 Game number 68920}
+1.Ne8 $1 c3 ( 1...Bd5 2.a8=Q+ Kxa8 3.Nc7+ ) ( 1...Bh7 2.Bd4 ) ( 1...Kxa7 2.Nf6 
+$1 ) 2.Bd4 c2 3.Nc7 c1=Q 4.a8=Q+ Kxc7 5.Qa7+ Kc8 6.Qa6+ Kc7 7.Be5# {CQL} 1-0
+
+
+[Event ".hm Intskirveli MT Sakartvelos Respubli"]
+[Site "?"]
+[Date "2003.12.18"]
+[Round "?"]
+[White "Gogberashvili=M"]
+[Black "(+0004.11d7a7)"]
+[Result "1-0"]
+[EventDate "2003.??.??"]
+[SetUp "1"]
+[PlyCount "19"]
+[FEN "8/k2K4/3P4/8/6p1/1N6/5n2/8 w - - 0 1"]
+
+{EG#14924 @2: Garcia=M EG=167 1/2007 Game number 69836}
+1.Kc7 Ne4 2.d7 Ng5 3.Nd4 Nf7 4.Nc6+ ( 4.Nf5 $1 {<cook MG>} 4...Ka6 ( 4...Ng5 5.
+Kd8 $1 Nf7+ 6.Ke8 ) 5.Nh6 Nd8 6.Nxg4 ) 4...Ka6 5.Ne5 g3 6.Nxf7 g2 7.d8=Q g1=Q 
+8.Qd3+ Ka5 9.Qa3+ Kb5 10.Nd6# {CQL} 1-0
+
+
+[Event ".c Vecherni Peterburg#064"]
+[Site "?"]
+[Date "2005.??.??"]
+[Round "?"]
+[White "Sochniev=A"]
+[Black "(+0200.02f7e5)"]
+[Result "1-0"]
+[EventDate "2005.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "8/5K2/8/4k3/5RR1/8/pp6/8 w - - 0 1"]
+
+{EG#16891 Game number 71617}
+1.Re4+ Kd5 ( 1...Kf5 {<main>} 2.Rgf4+ Kg5 3.Ke6 $1 b1=Q 4.Rg4+ Kh6 5.Rh4+ Kg7 (
+5...Kg5 6.Reg4# ) 6.Reg4+ Kf8 7.Rh8# ) 2.Rd4+ Ke5 ( 2...Kc5 3.Rc4+ Kb5 ( 3...
+Kd5 4.Kf6 $1 b1=Q 5.Rgd4# ) 4.Rb4+ Kc5 5.Ke6 $1 b1=Q 6.Rgc4# ) 3.Rge4+ Kf5 4.
+Re7 $1 b1=Q 5.Red7 $1 a1=Q 6.R7d5# {CQL} 1-0
+
+
+[Event "sp.p Razumenko-70 JT Zadachy i Etyudy"]
+[Site "?"]
+[Date "2007.10.01"]
+[Round "?"]
+[White "Gromov=M"]
+[Black "(+3204.10f4a8)"]
+[Result "1-0"]
+[EventDate "2007.??.??"]
+[SetUp "1"]
+[PlyCount "33"]
+[FEN "k7/3n4/1RR5/2P5/N4K2/8/q7/8 w - - 0 1"]
+
+{EG#17050 Game number 74411}
+1.Rc8+ ( 1.Ra6+ $2 Kb7 ) 1...Ka7 ( 1...Nb8 2.Rbxb8+ Ka7 3.Ra8+ Kb7 4.c6# ) 2.
+Rc7+ Ka8 3.Ra6+ Kb8 4.Rc8+ $1 Kb7 $1 ( 4...Kxc8 5.Nb6+ Nxb6 6.Rxa2 ) 5.c6+ Kxc8
+( 5...Kxa6 6.Ra8+ Kb5 7.Nc3+ ) 6.cxd7+ ( 6.Nb6+ $2 Nxb6 7.Rxa2 Nd5+ 8.Ke5 Nb4 )
+6...Kc7 7.Ra7+ Kc6 8.d8=N+ $1 ( 8.d8=Q $2 Qf2+ ) 8...Kd6 9.Nf7+ Kc6 10.Ne5+ Kd6
+11.Rd7+ Ke6 12.Nc5+ Kf6 13.Ne4+ Ke6 14.Ng5+ Kf6 15.Nh7+ Ke6 16.Nf8+ Kf6 17.Ng4#
+{CQL} 1-0
+
+

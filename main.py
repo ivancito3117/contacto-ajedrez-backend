@@ -1,20 +1,30 @@
-from fastapi import FastAPI, Depends, HTTPException, Query
+from fastapi import FastAPI, Depends, HTTPException, Query, Body, WebSocket
 from sqlalchemy.orm import Session
 from dotenv import load_dotenv
 import os
 import requests
 import json
+from cql_runner import run_cql_query, list_cql_examples
+from tactical_search import analyze_tactical_candidates
 
 from db import Base, engine, get_db
 from models import Student, Game
 from schemas import StudentCreate, StudentOut
 from traffic_lights import build_traffic_lights
+from live_ws import ws_live_game
+from live_api import router as live_router
 
 
 load_dotenv()
 LICHESS_TOKEN = os.getenv("LICHESS_TOKEN")
+STOCKFISH_PATH = os.getenv(
+    "STOCKFISH_PATH",
+    "/home/ivancito820a/proyectos/ajedrez_app/engines/stockfish/stockfish-ubuntu-x86-64"
+)
 
 app = FastAPI(title="Plataforma Ajedrez Iván")
+
+app.include_router(live_router)
 
 # Crea tablas (simple para MVP; luego migramos con Alembic)
 Base.metadata.create_all(bind=engine)
@@ -426,7 +436,7 @@ def student_pedagogical_report(
 
     return report
     
-    # ===============================
+# ===============================
 # SYSTEM DOCS ENDPOINT
 # ===============================
 
@@ -472,3 +482,97 @@ def system_docs():
         "docs": docs
     }
 
+
+@app.get("/cql/run-example")
+def run_cql_example():
+    """
+    Ejecuta una consulta CQL de ejemplo sobre hhdbvi_clean.pgn.
+    """
+    try:
+        return run_cql_query("exalpha/greekgift.cql")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/cql/examples")
+def get_cql_examples():
+    """
+    Lista los patrones CQL disponibles.
+    """
+    try:
+        return list_cql_examples()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.websocket("/ws/games/{game_id}")
+async def websocket_game(ws: WebSocket, game_id: int):
+    await ws_live_game(game_id, ws)
+
+@app.post("/cql/run-pattern")
+def run_cql_pattern(payload: dict = Body(...)):
+    """
+    Ejecuta un patrón CQL indicado por el cliente.
+    Ejemplos de pattern:
+      - exalpha/greekgift.cql
+      - exalpha/pins.cql
+      - queries/mirrormate.cql
+    """
+    pattern = (payload.get("pattern") or "").strip()
+
+    if not pattern:
+        raise HTTPException(status_code=400, detail="Falta 'pattern'")
+
+    # seguridad básica: evitar rutas fuera de cql/
+    if ".." in pattern or pattern.startswith("/") or pattern.startswith("\\"):
+        raise HTTPException(status_code=400, detail="Pattern inválido")
+
+    allowed_prefixes = ("exalpha/", "queries/")
+    if not pattern.startswith(allowed_prefixes):
+        raise HTTPException(
+            status_code=400,
+            detail="Pattern no permitido. Usa exalpha/ o queries/"
+        )
+
+    if not pattern.endswith(".cql"):
+        raise HTTPException(status_code=400, detail="El pattern debe terminar en .cql")
+
+    try:
+        return run_cql_query(pattern)
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+ 
+@app.post("/analyze/tactics")
+def analyze_tactics_endpoint(payload: dict = Body(...)):
+    """
+    Analiza una posición FEN usando Stockfish + detector táctico.
+    Devuelve jugadas candidatas y temas tácticos detectados.
+    """
+    fen = (payload.get("fen") or "").strip()
+    depth = int(payload.get("depth", 3))
+    multipv = int(payload.get("multipv", 5))
+
+    if not fen:
+        raise HTTPException(status_code=400, detail="Falta 'fen'")
+
+    if depth < 1 or depth > 10:
+        raise HTTPException(status_code=400, detail="depth debe estar entre 1 y 10")
+
+    if multipv < 1 or multipv > 10:
+        raise HTTPException(status_code=400, detail="multipv debe estar entre 1 y 10")
+
+    try:
+        return analyze_tactical_candidates(
+            fen=fen,
+            engine_path=STOCKFISH_PATH,
+            depth=depth,
+            multipv=multipv,
+        )
+    except FileNotFoundError:
+        raise HTTPException(
+            status_code=500,
+            detail=f"No se encontró Stockfish en: {STOCKFISH_PATH}"
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

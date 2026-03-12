@@ -1,18 +1,64 @@
-# Python / venv
-venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
+*.so
 
-# Env
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Variables sensibles
 .env
+.env.*
 
-# DB / local artifacts
+# Base de datos local / temporales
 *.sqlite3
+*.db
 
-# IDE
-.vscode/
-.idea/
+# Logs y temporales
+*.log
+*.tmp
+*.swp
+*.swo
+*~
 
-# OS
+# Tests / caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Archivos de sistema
 .DS_Store
+Thumbs.db
+
+# Build / binarios compilados C-C++
+*.o
+*.out
+*.a
+*.la
+*.lo
+*.dylib
+
+# Carpetas de compilación o basura
+build/
+dist/
+
+# Flutter / Android / Dart
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+.packages
+
+# Resultados generados automáticamente
+cql/results/
+chessdb/results/
+
+# Caches o artefactos locales opcionales
+*.tar
+
+# Binarios grandes locales
+cql/cql
+engines/stockfish/stockfish-ubuntu-x86-64

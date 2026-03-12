@@ -1,0 +1,894 @@
+[Event "Problem#225"]
+[Site "?"]
+[Date "1969.??.??"]
+[Round "?"]
+[White "Kozdon=B"]
+[Black "(=4888.23e5b1)"]
+[Result "1/2-1/2"]
+[EventDate "1969.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "7q/4p1Q1/3n1P2/rBB1KNRr/3NpP2/2R4n/b6p/bk6 w - - 0 1"]
+
+{Problem/3 Game number 37771  number of pinned pieces: 4}
+1.Bd3+ exd3 ( 1...Kb2 2.Rg2+ Kxc3 3.Rc2+ Kxd3 4.Qg3+ ) 2.Rc1+ Kxc1 3.Rg1+ 
+hxg1=Q 4.Qxg1+ {Pinned pieces: [d4,c5,f5,f6]} 4...Kb2 5.Qc1+ Kxc1 1/2-1/2
+
+
+[Event "Shakhmaty v SSSR"]
+[Site "?"]
+[Date "1987.??.??"]
+[Round "?"]
+[White "Martsvalashvili=R"]
+[Black "(=3878.40h3h5)"]
+[Result "1/2-1/2"]
+[EventDate "1987.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "6nq/3b3B/R3R3/5PPk/8/1r1NP2K/3P1b1N/4n2r w - - 0 1"]
+
+{Shakhmaty v SSSR/2 Game number 56040  number of pinned pieces: 4}
+1.Rh6+ $1 Nxh6 $1 ( 1...Kxg5 $2 2.Rag6+ Kxf5 3.Rh5+ Ke4+ 4.Rg4# ) 2.Rxh6+ Kxg5 
+3.Rg6+ Kxf5 ( 3...Kh5 $2 4.Nf4# ) 4.e4+ $1 Kxe4+ 5.Rg4+ {Pinned pieces: 
+[h2,d3,g4,h7]} 5...Kd5 1/2-1/2
+
+
+[Event "sp.p Kopnin JT Kvarnaja Krim"]
+[Site "?"]
+[Date "1988.??.??"]
+[Round "?"]
+[White "Grin=A"]
+[Black "(=4887.40d5f7)"]
+[Result "1/2-1/2"]
+[EventDate "1988.??.??"]
+[SetUp "1"]
+[PlyCount "12"]
+[FEN "bn2q1N1/1R2PkP1/2R2P2/rB1KB3/1b1P3r/8/3n4/3Q4 w - - 0 1"]
+
+{EG#07699 Game number 57186  number of pinned pieces: 4}
+1.Nh6+ Rxh6 2.g8=Q+ Qxg8 3.Qh5+ Rxh5 4.e8=Q+ Kxe8+ 5.f7+ Qxf7+ 6.Re6+ {Pinned 
+pieces: [b5,e5,e6,b7]} 6...Kf8 1/2-1/2
+
+
+[Event "The Problemist"]
+[Site "?"]
+[Date "1995.??.??"]
+[Round "?"]
+[White "Jasik=A"]
+[Black "(=0732.54e4c1)"]
+[Result "1/2-1/2"]
+[EventDate "1995.??.??"]
+[SetUp "1"]
+[PlyCount "12"]
+[FEN "8/r3P3/2p1p1r1/1p2P1N1/2NPKPR1/3P4/4p3/2k2b2 w - - 0 1"]
+
+{Game number 63394  number of pinned pieces: 4}
+1.Nf3 ( 1.e8=Q $2 e1=Q+ 2.Ne3 Bxd3+ 3.Kxd3 Ra3+ ) 1...Rxg4 2.e8=Q Bg2 3.Qxc6 ( 
+3.Ne3 $2 Bxf3+ 4.Kxf3 Kd2 5.Qxc6 ( 5.Nc2 Rag7 ) 5...Rg3+ 6.Kxg3 e1=Q+ ) ( 3.Ke3
+$2 Bxf3 ) 3...e1=Q+ ( 3...Bxf3+ 4.Kxf3 e1=Q 5.Ne3+ Kb1 6.Qxb5+ ) 4.Ne3+ Kb1 5.
+Qxb5+ Ka1 6.Qa4+ Rxa4 {Pinned pieces: [e3,f3,d4,f4]} ( 6...Kb2 7.Qb5+ Ka3 8.
+Qc5+ Kb3 9.Qc4+ ) 1/2-1/2
+
+
+[Event "3.c Sevcik JT Ceskoslovensky Sach (c)"]
+[Site "?"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Bunka=V"]
+[Black "(=4887.28e1c5)"]
+[Result "1/2-1/2"]
+[EventDate "1996.??.??"]
+[SetUp "1"]
+[PlyCount "18"]
+[FEN "8/1np1r3/2b2p2/P1k1bp2/1N4pq/B1pp2Q1/R1pRBPp1/1rn1K3 w - - 0 1"]
+
+{Ceskoslovensky Sach/10 EG#10562a (c): Ceskoslovensky Sach/3 1997 Game number 
+63732  number of pinned pieces: 4}
+1.Nxd3+ Kb5 2.Nxc1+ Kxa5 3.Qxc3+ Bxc3 {Pinned pieces: [c1,d2,e2,f2]} 4.Bb4+ 
+Kxb4 5.Ra4+ Kc5 6.Rc4+ Kb6 7.Rxc6+ Ka7 8.Ra6+ Kb8 9.Ra8+ Kxa8 1/2-1/2
+
+
+[Event "3.c Sevcik JT Ceskoslovensky Sach @4"]
+[Site "?"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Bunka=V"]
+[Black "(=4887.27e1c5)"]
+[Result "1/2-1/2"]
+[EventDate "1996.??.??"]
+[SetUp "1"]
+[PlyCount "18"]
+[FEN "8/1np1r3/2b5/P1k1bp2/1N4pq/B1pp2Q1/R1pRBPp1/1rn1K3 w - - 0 1"]
+
+{Ceskoslovensky Sach/10 EG#10562 @4: Ceskoslovensky Sach/3 1997 Game number 
+63733  number of pinned pieces: 4}
+1.Nxd3+ Kb5 2.Nxc1+ Kxa5 3.Qxc3+ $1 ( 3.Qxe5+ $1 {<cook>} 3...Rxe5 4.Bd6+ Ba4 
+5.Rxa4+ Kxa4 6.Rd4+ ) 3...Bxc3 {Pinned pieces: [c1,d2,e2,f2]} 4.Bb4+ Kxb4 5.
+Ra4+ $1 Kc5 6.Rc4+ Kb6 7.Rxc6+ Ka7 8.Ra6+ Kb8 9.Ra8+ Kxa8 1/2-1/2
+
+
+[Event "StrateGems#0009 @3"]
+[Site "?"]
+[Date "1998.??.??"]
+[Round "?"]
+[White "Jasik=A"]
+[Black "(=1844.13d5a5)"]
+[Result "1/2-1/2"]
+[EventDate "1998.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "1nr4B/1p2R2b/8/kp1K4/2PQN3/4Rr2/7p/8 b - - 0 1"]
+
+{StrateGems/10-12 @3: Van_der_Heijden=H StrateGems=12 10-12/2000 Game number 
+65774  number of pinned pieces: 4}
+1...Bg8+ $1 2.Re6 Rf5+ ( 2...Bxe6+ 3.Kxe6 Re8+ 4.Kd5 Rf5+ 5.Kd6 Rd8+ 6.Ke6 Rxd4
+7.Kxf5 h1=Q 8.Bxd4 bxc4 ) 3.Be5 Rd8+ 4.Nd6 h1=Q+ ( 4...Na6 $1 {<cook HH>} 5.
+Qd2+ Nb4+ 6.Qxb4+ Kxb4 7.cxb5 Ka5 ) 5.Re4 {Pinned pieces: [e4,e5,d6,e6]} 5...
+Nc6 $1 6.Qb6+ $1 Kxb6 7.c5+ Ka6 1/2-1/2
+
+
+[Event "Tidskrift f�r Schack#101 @1"]
+[Site "?"]
+[Date "1910.??.??"]
+[Round "?"]
+[White "Jespersen=J"]
+[Black "(+0146.24a6a1)"]
+[Result "1-0"]
+[EventDate "1910.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "b6B/8/K1P5/8/6p1/p5p1/pnP5/kn4R1 w - - 0 1"]
+
+{Tidskrift foer Schack/8 @1: Tidskrift foer Schack=11 11/1910 Game number 5850 
+number of pinned pieces: 3}
+1.c7 ( 1.Kb5 $1 {<cook>} 1...Bxc6+ 2.Kxc6 g2 3.Kd5 g3 4.Kd4 Na4 5.Ke3+ Nb2 6.
+Rxg2 Nc3 7.Rg1+ Nb1 ( 7...Nbd1+ 8.Kd2 Kb2 9.Rxd1 a1=Q 10.Bxc3+ ) 8.Ke2 g2 9.Ke1
+Nc3 10.Bxc3 Kb1 11.Kd2+ ) ( 1.Kb6 $1 {<cook>} 1...g2 2.c7 ) 1...Bb7+ $1 2.Kxb7 
+g2 3.c8=R $1 ( 3.c8=Q $2 g3 4.Qc3 ) 3...g3 4.Rc3 Nd1 5.Rxa3+ Nb2 {Pinned 
+pieces: [b1,a2,b2]} ( 5...Nbc3 6.Bxc3+ Kb1 7.Rxd1+ ) 6.Rc3 Nd1 7.Rb3+ Nb2 8.
+Bxb2# 1-0
+
+
+[Event "6.p La Strat�gie#0379"]
+[Site "?"]
+[Date "1912.??.??"]
+[Round "?"]
+[White "Lazard=F"]
+[Black "(=0710.22a8a6)"]
+[Result "1/2-1/2"]
+[EventDate "1912.??.??"]
+[SetUp "1"]
+[PlyCount "8"]
+[FEN "KB6/1PRp2P1/k7/r7/8/8/6rp/8 w - - 0 1"]
+
+{La Strategie/11 Game number 6107  number of pinned pieces: 3}
+1.Ba7 h1=Q 2.b8=N+ $1 Kb5 3.Rb7+ Ka4 4.g8=Q Rxg8 {Pinned pieces: [a7,b7,b8]} 
+1/2-1/2
+
+
+[Event "British Chess Magazine#186"]
+[Site "?"]
+[Date "1915.??.??"]
+[Round "?"]
+[White "Alexander=F"]
+[Black "(=4888.13c2a1)"]
+[Result "1/2-1/2"]
+[EventDate "1915.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "2r5/2N5/pB1q3b/nn4Nb/P2p4/7Q/pRKR4/k4Br1 w - - 0 1"]
+
+{British Chess Magazine/4 Game number 6906  number of pinned pieces: 3}
+1.Rxa2+ Kxa2 2.Kc1+ Ka1 3.Bxd4+ Qxd4 4.Qa3+ Nxa3 5.Ra2+ {Pinned pieces: 
+[f1,g5,c7]} 5...Kxa2 1/2-1/2
+
+
+[Event "Fern vom Alltag#085"]
+[Site "?"]
+[Date "1924.??.??"]
+[Round "?"]
+[White "Lowy=L"]
+[Black "(=3888.42d2f4)"]
+[Result "1/2-1/2"]
+[EventDate "1924.??.??"]
+[SetUp "1"]
+[PlyCount "6"]
+[FEN "4n3/2p3p1/2P3P1/qn2PNbB/1R1N1k2/4R2r/3K2P1/1b3rB1 w - - 0 1"]
+
+{Game number 9688  number of pinned pieces: 3}
+1.Bh2+ Rxh2 2.Ne2+ Kxf5 3.g4+ {Pinned pieces: [e2,e3,b4]} 3...Ke6 1/2-1/2
+
+
+[Event "The Chess Amateur#1432"]
+[Site "?"]
+[Date "1927.??.??"]
+[Round "?"]
+[White "Lester=W"]
+[Black "(+3876.06f8h1)"]
+[Result "1-0"]
+[EventDate "1927.??.??"]
+[SetUp "1"]
+[PlyCount "25"]
+[FEN "3b1KbR/1qp3n1/3p4/4p3/5p2/n6B/R2p1pr1/6rk w - - 0 1"]
+
+{The Chess Amateur/4 Game number 11828  number of pinned pieces: 3}
+1.Bc8+ Bh7 2.Rxh7+ Nh5 3.Rxh5+ Bh4 4.Rxh4+ Rh2 5.Bxb7+ c6 6.Bxc6+ d5 7.Bxd5+ e4
+8.Bxe4+ f3 9.Bxf3+ Rg2 10.Ra1+ Nb1 {Pinned pieces: [b1,g2,h2]} 11.Rxb1+ d1=Q 
+12.Rxd1+ f1=Q 13.Rxf1# 1-0
+
+
+[Event "Revista de Romana de Sah#0130"]
+[Site "?"]
+[Date "1928.??.??"]
+[Round "?"]
+[White "Ginninger=H"]
+[Black "(=3587.33e6h6)"]
+[Result "1/2-1/2"]
+[EventDate "1928.??.??"]
+[SetUp "1"]
+[PlyCount "6"]
+[FEN "1bn5/1pR2Ppn/2R1K2k/2B2B1r/b1p1N2P/1q5P/8/8 w - - 0 1"]
+
+{Revista de Romana de Sah/7 Game number 12634  number of pinned pieces: 3}
+1.f8=Q $1 Nxf8+ ( 1...Bxc7 2.Qxg7+ $1 Kxg7 3.Rxc7+ ) 2.Ke5+ bxc6 ( 2...Ng6+ 3.
+Rxg6+ Kh7 4.Rg5+ $1 ) 3.Be3+ Qxe3 {Pinned pieces: [e4,f5,c7]} ( 3...g5 4.hxg5+ 
+Rxg5 5.Bxg5+ Kh5 6.Bg4+ Kg6 7.Bf5+ ) 1/2-1/2
+
+
+[Event "L'Echiquier#037"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Ginninger=H"]
+[Black "(=4488.04e6h8)"]
+[Result "1/2-1/2"]
+[EventDate "1929.??.??"]
+[SetUp "1"]
+[PlyCount "8"]
+[FEN "3qQN1k/1n2N2p/4KpBR/3p4/8/pb4n1/5B2/2b4r w - - 0 1"]
+
+{L'Echiquier/7 Game number 13352  number of pinned pieces: 3}
+1.Bd4 Bb2 $1 ( 1...Bxh6 2.Bxf6+ Bg7 3.Bxg7+ Kxg7 4.Qf7+ Kh6 5.Qf4+ ) 2.Nxh7+ 
+Qxe8 3.Nxf6+ Rxh6 4.Nxd5+ {Pinned pieces: [d5,g6,e7]} 4...Bxd4 1/2-1/2
+
+
+[Event "Schackv�rlden#207 @4"]
+[Site "?"]
+[Date "1938.??.??"]
+[Round "?"]
+[White "Karlstrom=A"]
+[Black "(=4678.07a4f3)"]
+[Result "1/2-1/2"]
+[EventDate "1938.??.??"]
+[SetUp "1"]
+[PlyCount "16"]
+[FEN "q4b2/pb2p3/1p3n2/B2p4/K4p2/p1rp1k2/2NnN3/r5Q1 w - - 0 1"]
+
+{Schackvaerlden/7 @4: (HHdbII#16455 2000) Game number 18592  number of pinned 
+pieces: 3}
+1.Ned4+ Ke4 2.Qg6+ Ke5 3.Qf5+ Kd6 4.Nb5+ Kc6 5.Nb4+ ( 5.Qe6+ $1 {<cook>} 5...
+Kc5 6.Bb4+ Kc4 7.Qe5 $1 ) 5...Kc5 6.Qe5 $1 Rc4 7.Qc7+ Bc6 8.Qxb6+ axb6 {Pinned 
+pieces: [b4,a5,b5]} 1/2-1/2
+
+
+[Event "source unknown"]
+[Site "?"]
+[Date "1940.??.??"]
+[Round "?"]
+[White "Korolkov=V"]
+[Black "(+4858.33c3d5)"]
+[Result "1-0"]
+[EventDate "1940.??.??"]
+[SetUp "1"]
+[PlyCount "7"]
+[FEN "6B1/5Nb1/3p4/q2krP1R/Nn2p3/pPKnr3/Q1PB4/3R4 w - - 0 1"]
+
+{Game number 20021  number of pinned pieces: 3}
+1.Nd8+ Re6+ 2.f6+ Ne5+ 3.Bxe3+ Nd3+ {Pinned pieces: [d3,e5,e6]} 4.b4# 1-0
+
+
+[Event "British Chess Magazine#1255"]
+[Site "?"]
+[Date "1956.??.??"]
+[Round "?"]
+[White "Roycroft=A"]
+[Black "(=0773.11e8g8)"]
+[Result "1/2-1/2"]
+[EventDate "1956.??.??"]
+[SetUp "1"]
+[PlyCount "4"]
+[FEN "3nK1kr/3R1p2/2b1BbP1/4r3/8/8/8/8 w - - 0 1"]
+
+{British Chess Magazine/5 Game number 28649  number of pinned pieces: 3}
+1.gxf7+ Kg7+ ( 1...Kh7+ 2.f8=N+ Kh6 ) 2.f8=B+ {Pinned pieces: [e6,d7,f8]} 2...
+Kg6 1/2-1/2
+
+
+[Event "4.hm Problem#148"]
+[Site "?"]
+[Date "1962.??.??"]
+[Round "?"]
+[White "Zlatic=S"]
+[Black "(+4770.57h3f6)"]
+[Result "1-0"]
+[EventDate "1962.??.??"]
+[SetUp "1"]
+[PlyCount "21"]
+[FEN "3b4/3p4/q3pk1P/1pQ3p1/4rpP1/3p1P1K/p1bP1rPB/1R6 w - - 0 1"]
+
+{Problem/12 1965 EG#09713 Game number 32435  number of pinned pieces: 3}
+1.Qf8+ Ke5 2.h7 Bf6 3.Qc5+ d5 4.Qc7+ Qd6 5.Qc3+ Rd4 6.Re1+ Re2 {Pinned pieces: 
+[e2,d4,f4]} 7.Rxe2+ dxe2 8.Qe3+ Be4 9.Bxf4+ gxf4 10.g3 fxe3 11.f4# 1-0
+
+
+[Event "L'Italia Scacchistica#3631"]
+[Site "?"]
+[Date "1963.??.??"]
+[Round "?"]
+[White "Kozdon=B"]
+[Black "(=4678.32b1h5)"]
+[Result "1/2-1/2"]
+[EventDate "1963.??.??"]
+[SetUp "1"]
+[PlyCount "4"]
+[FEN "1r5b/5q2/6b1/1N3N1k/5Pp1/1B1Q4/3p1P1P/nK2nr2 w - - 0 1"]
+
+{Game number 33323  number of pinned pieces: 3}
+1.Qh3+ $1 gxh3 2.Bd1+ Nf3 {Pinned pieces: [d1,b5,f5]} 1/2-1/2
+
+
+[Event "2.hm Magyar Sakk�let#0567"]
+[Site "?"]
+[Date "1964.??.??"]
+[Round "?"]
+[White "Balazs=J"]
+[Black "(=3682.25h1b8)"]
+[Result "1/2-1/2"]
+[EventDate "1964.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "bk4rr/2p5/P2p4/P7/p4b2/1p3N1B/2p4N/q5BK w - - 0 1"]
+
+{Magyar Sakkelet/12 Game number 33759  number of pinned pieces: 3}
+1.a7+ Kb7 2.a6+ Kc6 ( 2...Kxa6 {<main>} 3.Bf1+ Kb7 ( 3...Ka5 {<main>} 4.Bb6+ 
+Kb4 5.Bc5+ dxc5 ) 4.Ba6+ Kc6 5.Bb5+ Kd5 6.Bc4+ Ke4 7.Bd3+ Kxd3 ) 3.Bd7+ Kd5 4.
+Be6+ Ke4 5.Bf5+ Kxf5 {Pinned pieces: [g1,h2,f3]} 1/2-1/2
+
+
+[Event "sp.p All-Russian Ty Shakhmaty Rossii @3"]
+[Site "?"]
+[Date "1967.??.??"]
+[Round "?"]
+[White "Pogosyants=E"]
+[Black "(=0732.00c8a7)"]
+[Result "1/2-1/2"]
+[EventDate "1967.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "2K5/k4N2/r5b1/2R5/3Nr3/8/8/8 w - - 0 1"]
+
+{EG#01160 EG#14952 @3: Veitch=W EG=23 2/1971 Game number 36666  number of 
+pinned pieces: 3}
+1.Rc7+ ( 1.Nd6 $2 Rxd4 2.Nb5+ Kb6 3.Nxd4 Kxc5 ) ( 1.Rc4 $2 Re8+ 2.Kd7 Bxf7 ) 
+1...Ka8 ( 1...Kb6 2.Rc6+ Ka5 3.Nb3+ Kb5 4.Rxa6 Kxa6 ( 4...Rc4+ 5.Kb7 Be4+ 6.Ka7
+Rc7+ 7.Kb8 Rb7+ 8.Kc8 Kxa6 9.Nc5+ ) 5.Nc5+ ) 2.Nb5 ( 2.Rd7 $2 Bxf7 3.Rxf7 Rxd4 
+) ( 2.Nb3 $2 Re8+ 3.Kd7 ( 3.Nd8 Bf5+ ) 3...Bxf7 ) 2...Re8+ ( 2...Bf5+ $1 {<cook
+WV>} 3.Kd8 ( 3.Rd7 Re7 ) 3...Rg6 4.Rc5 ( 4.Rd7 $2 Bxd7 5.Kxd7 Rg7 ) 4...Rg8+ 5.
+Kc7 Re7+ 6.Kb6 Rb7+ ( 6...Rxf7 $2 7.Nc7+ Kb8 8.Na6+ ) ) 3.Nd8 ( 3.Kd7 $2 Bxf7 )
+3...Bf5+ ( 3...Re5 4.Nd4 ) 4.Rd7 Rc6+ ( 4...Bxd7+ 5.Kxd7 Rh8 6.Nc7+ ) ( 4...Re7
+5.Nc7+ Ka7 6.Nce6+ ) 5.Nc7+ {Pinned pieces: [c7,d7,d8]} 5...Ka7 1/2-1/2
+
+
+[Event "4.c Vechernyaya Odessa"]
+[Site "?"]
+[Date "1974.??.??"]
+[Round "?"]
+[White "Yaroslavtsev=A"]
+[Black "(=1405.14a8e7)"]
+[Result "1/2-1/2"]
+[EventDate "1974.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "K4n2/4kP1Q/4Nr2/1N6/5p2/1R4p1/p6p/8 w - - 0 1"]
+
+{EG#02489 Game number 41632  number of pinned pieces: 3}
+1.Qe4 $1 a1=Q+ 2.Na7 h1=Q 3.Rb7+ Nd7 4.f8=Q+ Rxf8+ 5.Nd8+ Qxe4 {Pinned pieces: 
+[a7,b7,d8]} ( 5...Kxd8 6.Qe8+ Kxe8 ) ( 5...Kf6 6.Qf5+ Kg7 7.Qg6+ Kh8 8.Qg8+ $1 
+Rxg8 ) ( 5...Kd6 6.Qe6+ Kc5 7.Qc4+ Kd6 8.Qe6+ ) 1/2-1/2
+
+
+[Event "Th�mes 64#3209 @1"]
+[Site "?"]
+[Date "1977.??.??"]
+[Round "?"]
+[White "Pogosyants=E"]
+[Black "(=3511.01a1a8)"]
+[Result "1/2-1/2"]
+[EventDate "1977.??.??"]
+[SetUp "1"]
+[PlyCount "14"]
+[FEN "k5B1/1R6/8/8/3R4/7r/5p2/KN4q1 w - - 0 1"]
+
+{Themes 64/7-9 @1: Perkonoja=P Themes 64=89 1-3/1978 Game number 45383  number 
+of pinned pieces: 3}
+1.Rb2 ( 1.Bd5 Ra3+ 2.Kb2 Qxb1+ 3.Kxb1 f1=Q+ 4.Kc2 $1 {<cook PP>} 4...Qf2+ 5.Rd2
+Qc5+ ( 5...Qf5+ 6.Kb2 $1 ) 6.Kb1 Qg1+ 7.Kc2 $1 ) 1...Ra3+ 2.Ba2 f1=Q ( 2...Qg7 
+3.Rf4 ) ( 2...Qg3 3.Rd8+ Ka7 4.Rf8 ) ( 2...Qg2 3.Rdd2 ) 3.Rd8+ Ka7 4.Rd7+ Ka6 
+5.Rd6+ Ka5 6.Rd5+ Ka4 7.Rd4+ $1 Qxd4 {Pinned pieces: [b1,a2,b2]} 1/2-1/2
+
+
+[Event "Sachov� Umenie#5499 (c)"]
+[Site "?"]
+[Date "1979.??.??"]
+[Round "?"]
+[White "Akobia=I"]
+[Black "(=3752.24a8d8)"]
+[Result "1/2-1/2"]
+[EventDate "1979.??.??"]
+[SetUp "1"]
+[PlyCount "32"]
+[FEN "K2k4/B1p1pP2/B2Np3/2P5/8/5r2/RN3rbp/6q1 w - - 0 1"]
+
+{Sachove Umenie/10 (c): Hlinka=M Ceskoslovensky Sach#92 12/2009 Game number 
+47260  number of pinned pieces: 3}
+1.Nb7+ Kd7 2.c6+ $1 Kxc6 3.Na5+ Kd7 4.Bb5+ Kc8 ( 4...c6 5.Bxc6+ Kc8 6.Bb7+ Kc7 
+7.Bb8+ Kb6 8.Ba7+ $1 ( 8.Nc6 $2 Qe1 9.Ra6+ Kb5 10.Bxh2 Rb3 11.Nd4+ Kb4 12.Rb6+ 
+Kc5 13.Rxb3 Bxb7+ 14.Kb8 Kxd4 15.Bg3 Qe2 16.Bxf2+ Qxf2 17.Rb4+ Kd5 18.Rb5+ Kc6 
+19.Rxb7 Qxf7 20.Rc7+ Kd5 ) ) 5.Ba6+ Kd7 6.Bb5+ c6 $1 7.Bxc6+ Kc8 8.Bb7+ Kc7 9.
+Bb8+ Kb6 10.Ba7+ $1 Kc7 ( 10...Kb5 11.Bc6+ Kb4 12.Bd4 $1 Qd1 13.Nxd1 Rxa2 14.
+Bxf3 ) 11.Bb8+ Kd7 $1 12.Bc6+ Kd8 13.Nb7+ Kc8 14.Na4 $1 Rxa2 ( 14...Rf1 15.Rc2 
+) 15.f8=Q+ $1 Rxf8 16.Bd7+ Kxd7 {Pinned pieces: [a4,b7,b8]} 1/2-1/2
+
+
+[Event "Sachov� Umenie#5499 @3 @1"]
+[Site "?"]
+[Date "1979.??.??"]
+[Round "?"]
+[White "Akobia=I"]
+[Black "(=3482.24a8c8)"]
+[Result "1/2-1/2"]
+[EventDate "1979.??.??"]
+[SetUp "1"]
+[PlyCount "12"]
+[FEN "K1kN2R1/B4p2/2pP4/NP3p2/3b1p2/q4B2/6r1/7b w - - 0 1"]
+
+{Sachove Umenie/10 @3: Sachove Umenie/5 1980 @1: Hlinka=M Ceskoslovensky Sach/ 
+2009 Game number 47261  number of pinned pieces: 3}
+1.d7+ ( 1.Re8 $1 {<cook MH>} ) ( 1.Bxg2 $1 {<cook MH>} 1...Bxg2 2.bxc6 ) 1...
+Kxd7 ( 1...Kc7 2.Ne6+ Kxd7 3.Bxc6+ Kxe6 4.Re8+ Kf6 5.Bxd4+ Kg5 6.Rg8+ ) 2.Bxc6+
+Kc7 ( 2...Ke7 3.Re8+ Kf6 4.Bxd4+ Kg6 5.Rg8+ Kh7 6.Rh8+ ) ( 2...Kc8 3.Bb7+ Kc7 
+4.b6+ Bxb6 5.Bb8+ Kd7 6.Bc6+ Ke7 7.Re8+ Kf6 8.Be5+ Kg6 9.Rg8+ Kh5 $1 {<cook>} 
+10.Rh8+ Kg4 11.Rg8+ Kh4 12.Rh8+ Kg3 13.Rg8+ Kf2 ) 3.b6+ Bxb6 ( 3...Kd6 4.Nc4+ )
+4.Bb8+ Kc8 5.Nb7+ Rxg8 6.Bd7+ $1 Kxd7 {Pinned pieces: [a5,b7,b8]} 1/2-1/2
+
+
+[Event "64 Shakhmatnoye Obozrenye"]
+[Site "?"]
+[Date "1982.??.??"]
+[Round "?"]
+[White "Yaroslavtsev=A"]
+[Black "(=4462.14h1h5)"]
+[Result "1/2-1/2"]
+[EventDate "1982.??.??"]
+[SetUp "1"]
+[PlyCount "12"]
+[FEN "1qb5/5p2/1pQ4P/7k/5pN1/1p6/1R6/r3b1NK w - - 0 1"]
+
+{64 Shakhmatnoye Obozrenye/2 Game number 50257  number of pinned pieces: 3}
+1.h7 Bb7 2.Nf6+ Kh6 3.Rh2+ Kg6 4.Rg2+ Bg3 ( 4...Kf5 5.Qd7+ Kxf6 6.Qd4+ Kf5 7.
+Qxa1 Bxg2+ 8.Kxg2 f6 9.Qxe1 ) 5.h8=N+ $1 ( 5.h8=Q $2 Rxg1+ $1 6.Kxg1 Qxh8 7.
+Qxb7 Qxf6 ) 5...Qxh8+ 6.Nh7+ Bxc6 {Pinned pieces: [g1,g2,h7]} ( 6...Kh5 7.Qb5+ 
+Bd5 ( 7...Kh6 8.Qg5+ Kxh7 9.Qh6+ Kxh6 ) 8.Qxd5+ Kh6 9.Qg5+ Kxh7 10.Rh2+ Bxh2 
+11.Qh4+ Kg8 12.Qd8+ Kg7 13.Qg5+ ) 1/2-1/2
+
+
+[Event "64 Shakhmatnoye Obozrenye (v)"]
+[Site "?"]
+[Date "1982.??.??"]
+[Round "?"]
+[White "Yaroslavtsev=A"]
+[Black "(=4462.14h1g6)"]
+[Result "1/2-1/2"]
+[EventDate "1982.??.??"]
+[SetUp "1"]
+[PlyCount "6"]
+[FEN "1q6/1b3p1P/1pQ2Nk1/8/5p2/1p6/1R6/r3b1NK w - - 0 1"]
+
+{64 Shakhmatnoye Obozrenye/2 (v): 1988 Game number 50263  number of pinned 
+pieces: 3}
+1.Rg2+ Bg3 ( 1...Kf5 2.Qd7+ Kxf6 3.Qd4+ Kf5 4.Qxa1 Bxg2+ 5.Kxg2 f6 6.Qxe1 ) 2.
+h8=N+ $1 ( 2.h8=Q $2 Rxg1+ $1 3.Kxg1 Qxh8 4.Qxb7 Qxf6 ) 2...Qxh8+ ( 2...Kg7 3.
+Qc3 ) 3.Nh7+ $1 ( 3.Nh5+ $2 Kh7 ) 3...Bxc6 {Pinned pieces: [g1,g2,h7]} ( 3...
+Kh5 4.Qb5+ Bd5 ( 4...Kg6 5.Qg5+ ) ( 4...Kh6 5.Qg5+ Kxh7 6.Qh6+ Kxh6 ) 5.Qxd5+ 
+Kg6 6.Qg5+ Kxh7 7.Rh2+ $1 Bxh2 8.Qh4+ Kg7 9.Qg5+ Kf8 10.Qd8+ ) 1/2-1/2
+
+
+[Event "Szachy#07"]
+[Site "?"]
+[Date "1983.??.??"]
+[Round "?"]
+[White "Lewandowski=A"]
+[Black "(=3652.23b5c7)"]
+[Result "1/2-1/2"]
+[EventDate "1983.??.??"]
+[SetUp "1"]
+[PlyCount "12"]
+[FEN "8/2kp1B1P/8/1K1p4/1P2Nq2/N2r4/2p2B2/3b1r2 w - - 0 1"]
+
+{Game number 51884  number of pinned pieces: 3}
+1.Bb6+ ( 1.h8=Q $2 Rxf2 2.Nc5 Qd6 3.Na6+ Qxa6+ ) 1...Kb7 2.Nc5+ ( 2.h8=Q $2 
+dxe4 3.Nc4 Qf5+ 4.Bc5 c1=Q ) 2...Ka8 3.h8=Q+ Qb8 4.Qa1 $1 Be2 $1 5.Bxd5+ Rxd5+ 
+6.Nc4+ {Pinned pieces: [c4,c5,b6]} 6...Rxa1 1/2-1/2
+
+
+[Event "Leninski Propor"]
+[Site "?"]
+[Date "1984.??.??"]
+[Round "?"]
+[White "Pogosyants=E"]
+[Black "(=0742.01b1a4)"]
+[Result "1/2-1/2"]
+[EventDate "1984.??.??"]
+[SetUp "1"]
+[PlyCount "10"]
+[FEN "6b1/5r2/8/3B4/k4r2/1N6/5p2/NK2R3 w - - 0 1"]
+
+{Game number 52592  number of pinned pieces: 3}
+1.Rf1 Re7 2.Rxf2 $1 Re1+ 3.Nc1 Bh7+ 4.Rc2 Rb4+ 5.Bb3+ {Pinned pieces: 
+[c1,c2,b3]} 5...Ka3 1/2-1/2
+
+
+[Event "3.p Szachy#56"]
+[Site "?"]
+[Date "1985.??.??"]
+[Round "?"]
+[White "Lewandowski=A"]
+[Black "(=3654.33b5d6)"]
+[Result "1/2-1/2"]
+[EventDate "1985.??.??"]
+[SetUp "1"]
+[PlyCount "14"]
+[FEN "8/3p1B1P/1pNk4/BK1p4/1PP2q2/3r4/8/n2b1r2 w - - 0 1"]
+
+{EG#06776 Game number 53476  number of pinned pieces: 3}
+1.c5+ Kc7 2.Bxb6+ Kb7 3.Na5+ Ka8 4.h8=Q+ Qb8 5.Qxa1 ( 5.Bxd5+ $2 Rxd5 6.Qxa1 
+Rxc5+ $1 7.Kxc5 ( 7.bxc5 Be2+ ) 7...d6+ 8.Kd4 Qh8+ ) 5...Be2 $1 6.Bxd5+ $1 ( 6.
+Nc4+ $2 Rxa1 7.Bxd5+ Qb7 ) 6...Rxd5+ 7.Nc4+ {Pinned pieces: [c4,c5,b6]} 7...
+Rxa1 1/2-1/2
+
+
+[Event "4.p Szachy#30"]
+[Site "?"]
+[Date "1986.??.??"]
+[Round "?"]
+[White "Lewandowski=A"]
+[Black "(=4642.42e8g5)"]
+[Result "1/2-1/2"]
+[EventDate "1986.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "1N2K3/6Pq/6p1/1prP2k1/1P4N1/8/1B2Q1P1/4b1r1 b - - 0 1"]
+
+{EG#07206 Game number 54587  number of pinned pieces: 3}
+1...Qg8+ 2.Ke7 Rc7+ 3.Nd7 Bxb4+ 4.d6 Re1 {Pinned pieces: [e2,d6,d7]} 5.Bf6+ Kh5
+6.Ne5+ $1 Rxe2 7.g4+ Kh6 8.g5+ Kh7 1/2-1/2
+
+
+[Event "1.c October Revolution JT Leninskoye Zn"]
+[Site "?"]
+[Date "1987.??.??"]
+[Round "?"]
+[White "Asaba=E"]
+[Black "(+4110.04b8g2)"]
+[Result "1-0"]
+[EventDate "1987.??.??"]
+[SetUp "1"]
+[PlyCount "17"]
+[FEN "1K6/1R6/8/7B/7p/6pp/5pkq/Q7 w - - 0 1"]
+
+{EG#07510 Game number 55336  number of pinned pieces: 3}
+1.Rb1 Qg1 2.Bf3+ Kh2 3.Rf1 g2 4.Qe5+ Kh1 5.Qf5 Kh2 6.Qf4+ Kh1 7.Qxh4 {Pinned 
+pieces: [g1,g2,h3]} 7...Qxf1 8.Qxh3+ Kg1 9.Bb7 1-0
+
+
+[Event "Shakhmaty v SSSR#17"]
+[Site "?"]
+[Date "1989.??.??"]
+[Round "?"]
+[White "Kalyagin=V Kirillov=V"]
+[Black "(+3213.11a2d1)"]
+[Result "1-0"]
+[EventDate "1989.??.??"]
+[SetUp "1"]
+[PlyCount "13"]
+[FEN "1R5R/8/3P2B1/8/8/8/K3p3/3kn1q1 w - - 0 1"]
+
+{Shakhmaty v SSSR/5 Game number 57970  number of pinned pieces: 3}
+1.d7 Qa7+ 2.Kb1 $1 Qxd7 3.Rbd8 Qd2 4.Be4 $1 Nd3 ( 4...Nf3 5.Rh1+ e1=Q ( 5...Ne1
+6.Bc2# ) 6.Bxf3# ) 5.Rh1+ e1=Q 6.Bf3+ Qe2 {Pinned pieces: [e1,e2,d3]} 7.Rxd3# 
+1-0
+
+
+[Event "3.p The Problemist#0555"]
+[Site "?"]
+[Date "1990.??.??"]
+[Round "?"]
+[White "Lewandowski=A"]
+[Black "(=4735.10h3f1)"]
+[Result "1/2-1/2"]
+[EventDate "1990.??.??"]
+[SetUp "1"]
+[PlyCount "14"]
+[FEN "3Q4/1qr2N2/4r3/8/3n3R/6PK/b7/2N2k2 w - - 0 1"]
+
+{The Problemist/11 1991 EG#09389 EG#15903 Game number 58435  number of pinned 
+pieces: 3}
+1.Rf4+ ( 1.Rxd4 $2 Qh1+ 2.Kg4 Re4+ 3.Rxe4 Qxe4+ 4.Kg5 Qd5+ ) 1...Ke1 ( 1...Nf3 
+2.Qd1+ Kf2 3.Qd2+ ) 2.Qxd4 ( 2.Nd3+ $2 Ke2 3.Qxd4 Qh1+ 4.Kg4 Rg6+ 5.Ng5 Be6+ 6.
+Rf5 Qf3+ ) 2...Qh1+ ( 2...Rd7 3.Qc3+ Rd2 4.Nd3+ Ke2 5.Rf2+ ) 3.Kg4 Rg6+ ( 3...
+Rxf7 4.Qf2+ Kd1 5.Rd4+ Kxc1 6.Qd2+ Kb1 7.Rb4+ ) 4.Ng5 $1 ( 4.Kf5 $2 Rxf7+ 5.
+Kxg6 Qh7+ 6.Kg5 Qg8+ ) 4...Be6+ 5.Rf5 Rc4 {Pinned pieces: [d4,f5,g5]} 6.Nd3+ 
+Kd2 7.Nf4+ Rxd4 1/2-1/2
+
+
+[Event "Mat v Etyudak#3554"]
+[Site "?"]
+[Date "1990.??.??"]
+[Round "?"]
+[White "Akobia=I"]
+[Black "(+3840.12g5a8)"]
+[Result "1-0"]
+[EventDate "1990.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "k7/q7/2P5/2R1p1K1/5pb1/8/1r6/r1R4B w - - 0 1"]
+
+{Game number 58800  number of pinned pieces: 3}
+1.c7+ f3 2.c8=Q+ Rb8 ( 2...Bxc8 3.Bxf3+ e4 4.Bxe4+ Bb7 ( 4...Rb7 5.Rxc8+ Qb8 6.
+Rxa1# ) 5.Rc8+ Qb8 6.Rxa1+ Ra2 7.Rxa2# ) 3.Qc6+ Rb7 4.Qxf3 $1 Bxf3 5.Rc8+ Qb8 (
+5...Rb8 6.Bxf3+ e4 7.Bxe4+ Qb7 8.Rxa1# ) 6.Rxa1+ Ra7 {Pinned pieces: [f3,a7,b8]
+} 7.Bxf3+ e4 8.Bxe4# 1-0
+
+
+[Event "sp.hm Hildebrand JT Tidskrift f�r Schac"]
+[Site "?"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Matous=M Polasek=J"]
+[Black "(=3451.10g8d4)"]
+[Result "1/2-1/2"]
+[EventDate "1996.??.??"]
+[SetUp "1"]
+[PlyCount "8"]
+[FEN "6K1/6PB/2q4B/7R/2Nk4/2b5/r7/8 w - - 0 1"]
+
+{EG#11201 Game number 64198  number of pinned pieces: 3}
+1.Kh8 ( 1.Rh4+ $2 Kc5 2.Be4 Qd7 3.Kh7 Ra7 ) ( 1.Bb1 $2 Qe8+ 2.Kh7 Qxh5 3.Bxa2 (
+3.Bg6 Qh3 4.g8=Q Ra7+ 5.Bf7 Qf5+ 6.Qg6 ( 6.Kh8 Kc5+ 7.Bg7 Qh3+ 8.Qh7 Qxh7+ 9.
+Kxh7 Rxf7 ) 6...Rxf7+ 7.Bg7+ Kxc4 ) 3...Qf5+ 4.Kg8 Kc5 5.Be3+ Kc6 6.Bd2 Qd5+ 7.
+Kh7 Qh1+ 8.Kg8 Bxg7 9.Kxg7 Qa1+ ) 1...Ra8+ ( 1...Kxc4 2.Bg8+ Kb4 3.Bxa2 ) ( 
+1...Qf6 2.Nb6 $1 ) 2.g8=B Qxh6 ( 2...Qxc4 3.Bg7+ Ke3 4.Rh3+ Kf2 5.Rxc3 ) ( 2...
+Qe6 3.Bg7+ Kxc4 4.Rh4+ Kc5 5.Bxc3 ) 3.Rd5+ Kxc4+ 4.Rd4+ {Pinned pieces: 
+[d4,h7,g8]} 4...Kb5 1/2-1/2
+
+
+[Event "Zadachy i Etyudy#0396"]
+[Site "?"]
+[Date "1997.12.25"]
+[Round "?"]
+[White "Ioffe=D"]
+[Black "(=4683.21a8h2)"]
+[Result "1/2-1/2"]
+[EventDate "1997.??.??"]
+[SetUp "1"]
+[PlyCount "14"]
+[FEN "KnB2r2/BPP5/5b2/8/8/2q5/Qp5k/r6b w - - 0 1"]
+
+{Game number 65041  number of pinned pieces: 3}
+1.Qxb2+ $1 ( 1.cxb8=Q+ $2 Qg3 2.Qxg3+ Kxg3 3.Qb3+ Kh4 ) 1...Qxb2 ( 1...Bg2 {
+<main>} 2.cxb8=B+ $1 ( 2.cxb8=Q+ $2 Kh1 3.Qxg2+ ( 3.Qxc3 Bxc3 4.Qc7 Bd4 ) 3...
+Kxg2 4.Bh3+ Kxh3 5.Qxf8 Rxa7+ 6.Kxa7 Qa5+ 7.Kb8 Be5+ ) 2...Kh1 3.Qxg2+ $1 Kxg2 
+4.Bh3+ Kf3 ( 4...Kh1 5.Bg2+ Kxg2 ) 5.Bg4+ Ke4 6.Bf5+ Kd5 7.Be6+ Kc6 8.Bd7+ Kxd7
+) 2.cxb8=B+ $1 Kg2 ( 2...Be5 3.Bxe5+ Qxe5 ) 3.Bh3+ Kf3 4.Bg4+ Ke4 5.Bf5+ Kd5 6.
+Be6+ Kc6 7.Bd7+ Kxd7 {Pinned pieces: [a7,b7,b8]} 1/2-1/2
+
+
+[Event ".hm The Problemist#0828"]
+[Site "?"]
+[Date "2000.??.??"]
+[Round "?"]
+[White "Yarmonov=I"]
+[Black "(=3762.64a8a5)"]
+[Result "1/2-1/2"]
+[EventDate "2000.??.??"]
+[SetUp "1"]
+[PlyCount "16"]
+[FEN "K3N3/1P3P2/1P6/kN1b3R/1p1p4/1p1p1Pr1/1P1P3b/r6q w - - 0 1"]
+
+{The Problemist/11 2001 EG#15307 Game number 66873  number of pinned pieces: 3}
+1.Na7 $1 Rxf3 ( 1...Kxb6 2.Rh6+ ) ( 1...Qxf3 2.f8=Q Qxf8 3.Rxd5+ Ka4 4.b8=Q ) 
+2.Rxd5+ Ka6 ( 2...Kxb6 3.Rb5+ Ka6 4.f8=Q Rxf8 5.Rb6+ Ka5 6.Rb5+ Ka4 7.Rxb4+ 
+Kxb4 ) 3.Nc7+ Bxc7 4.bxc7 Rf6 ( 4...Rxf7 5.Rd6+ Ka5 6.c8=Q ) 5.f8=Q ( 5.c8=Q $2
+Qxd5 ) 5...Rxf8+ 6.b8=N+ $1 Kb6 {Pinned pieces: [d5,a7,b8]} ( 6...Rxb8+ 7.Kxb8 
+Qxd5 ( 7...Rc1 8.Rd6+ Ka5 9.Nc6+ Rxc6 10.Rxc6 Qxc6 11.c8=Q ) ( 7...Qh2 8.Rh5 $1
+Qxh5 ( 8...Qf4 9.Rh6+ Ka5 10.Nc6+ $1 ) 9.c8=Q+ ) 8.c8=Q+ Ka5 9.Qc7+ Ka4 10.Nc8 
+$1 Qb5+ 11.Nb6+ Ka5 12.Qa7+ Qa6 13.Nc4+ Kb5 14.Qd7+ Kxc4 ( 14...Kc5 15.Qc7+ Kd5
+16.Qf7+ Kc5 17.Qc7+ Qc6 18.Qe7+ $1 ( 18.Qe5+ $2 Kxc4 19.Qxd4+ Kb5 20.Qxb4+ Ka6 
+$1 ) 18...Kb5 ( 18...Kxc4 19.Qxb4+ Kd5 20.Qxd4+ Kxd4 ) 19.Nd6+ ) 15.Qc6+ Qxc6 )
+7.c8=N+ $1 Kc7 ( 7...Rxc8 {<main>} ) 8.Na6+ $1 Rxa6 1/2-1/2
+
+
+[Event "Tidskrift f�r Schack#3172"]
+[Site "?"]
+[Date "2001.??.??"]
+[Round "?"]
+[White "Slepyan=G"]
+[Black "(=0741.21a3a1)"]
+[Result "1/2-1/2"]
+[EventDate "2001.??.??"]
+[SetUp "1"]
+[PlyCount "12"]
+[FEN "4B3/P6r/3b4/8/NR6/K7/5Prp/k7 w - - 0 1"]
+
+{Tidskrift foer Schack/12 Game number 68756  number of pinned pieces: 3}
+1.a8=Q h1=Q ( 1...Bxb4+ 2.Kb3 $1 ) 2.Nc5 $1 Rg3+ 3.f3 $1 Rxf3+ ( 3...Ra7+ 4.
+Qxa7 Qxf3+ 5.Ka4 Qa3+ 6.Kb5 Qxa7 7.Ra4+ Qxa4+ 8.Nxa4 ) 4.Qxf3 $1 ( 4.Nb3+ $2 
+Rxb3+ 5.Ka4 Ra3+ ) 4...Ra7+ ( 4...Qxf3+ 5.Nb3+ Qxb3+ ( 5...Kb1 $2 6.Bg6+ ) 6.
+Kxb3 Bxb4 7.Kxb4 ) 5.Ba4 Qxf3+ ( 5...Rxa4+ 6.Kxa4 Qxf3 7.Nb3+ Ka2 8.Nc1+ ) 6.
+Nb3+ {Pinned pieces: [b3,a4,b4]} 6...Kb1 1/2-1/2
+
+
+[Event "4.p Krabb�-60 JT"]
+[Site "?"]
+[Date "2003.??.??"]
+[Round "?"]
+[White "Costeff=G"]
+[Black "(=0735.21h8c3)"]
+[Result "1/2-1/2"]
+[EventDate "2003.??.??"]
+[SetUp "1"]
+[PlyCount "15"]
+[FEN "5R1K/4NPP1/3br3/6pn/8/2k5/3N1r2/8 w - - 0 1"]
+
+{EG#13875 Game number 70103  number of pinned pieces: 3}
+1.Ne4+ ( 1.Rc8+ $2 Kxd2 2.f8=Q Rh6+ 3.Kg8 Nf6+ 4.Kf7 Nh7+ 5.Ke8 Rxf8+ 6.gxf8=Q 
+Nxf8 7.Nf5 ( 7.Rd8 Re6 8.Kxf8 Ke2 ) 7...Rf6 8.Nxd6 Rxd6 9.Kxf8 g4 ) ( 1.Nb1+ $2
+Kb2 2.Rb8+ Bxb8 3.f8=Q Rh6+ 4.Kg8 Nf6+ 5.Kf7 Nd7+ 6.Ke8 Rxf8+ 7.gxf8=Q Nxf8 ) (
+1.Rd8 $2 Rxf7 2.Rxd6 Nxg7 ) ( 1.Nd5+ $2 Kxd2 ) 1...Kd4 ( 1...Rxe4 2.Rc8+ Kd2 3.
+f8=Q ) ( 1...Kd3 2.Nxf2+ ) 2.Nxg5 ( 2.Re8 $2 Kxe4 3.f8=Q ( 3.Nc8 Nxg7 4.Nxd6+ (
+4.Kxg7 Be5+ ) 4...Kd5 5.Kxg7 Rxd6 6.f8=Q Rxf8 7.Kxf8 Re6 8.Ra8 Ke4 9.Kf7 Rb6 ) 
+3...Rh6+ 4.Kg8 Nf6+ 5.Kf7 Nh7+ 6.Nf5+ Kxf5 7.Qh8 Kg4+ 8.Kg8 Nf6+ 9.Kf7 Nxe8+ 
+10.Kxe8 Rxh8+ 11.gxh8=Q Rf8+ 12.Qxf8 Bxf8 ) ( 2.Rd8 $2 Kxe4 3.f8=Q Rh6+ 4.Kg8 
+Nf6+ 5.Kf7 Nd7+ 6.Ke8 Rxf8+ 7.gxf8=Q Nxf8 8.Ng8 Rg6 9.Kf7 Kf5 ) 2...Rh6+ ( 2...
+Nxg7 3.Rd8 Rxe7 4.Rxd6+ Ke5 5.Rd2 Rfxf7 6.Nxf7+ Rxf7 7.Re2+ ) 3.Nh7 Nf6 ( 3...
+Be5 4.Rd8+ Ke4 5.Kg8 Bxg7 6.f8=Q Bxf8 7.Nxf8 Rg2+ 8.Neg6 Nf4 9.Re8+ Kd5 10.Kg7 
+) ( 3...Bxe7 4.Rd8+ Bxd8 5.f8=Q Bf6 6.Kg8 Rf4 7.Qb4+ Kd3 8.Qb1+ ) 4.g8=Q Nxg8 
+5.fxg8=R $1 ( 5.fxg8=Q $2 Be5+ 6.Qg7 Rxf8+ 7.Ng8 Ra8 8.Qxe5+ Kxe5 9.Kg7 Rb6 ) (
+5.Nc6+ $2 Kc5 6.fxg8=Q Rxf8 7.Qxf8 Bxf8 ) 5...Be5+ 6.Rg7 Rxf8+ 7.Ng8 {Pinned 
+pieces: [g7,h7,g8]} 7...Bxg7+ ( 7...Ra8 ) ( 7...Rh1 ) ( 7...Rf7 8.Nxh6 Bxg7+ ( 
+8...Rxg7 9.Nf5+ ) 9.Kg8 Ra7 10.Nf5+ ) ( 7...Ra6 8.Nxf8 Ra7 9.Ne6+ Kd5 10.Kh7 ) 
+( 7...Bd6 8.Rg4+ Ke5 9.Kg7 ) 8.Kxg7 1/2-1/2
+
+
+[Event "EG"]
+[Site "?"]
+[Date "2004.??.??"]
+[Round "?"]
+[White "Slepyan=G"]
+[Black "(=1832.13f6h6)"]
+[Result "1/2-1/2"]
+[EventDate "2004.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "8/r1Q4p/5K1k/2R4P/5N2/4N3/rp3p2/b6R b - - 0 1"]
+
+{EG/1 EG#13746 Game number 71176  number of pinned pieces: 3}
+1...b1=Q+ 2.Re5 R2a6+ 3.Ne6 f1=Q+ ( 3...Rxe6+ 4.Kxe6 ) 4.Rxf1 Qxf1+ 5.Nf5+ {
+Pinned pieces: [e5,f5,e6]} 5...Kxh5 ( 5...Qxf5+ 6.Kxf5 Rxc7 7.Nxc7 ) 6.Qxh7+ 
+Rxh7 1/2-1/2
+
+
+[Event "EG"]
+[Site "?"]
+[Date "2005.??.??"]
+[Round "?"]
+[White "Van Essen=M"]
+[Black "(+4778.08f1e8)"]
+[Result "1-0"]
+[EventDate "2005.??.??"]
+[SetUp "1"]
+[PlyCount "9"]
+[FEN "rnbqkbnr/pppppppp/8/1Q2R2B/4N1N1/8/8/5K2 w - - 0 1"]
+
+{EG/12 composed 1994 Game number 72064 Pinned pieces: [d7,e7,f7]  number of 
+pinned pieces: 3}
+1.Re6 b6 2.Qf5 Ba6+ 3.Kg1 d6 4.Bxf7+ Kd7 5.Rxd6# 1-0
+
+
+[Event "sp.hm NONA"]
+[Site "?"]
+[Date "2008.??.??"]
+[Round "?"]
+[White "Slepyan=G"]
+[Black "(=4746.40e8g7)"]
+[Result "1/2-1/2"]
+[EventDate "2008.??.??"]
+[SetUp "1"]
+[PlyCount "11"]
+[FEN "4K1n1/3PBPk1/1r3qPn/1r5P/3Q4/8/3R4/3b4 b - - 0 1"]
+
+{EG#17089 Game number 75199  number of pinned pieces: 3}
+1...Rb8+ 2.d8=B ( 2.d8=Q $2 Re5 3.Qxe5 Ba4+ 4.Rd7 Qxe5 5.f8=Q+ Kh8 6.g7+ Kh7 ) 
+( 2.d8=N $2 Re5 3.Qxe5 Ba4+ 4.Rd7 Qxe5 5.f8=B+ Kh8 6.g7+ Qxg7 7.Bxg7+ Kxg7 8.
+Bf6+ Kxf6 ) 2...Re5 3.Qxe5 Ba4+ 4.Rd7 Qxe5 {Pinned pieces: [d7,e7,d8]} 5.f8=B+ 
+Kh8 6.g7+ Kh7 1/2-1/2
+
+
+[Event "2.p Olimpiya Dunyasi#421"]
+[Site "?"]
+[Date "2009.??.??"]
+[Round "?"]
+[White "Hlinka=M Kekely=L"]
+[Black "(=1645.12g6h8)"]
+[Result "1/2-1/2"]
+[EventDate "2009.??.??"]
+[SetUp "1"]
+[PlyCount "19"]
+[FEN "r6k/6p1/2b3KN/3nN3/7B/4P3/3pr3/7Q b - - 0 1"]
+
+{Game number 75331  number of pinned pieces: 3}
+1...Nf4+ $1 2.exf4 Be4+ $1 ( 2...Bxh1 3.Nef7# ) 3.Kh5 $1 ( 3.Qxe4 $2 Ra6+ $1 ) 
+( 3.f5 $2 Ra6+ $1 ) 3...g6+ $1 ( 3...Bxh1 4.Nef7+ Kh7 5.Ng5+ Kh8 6.Ngf7+ ) ( 
+3...Rg2 4.Nhg4 Rc8 5.Qa1 Rxg4 6.Nxg4 Bf3 7.Kg6 Rc6+ 8.Nf6 ) ( 3...Kh7 4.Qd1 Rg2
+5.Bg3 Rc8 ( 5...gxh6 6.Ng4 Bf5 7.Ne3 ) 6.Nhg4 Rc1 7.Qa4 Bg6+ 8.Nxg6 d1=Q 9.Qe4 
+Qe2 10.Qxe2 Rxe2 11.f5 ) 4.Nxg6+ Kh7 $1 ( 4...Kg7 $2 5.Bf6+ Kh7 6.Qg1 Rh2+ 7.
+Qxh2 d1=Q+ 8.Ng4 Qh1 9.Qxh1 Bxh1 ) 5.Qf1 $1 ( 5.Qd1 $2 Bf3+ 6.Ng4 Re5+ ) ( 5.
+Qg1 $2 Rg2 ) 5...d1=Q $1 ( 5...Bxg6+ 6.Kg5 Re1 7.Qxe1 $1 ) 6.Qxd1 Bf3+ 7.Ng4 
+Ra5+ 8.f5 $1 ( 8.Bg5 $2 Rh2+ 9.Nh4 Bxd1 ) 8...Rxf5+ 9.Bg5 Rh2+ 10.Nh4 {Pinned 
+pieces: [g4,h4,g5]} 10...Bxd1 ( 10...Rxh4+ 11.Kxh4 Bxd1 12.Ne3 $1 ) ( 10...
+Rxg5+ 11.Kxg5 Bxd1 12.Nxh2 ) 1/2-1/2
+
+
+[Event "3.hm Kekely JT Pat a Mat#1498"]
+[Site "?"]
+[Date "2009.??.??"]
+[Round "?"]
+[White "Hlinka=M"]
+[Black "(=0787.12d7a7)"]
+[Result "1/2-1/2"]
+[EventDate "2009.??.??"]
+[SetUp "1"]
+[PlyCount "18"]
+[FEN "r7/kb1K4/pp6/2PB4/1N1B2n1/1n6/2Rb4/3r4 w - - 0 1"]
+
+{Pat a Mat/12 Game number 75399  number of pinned pieces: 3}
+1.cxb6+ Kb8 2.Rc7 $1 ( 2.Nc6+ $2 Bxc6+ 3.Rxc6 Rc1 4.Re6 ( 4.Rc7 Nc5+ 5.Bxc5 
+Nf6+ 6.Ke6 Nxd5 ) 4...Rc8 5.Bxb3 Bg5 6.Bd5 Rd8+ 7.Kc6 Rxd5 8.Kxd5 Kb7 9.Rg6 
+Ne3+ 10.Ke4 Re8+ 11.Kd3 Bf4 ) 2...Nc5+ ( 2...Nf6+ 3.Bxf6 Bxd5 4.Be5 Nc5+ 5.
+Rxc5+ Kb7 6.Nxd5 Rc1 7.Rc7+ Rxc7+ 8.bxc7 ) ( 2...Bxd5 3.Rc8+ Kb7 4.Rc7+ ) 3.
+Bxc5 Nf6+ ( 3...Bxd5 4.Rc8+ Kb7 5.Rc7+ ) ( 3...Ne5+ 4.Ke6 Bxd5+ 5.Nxd5 Re1 6.b7
+Nd3+ 7.Kd6 Nxc5 8.bxa8=Q+ Kxa8 9.Kxc5 ) 4.Kd8 Nxd5 ( 4...Bxd5 5.Nxa6+ Rxa6 6.
+Rc8+ Kb7 7.Rc7+ Kb8 8.Rc8+ ) 5.Bd6 Bg5+ ( 5...Nxc7 6.Bxc7# ) ( 5...Nxb6 6.Nc6+ 
+Bxc6 7.Rh7# ) 6.Re7+ Nc7 7.Nc6+ ( 7.bxc7+ $2 Ka7+ ) 7...Bxc6 8.bxc7+ Kb7+ ( 
+8...Ka7+ 9.c8=N# ) 9.c8=B+ {Pinned pieces: [d6,e7,c8]} ( 9.c8=Q+ $2 Kb6 ) 9...
+Kb6 1/2-1/2
+
+
+[Event "The Problemist#1002"]
+[Site "?"]
+[Date "2009.??.??"]
+[Round "?"]
+[White "Jasik=A"]
+[Black "(=1647.44g4a4)"]
+[Result "1/2-1/2"]
+[EventDate "2009.??.??"]
+[SetUp "1"]
+[PlyCount "16"]
+[FEN "3B3n/7p/n1P3p1/p1b3Q1/k4NK1/Pp6/1P4P1/3r1r2 w - - 0 1"]
+
+{The Problemist/1 Game number 75852  number of pinned pieces: 3}
+1.c7 Nxc7 2.Bxc7 h5+ 3.Kh4 $1 ( 3.Kh3 $2 Rf3+ $1 4.gxf3 Rh1+ 5.Kg3 h4+ 6.Qxh4 
+Bf2+ 7.Kxf2 Rxh4 ) 3...Bf2+ 4.g3 Rh1+ 5.Nh3 Rd4+ 6.Bf4 {Pinned pieces: 
+[g3,h3,f4]} 6...Nf7 7.Qb5+ $1 Kxb5 8.a4+ Ka6 1/2-1/2
+
+

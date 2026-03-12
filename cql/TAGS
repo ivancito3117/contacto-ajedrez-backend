@@ -1,0 +1,5132 @@
+
+abbreviations.h,154
+using std::vector;8,126
+using std::string;9,145
+using std::endl;10,164
+using std::stringstream;11,181
+using std::cout;12,206
+using std::pair;13,223
+
+abortnode.h,158
+class AbortNode 6,95
+  const string theMessage;9,164
+  string thisclass(10,191
+  vnode children(11,238
+  void deepify(12,279
+  string getMessage(16,380
+
+absnode.h,102
+class AbsNode:AbsNode3,31
+  Node*node{node5,68
+  string thisclass(7,105
+  bool isNumeric(14,309
+
+andnode.h,115
+class AndNode:AndNode3,31
+  Node* clause1{clause15,68
+  Node* clause2{clause26,91
+  string thisclass(11,240
+
+anticipatedb.h,429
+class AnticipateDb{AnticipateDb5,75
+  static AnticipateDb* AnticipateDbP;8,174
+  string theFilename;9,212
+  bool isNoTransform{isNoTransform10,234
+  int nGames{nGames11,263
+  static vector<Transform*> pawnlessTransforms;17,424
+  static vector<Transform*> pawnTransforms;18,472
+  static vector<Transform*> idTransforms;19,516
+  std::map<std::map21,613
+  std::map<string,vector<AnticipateEntry>*>theMap;theMap21,613
+
+anticipateentry.h,283
+class AnticipateEntry{AnticipateEntry6,89
+  const string key;8,121
+  const int gameNumber;9,141
+  const int moveNumber;10,165
+  const colorT sideToMove;11,189
+  const Transform* theTransform;12,216
+  static std::array<std::array17,462
+  static std::array<std::array24,722
+
+anticipatenode.h,262
+class AnticipateNode:AnticipateNode5,86
+  AnticipateDb* theDb{theDb7,129
+  string patternFile;9,249
+  NumericVariable*minRemoteQGameVar{minRemoteQGameVar10,271
+  bool isNoTransform{isNoTransform11,314
+  string thisclass(15,446
+  vnode children(18,581
+
+anyvalue.h,390
+class AnyValue{AnyValue8,120
+    bool,11,169
+    string,12,179
+    NumValue,13,191
+    SquareMask,14,205
+    QPos*>Any;Any15,221
+  static bool isString(16,236
+  static bool isNumValue(17,315
+  static bool isSquareMask(18,398
+  static bool isQPos(19,485
+  static bool isLogical(20,561
+  static bool isFalse(21,639
+  static void clear(28,962
+typedef AnyValue::Any Any;33,1165
+
+arithmeticnode.h,212
+class ArithmeticNode 4,41
+  Node* left{left7,105
+  Node* right{right8,125
+  bool isNumeric(12,261
+  string thisclass(14,315
+  void deepify(18,475
+  string getOps(19,534
+  static const string Ops;20,565
+
+assertnode.h,156
+class AssertNode:AssertNode3,31
+  Node*theNode{theNode6,107
+  Variable*theVariable{theVariable7,129
+  string theName;8,159
+  string thisclass(9,177
+
+assertvariationsnode.h,259
+class AssertVariationsNode 8,212
+ AssertVariationsNode(10,263
+  const string theMessage;11,323
+  string thisclass(12,350
+  vnode children(13,408
+  void deepify(14,449
+  bool match_position(16,484
+  bool isGameFilter(18,576
+  string getMessage(19,617
+
+assignnode.h,967
+class AssignNode:AssignNode9,187
+  Environment*environment{environment11,238
+class AssignNumericNode:AssignNumericNode19,533
+  NumericVariable* const variable;21,586
+  Node* node;22,621
+  string thisclass(27,803
+  void deepify(29,917
+  Variable*getVariable(getVariable30,963
+class AssignStringNode:AssignStringNode33,1024
+  StringVariable* const variable;35,1076
+  Node* node;36,1110
+  string thisclass(41,1288
+  void deepify(43,1400
+  Variable*getVariable(getVariable44,1446
+class AssignSquareNode:AssignSquareNode47,1507
+  SquareVariable* const variable;49,1559
+  SetBase* node;50,1593
+  bool isConditional{isConditional51,1636
+  string thisclass(56,1826
+  void deepify(58,1939
+  Variable*getVariable(getVariable59,1985
+class AssignPositionNode:AssignPositionNode62,2046
+  PositionVariable* const variable;64,2100
+  Node* node;65,2136
+  string thisclass(70,2318
+  void deepify(72,2434
+  Variable*getVariable(getVariable73,2480
+
+atomic.h,196
+typedef std::pair<Variable*Variable3,44
+typedef std::pair<Variable*,Any> Binding;3,44
+typedef vector<Binding> Bindings;4,86
+typedef vector<Variable*> VarList;5,120
+class Atomic{Atomic6,155
+
+attack.h,26
+class Attack{Attack3,31
+
+attackarrowdirection.h,215
+enum class AttackArrowDirection{AttackArrowDirection5,94
+enum class AttackArrowDirection{None,None5,94
+enum class AttackArrowDirection{None,Left,5,94
+enum class AttackArrowDirection{None,Left,Right}Right5,94
+
+attacknode.h,324
+class AttackNode 2,18
+  SquareMask allAttacked;4,63
+  SquareMask allAttacking;5,89
+  SetBase* attacking{attacking9,220
+  SetBase* attacked{attacked10,248
+  bool returnAttacking{returnAttacking11,275
+  bool returnAttacked{returnAttacked12,306
+  string thisclass(17,443
+  void deepify(19,526
+  bool isSet(20,601
+
+bracketrange.h,153
+class BracketRange 3,31
+  Node* theLeft{theLeft6,131
+  Node* theRight{theRight7,154
+  bool singleIndex{singleIndex8,178
+  string thisclass(9,205
+
+capturetype.h,190
+enum class CaptureType{CaptureType6,114
+enum class CaptureType{None,None6,114
+enum class CaptureType{None,Capture,6,114
+enum class CaptureType{None,Capture,NonCapture}NonCapture6,114
+
+caseconvertnode.h,390
+enum class CaseConvertDirection{CaseConvertDirection3,31
+enum class CaseConvertDirection{None,None3,31
+enum class CaseConvertDirection{None,ToLower,3,31
+enum class CaseConvertDirection{None,ToLower, ToUpper}ToUpper3,31
+class CaseConvertNode 4,87
+  Node*theNode{theNode7,185
+  CaseConvertDirection theDirection{theDirection8,207
+  string thisclass(9,272
+  bool isString(15,470
+
+chaincon.h,243
+class ChainCon:ChainCon3,34
+  vector<PathCon*>theCons;theCons5,74
+  vector<PathCon*>& getCons(6,101
+  int getLength(7,148
+  string thisclass(12,333
+  bool isChainCon(16,482
+  ChainCon* asChainCon(17,530
+  bool canModifyCurpos(19,608
+
+chesstypes.h,160
+inline bool color_valid(7,89
+inline bool square_valid(15,343
+inline squareT square_make(17,431
+inline int square_rank(22,629
+inline int square_file(23,683
+
+childnode.h,139
+class ChildNode 3,31
+  Node* indexNode{indexNode5,71
+  string thisclass(7,122
+  bool isPosition(12,304
+  bool canModifyCurpos(15,440
+
+clonevec.h,39
+template <class T> void clonevec(2,13
+
+colortypenode.h,365
+class ColorTypeNode 3,31
+  SetBase* theSet{theSet6,102
+  static const int PawnType=7,127
+  static const int KnightType=8,158
+  static const int BishopType=9,191
+  static const int RookType=10,224
+  static const int QueenType=11,255
+  static const int KingType=12,287
+  static const int EmptyType=13,318
+  string thisclass(14,350
+  bool isNumeric(24,705
+
+colorvaluenode.h,100
+class ColorValueNode 3,31
+  string thisclass(6,108
+  colorT color;8,177
+  bool isNumeric(15,362
+
+commententry.h,88
+class CommentEntry{CommentEntry5,110
+  QPos* qpos{qpos7,139
+  string message;8,159
+
+commentlevel.h,267
+enum class CommentLevel 2,13
+enum class CommentLevel {Unspecified,Unspecified2,13
+enum class CommentLevel {Unspecified, Silent,2,13
+enum class CommentLevel {Unspecified, Silent, Quiet,2,13
+enum class CommentLevel {Unspecified, Silent, Quiet, Normal}Normal2,13
+
+commentnode.h,179
+class CommentNode 5,61
+  StringConverter* theConverter{theConverter7,103
+  bool theIsMessage{theIsMessage8,142
+  bool theIsQuiet{theIsQuiet9,170
+  string thisclass(11,259
+
+commentstack.h,78
+class CommentStack{CommentStack3,39
+  vector<CommentEntry>stack;stack6,86
+
+complementnode.h,99
+class ComplementNode:ComplementNode3,31
+  SetBase* theSet{theSet5,77
+  string thisclass(7,130
+
+compoundnode.h,115
+class CompoundNode:CompoundNode3,31
+  vector<Node*> specs;5,76
+  string thisclass(8,146
+  void deepify(16,445
+
+concatenationnode.h,177
+class ConcatenationNode:ConcatenationNode3,31
+  Node*theLeft{theLeft5,77
+  Node*theRight{theRight6,99
+  bool isDestructive{isDestructive7,122
+  string thisclass(13,327
+
+consecutivemovesnode.h,339
+class ConsecutiveMovesNode:ConsecutiveMovesNode5,62
+  PositionVariable*left{left7,112
+  PositionVariable*right{right8,143
+  Range*range{range9,175
+  bool quiet{quiet10,196
+  string thisclass(12,305
+  bool canModifyCurpos(22,698
+  vector<vector26,796
+  vector<vector29,972
+  vector<pair<QMove*,QMove*>> bestMovePath;29,972
+
+converttoascii.h,42
+class ConvertToAscii{ConvertToAscii4,59
+
+converttocolorize.h,48
+class ConvertToColorize{ConvertToColorize5,78
+
+converttoecho.h,40
+class ConvertToEcho{ConvertToEcho4,59
+
+converttoexternal.h,48
+class ConvertToExternal{ConvertToExternal3,40
+
+converttounicode.h,46
+class ConvertToUnicode{ConvertToUnicode4,59
+
+cqlassert.h,24
+using std::string;3,31
+
+cqlexit.h,24
+using std::string;3,31
+
+cqlnode.h,774
+class CqlNode 6,155
+  Node* filter{filter8,199
+  vector<GameFilter*> gamefilters;9,221
+  int currentGameNumber{currentGameNumber10,256
+  bool searchVariations{searchVariations11,284
+  string inputfile;12,316
+  string outputfile;13,336
+  std::set<SequenceBase*>allSequences;allSequences14,357
+  std::set<PathNode*>allPaths;allPaths15,436
+  std::set<ConsecutiveMovesNode*>allConsecutiveMovesNodes;allConsecutiveMovesNodes16,501
+  std::set<SortNode*>allSortNodes;allSortNodes17,560
+  bool canModifyCurpos(29,1009
+  Range* nmatchesrange{nmatchesrange30,1064
+  Range* gamenumberrange{gamenumberrange31,1094
+  Range* matchCountRange{matchCountRange32,1126
+  Environment*environment{environment33,1158
+  string thisclass(41,1485
+  void deepify(45,1647
+
+currentfen.h,148
+class CurrentFen:CurrentFen3,31
+  CurrentFen(5,70
+  string thisclass(6,87
+  void deepify(7,135
+  vnode children(9,190
+  bool isString(13,322
+
+currentnode.h,76
+class CurrentNode 3,31
+  string thisclass(8,138
+  bool isPosition(13,307
+
+currenttransformnode.h,182
+class CurrentTransformNode:CurrentTransformNode3,31
+  vector<Transform*>theTransforms;theTransforms5,79
+  string thisclass(7,140
+  vnode children(8,207
+  bool isString(14,466
+
+dashcon.h,562
+class DashCon:DashCon6,84
+  SetBase*theLeft{theLeft9,190
+  SetBase*theRight{theRight10,215
+  Node*theTarget{theTarget11,241
+  Node*getTarget(getTarget12,265
+  CaptureType theCaptureType{theCaptureType13,308
+  CaptureType getCaptureType(14,357
+  vector<FromToNode*>fromToNodeOwned;fromToNodeOwned15,417
+  SetBase*getLeft(getLeft20,611
+  SetBase*getRight(getRight21,653
+  bool hasDash(23,723
+  bool isFromToOwner(27,853
+  string thisclass(28,941
+  bool canModifyCurpos(29,995
+  bool isDashCon(31,1088
+  DashCon*asDashCon(asDashCon32,1135
+
+dashnode.h,612
+class DashNode 5,71
+  SetBase*left{left8,194
+  SetBase*right{right9,216
+  Node*target{target10,239
+  CaptureType theCaptureType{theCaptureType11,260
+  CaptureType getCaptureType(12,309
+  QPos* theForceTail{theForceTail13,369
+  void setForceTail(14,397
+  bool isCount{isCount15,449
+  vector<FromToNode*>fromToNodeOwned;fromToNodeOwned16,472
+  SetBase*getLeft(getLeft17,526
+  SetBase*getRight(getRight18,565
+  Node*getTarget(getTarget19,606
+  string thisclass(20,646
+  bool isDashNode(34,1185
+  bool isFromToOwner(35,1233
+  bool canModifyCurpos(36,1284
+  AnyValue::Any theValue;39,1384
+
+depthnode.h,193
+class DepthNode 3,31
+  DepthNode(5,71
+  string thisclass(6,88
+  string toString(9,211
+  vnode children(10,252
+  bool match_position(11,293
+  bool isNumeric(12,340
+  void deepify(13,378
+
+descendantnode.h,143
+class DescendantNode:DescendantNode3,31
+  Node*left{left6,109
+  Node*right{right7,128
+  string thisclass(8,148
+  bool isNumeric(10,239
+
+dictionary.h,411
+class Dictionary:Dictionary5,51
+  std::map<std::map7,95
+  std::map<Any,Any>theMap;theMap7,95
+  ValueType keyType{keyType10,177
+  ValueType valueType{valueType11,215
+  bool isDictionary(14,331
+  string thisclass(16,410
+[[nodiscard]]  Dictionary* clone(17,467
+  std::map<std::map18,524
+  std::map<Any,Any>& getMap(18,524
+  const std::map<std::map19,570
+  const std::map<Any,Any>& getMap(19,570
+
+dictionaryaccessnode.h,833
+class DictionaryAccessNode:DictionaryAccessNode6,84
+  Dictionary* theDictionary{theDictionary9,234
+  bool isSet(15,431
+  Node* theKey{theKey19,800
+  Node* theValue{theValue20,822
+  Node* theBody{theBody21,846
+  Variable* theVariable{theVariable22,906
+class DictionaryRetrieveNode:DictionaryRetrieveNode25,975
+  string thisclass(38,1502
+class DictionaryDeleteDictionaryNode:DictionaryDeleteDictionaryNode41,1575
+  string thisclass(46,1798
+class DictionaryDeleteEntryNode:DictionaryDeleteEntryNode50,1882
+  string thisclass(54,2041
+class DictionaryCountNode:DictionaryCountNode58,2175
+  bool isNumeric(63,2358
+  string thisclass(64,2405
+class DictionaryAssignNode:DictionaryAssignNode68,2527
+  string thisclass(72,2687
+class DictionaryIterateNode:DictionaryIterateNode76,2811
+  string thisclass(80,2974
+
+direction.h,210
+class Direction{Direction3,26
+   int xoffset;5,52
+   int yoffset;6,68
+class DirectionParameter 30,950
+ public: vector<Direction> directions;31,977
+  Range*range range32,1016
+  string thisclass(33,1038
+
+distancenode.h,139
+class DistanceNode:DistanceNode3,31
+  Node*left{left6,105
+  Node*right{right7,124
+  string thisclass(8,144
+  bool isNumeric(10,231
+
+echonode.h,423
+class EchoNode 4,61
+  PositionVariable*sourcevar{sourcevar6,101
+  PositionVariable*targetvar{targetvar7,137
+  Node* theFilter{theFilter8,173
+  bool searchAll{searchAll9,198
+  bool isQuiet{isQuiet10,223
+  NumValue maxValue{maxValue11,246
+  NumValue currentValue{currentValue12,270
+  bool theIsNumeric{theIsNumeric13,298
+  bool isSort{isSort15,353
+  string thisclass(19,524
+  bool canModifyCurpos(27,803
+
+environment.h,539
+using std::map;10,208
+class Environment 19,397
+  vector<Variable*> theVariables;21,426
+  vector<SortVariable*>theSortVariables;theSortVariables22,460
+  vector<SortDirection>theSortDirections;theSortDirections23,501
+  vector<SortVariable*>theQuietSortVariables;theQuietSortVariables26,632
+  vector<Variable*>theQuietPersistentVariables;theQuietPersistentVariables27,678
+  vector<Variable*>theAtomicVariables;theAtomicVariables28,726
+  int sortId{sortId29,765
+  vector<Variable*>getAtomicVariables(getAtomicVariables37,1109
+
+equalitynode.h,112
+class EqualityNode:EqualityNode3,31
+  Node*left{left5,73
+  Node*right{right6,92
+  string thisclass(8,141
+
+extremalnode.h,175
+class ExtremalNode 3,31
+  vector<Node*>theNodes;theNodes6,122
+  bool theIsMax{theIsMax7,147
+  string thisclass(8,171
+  SortValueType sortValueType{sortValueType19,492
+
+findnode.h,194
+class FindNode 3,31
+  Node*filter{filter5,70
+  Range*range{range6,91
+  bool isFuture{isFuture7,112
+  bool isQuiet{isQuiet8,136
+  string thisclass(15,422
+  bool canModifyCurpos(20,602
+
+focus.h,412
+class Focus:Focus10,183
+  SetBase*theSetBase{theSetBase13,254
+  SetBase*getSetBase(getSetBase14,282
+  CaptureType theCaptureType{theCaptureType15,330
+  CaptureType getCaptureType(16,379
+  std::array<std::array17,439
+  std::array<bool,32> markMask;17,439
+  bool isValid(18,500
+  bool markMaskValid{markMaskValid19,545
+  bool isCapture(22,620
+  bool isNonCapture(23,690
+  string thisclass(28,888
+
+focuscapturenode.h,103
+class FocusCaptureNode:FocusCaptureNode3,31
+  SetBase* theSet{theSet5,76
+  string thisclass(7,131
+
+focustype.h,250
+enum class FocusType{FocusType3,31
+enum class FocusType{Unspecified,Unspecified3,31
+enum class FocusType{Unspecified,None,3,31
+enum class FocusType{Unspecified,None,Normal,3,31
+enum class FocusType{Unspecified,None,Normal,Capture}Capture3,31
+
+fromnode.h,81
+class FromNode:FromNode3,37
+  string thisclass(7,166
+  bool isFromNode(9,235
+
+fromtonode.h,144
+class FromToNode 3,31
+  bool masksValid{masksValid7,251
+  Node* theOwner{theOwner8,276
+  bool isFromToNode(11,374
+  bool hasOwner(12,424
+
+futurenode.h,128
+class FutureNode 3,39
+  bool isFuture(5,88
+  bool isPast(6,120
+  string thisclass(9,248
+  SeqDir getSearchDirection(12,485
+
+gamefilterwrapper.h,85
+class GameFilterWrapper 3,31
+  Node*theNode{theNode5,85
+  string thisclass(7,135
+
+gamesortinfo.h,142
+using std::string;3,30
+class GameSortInfo{GameSortInfo4,49
+  string data;6,78
+  vector<SortValue> values;8,115
+  string thisclass(9,143
+
+genericequalnode.h,132
+class GenericEqualNode:GenericEqualNode3,31
+  Node*theLeft{theLeft5,77
+  Node*theRight{theRight6,99
+  string thisclass(8,155
+
+gotonode.h,156
+class GotoNode 3,31
+  Node*target{target6,89
+  string thisclass(7,110
+  string toString(9,206
+  bool isPosition(12,322
+  bool canModifyCurpos(16,470
+
+groupnumbernode.h,278
+class GroupNumberNode 3,31
+  int theGroup{theGroup6,149
+  string theLocation;7,168
+  bool computeIndex{computeIndex8,190
+  string thisclass(9,218
+  vnode children(15,459
+  bool isString(16,500
+  bool isNumeric(17,546
+  void deepify(18,592
+  bool isGameFilter(19,612
+
+hascommentnode.h,173
+class HasCommentNode:HasCommentNode5,97
+  bool nagValid{nagValid8,156
+  string thisclass(11,227
+  vnode children(14,335
+  bool isString(17,462
+  void deepify(18,504
+
+hhdbawardnode.h,1228
+enum HhdbAwardType 3,31
+enum HhdbAwardType {HhdbAward,HhdbAward3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward,3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward, HhdbSpecialPrize,3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward, HhdbSpecialPrize, HhdbSpecialHm,3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward, HhdbSpecialPrize, HhdbSpecialHm, HhdbSpecialCommendation,3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward, HhdbSpecialPrize, HhdbSpecialHm, HhdbSpecialCommendation, HhdbPrize,3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward, HhdbSpecialPrize, HhdbSpecialHm, HhdbSpecialCommendation, HhdbPrize, HhdbHm,3,31
+enum HhdbAwardType {HhdbAward,HhdbSpecialAward, HhdbSpecialPrize, HhdbSpecialHm, HhdbSpecialCommendation, HhdbPrize, HhdbHm, HhdbCommendation}HhdbCommendation3,31
+class HhdbAwardNode 4,175
+  const string awardType;7,297
+  bool restrictSpecial{restrictSpecial8,323
+  bool restrictPrize{restrictPrize9,409
+  bool restrictCommendation{restrictCommendation10,459
+  bool restrictHm{restrictHm11,523
+  const bool useMax{useMax12,567
+  bool isNumeric(15,727
+  string thisclass(16,765
+  vnode children(18,854
+  void deepify(19,897
+  static const int genericPlaceMax=21,933
+
+hhdbhascooknode.h,125
+class HhdbHasCookNode 3,31
+  HhdbHasCookNode(5,77
+  string thisclass(7,134
+  vnode children(9,227
+  void deepify(10,270
+
+hhdbkeyword.h,782
+using std::string;5,64
+using std::vector;6,83
+using std::pair;7,102
+using std::map;8,119
+class HhdbKeyword{HhdbKeyword9,135
+  static const vector<string>playerBlackKeys;playerBlackKeys29,991
+  static const vector<string>otherKeys;otherKeys30,1037
+  static const vector<vector31,1078
+  static const vector<pair<string,string>> abbreviationMap;31,1078
+  static const vector<string> awardKeys;32,1138
+  static const vector<string>awardTypeKeys;awardTypeKeys33,1204
+  static const vector<string>takesParameterKeys;takesParameterKeys34,1281
+  static const vector<string>stipulationParameters;stipulationParameters35,1369
+  static const vector<string>gbrKeys;gbrKeys36,1471
+  static const map<map37,1534
+  static const map<string,string>KeyToCql;KeyToCql37,1534
+
+holdercon.h,239
+class HolderCon:HolderCon3,34
+  Node*theFilter{theFilter6,95
+  bool theIsInitial{theIsInitial7,119
+  Node* getFilter(8,147
+  bool hasDash(9,191
+  bool isHolderCon(15,398
+  HolderCon* asHolderCon(16,447
+  string thisclass(17,496
+
+ifnode.h,127
+class IfNode 3,31
+  Node* predicateFilter;5,71
+  Node* thenFilter;6,107
+  Node* elseFilter;7,138
+  string thisclass(8,173
+
+isboundnode.h,196
+class IsBoundNode:IsBoundNode4,53
+  Variable*theVariable{theVariable7,121
+  string theName;8,151
+  string thisclass(9,169
+  Variable*getVariable(getVariable15,344
+  string getName(16,395
+
+lambdacallnode.h,251
+class LambdaCallNode:LambdaCallNode6,99
+  string name;8,146
+  Environment*environment{environment9,161
+  vector<AssignNode*>assignments;assignments10,194
+  Node* bodynode{bodynode11,228
+  LambdaValue lambda;12,252
+  string thisclass(14,353
+
+lambdavalue.h,157
+class LambdaValue{LambdaValue4,59
+  vector<string> parameters;7,132
+  vector<Token*> body;8,161
+  int numberParameters(9,184
+  string thisclass(11,264
+
+lambdavariable.h,195
+class LambdaVariable:LambdaVariable5,61
+  LambdaValue value;7,109
+  bool isLambda(11,185
+  bool match_position(12,222
+  string thisclass(14,291
+[[nodiscard]]  LambdaVariable* clone(15,343
+
+lastgamenumbernode.h,176
+class LastGameNumberNode:LastGameNumberNode3,31
+  LastGameNumberNode(6,117
+  vnode children(7,142
+  string thisclass(9,217
+  void deepify(11,334
+  bool isNumeric(13,417
+
+lcanode.h,129
+class LcaNode:LcaNode3,31
+  Node*left{left6,95
+  Node*right{right7,114
+  string thisclass(8,134
+  bool isPosition(10,211
+
+lexer.h,340
+using std::string;5,68
+using std::vector;6,87
+class Lexer{Lexer10,127
+  bool eof(60,1741
+  int length(61,1797
+  int currentCharacter=80,2403
+  string theBuffer;81,2429
+  const bool syncThis;82,2449
+  vector<int>lineNumbers;lineNumbers83,2472
+  vector<int>columnNumbers;columnNumbers84,2544
+  string trailingWhiteSpace;88,2772
+
+loopnode.h,69
+class LoopNode 3,31
+  Node*node{node5,70
+  string thisclass(6,89
+
+makesquarenode.h,162
+class MakeSquareNode:MakeSquareNode3,32
+  Node* theFile{theFile7,151
+  Node* theRank{theRank8,183
+  Node* theName{theName9,215
+  string thisclass(12,287
+
+markboard.h,32
+class MarkBoard{MarkBoard3,37
+
+markt.h,440
+constexpr int markTMax=4,63
+constexpr int markTInvalid=5,147
+class markT{markT6,178
+  int theValue{theValue8,200
+  markT(9,230
+  explicit markT(10,243
+  int getValue(14,398
+  void setValue(15,438
+  bool isLegal(19,538
+  bool isValid(20,624
+  bool isInvalid(21,686
+  bool isIllegal(22,730
+  void makeInvalid(23,774
+  static markT zero(24,819
+  string thisclass(26,885
+  bool operator==(operator==27,928
+  void inc(28,990
+
+matchnode.h,247
+class MatchNode 4,62
+  TransformVariable*leftTransformVariable{leftTransformVariable8,203
+  Node* left{left9,252
+  TransformVariable*rightTransformVariable{rightTransformVariable10,272
+  Node* right{right11,322
+  string thisclass(12,343
+
+matefunction.h,39
+const string MateFunctionString=4,130
+
+movebase.h,775
+class MoveBase:MoveBase5,57
+  SetBase* from{from7,97
+  SetBase* to{to8,120
+  PieceLoc* promote{promote9,141
+  SetBase* enpassantsquare{enpassantsquare10,168
+  SetBase* capture{capture11,202
+  CommentNode* commentNode{commentNode12,228
+  bool nullMove{nullMove13,262
+  bool primaryMove{primaryMove14,286
+  bool secondaryMove{secondaryMove15,313
+  bool returnFrom{returnFrom16,342
+  bool returnTo{returnTo17,368
+  bool returnCapture{returnCapture18,392
+  SquareMask fromMask;19,421
+  SquareMask toMask;20,444
+  SquareMask enpassantMask;21,465
+  SquareMask captureMask;22,493
+class MovePastNode:MovePastNode34,966
+  string thisclass(36,1011
+class MoveFutureNode:MoveFutureNode42,1345
+  string thisclass(44,1392
+  QMove* requiredMove=47,1696
+
+movelegalnode.h,442
+class MoveLegalNode:MoveLegalNode4,32
+  string thisclass(6,77
+  SetBase* fromNode{fromNode9,291
+  SetBase* toNode{toNode10,318
+  SetBase* enpassantSquare{enpassantSquare11,343
+  Range* range{range12,377
+  bool pseudoFlag{pseudoFlag13,399
+  bool returnFrom{returnFrom14,474
+  bool returnTo{returnTo15,500
+  int count{count25,743
+  SquareMask toSquares;29,931
+  SquareMask fromSquares;30,955
+  SquareMask epSquares;31,981
+
+myvector.h,234
+template <class T> void myinsert(2,13
+template <class T> int myindex(8,132
+template <class T> int myindex(14,266
+template <class T> int mycount(20,406
+template <class T> bool myisset(27,570
+template<class T> void myprint(35,754
+
+node.h,5210
+typedef vector<Node*> vnode;42,749
+#define CVV(43,778
+enum class ValueType{ValueType45,864
+enum class ValueType{None,None45,864
+enum class ValueType{None,Set,45,864
+enum class ValueType{None,Set,Number,45,864
+enum class ValueType{None,Set,Number,String,45,864
+enum class ValueType{None,Set,Number,String,Position,45,864
+enum class ValueType{None,Set,Number,String,Position,Logical}Logical45,864
+class Node 47,928
+  bool annotateFlag{annotateFlag49,961
+  bool removedParens{removedParens50,989
+  virtual void transform_members(61,1470
+  virtual bool isGameFilter(68,1771
+  virtual bool isSet(70,1856
+  virtual SetBase* asSet(71,1900
+  virtual bool isNumeric(72,1941
+  virtual bool isSortable(73,1989
+  virtual SortVariable* asSortVariable(74,2050
+  virtual bool isPosition(75,2105
+  virtual bool isFromNode(76,2154
+  virtual bool isToNode(77,2202
+  virtual bool isFromToNode(78,2248
+  virtual bool isSequence(79,2298
+  virtual bool isPathNode(80,2342
+  virtual bool isPathCon(81,2390
+  virtual bool isDathCon(82,2437
+  virtual bool isDashNode(83,2484
+  virtual bool isFromToOwner(84,2532
+  virtual bool isWithPositionNode(85,2583
+  virtual bool isCaptureNode(86,2639
+  virtual bool canModifyCurpos(87,2690
+  virtual PathCon* asPathCon(88,2743
+  virtual PathNode* asPathNode(89,2788
+  virtual bool isString(90,2835
+  virtual bool isDictionary(91,2881
+  virtual Variable* asVariable(96,3206
+  virtual StringVariable* asStringVariable(97,3291
+  virtual PieceIdVariable* asPieceIdVariable(101,3476
+  virtual bool isVariable(102,3537
+  virtual bool isStringVariable(103,3585
+  virtual bool isPieceIdVariable(104,3639
+  vector<MoveFutureNode*> cachedLinearize;112,3946
+  bool cachedLinearizeValid{cachedLinearizeValid113,3989
+class NeverMatch:NeverMatch116,4031
+  bool match_position(118,4071
+class SetBase:SetBase121,4177
+  virtual bool isSet(126,4348
+  static SquareMask virtualGetSquares(128,4460
+class GameFilter:GameFilter134,4596
+  virtual bool isGameFilter(139,4763
+  void deepify(140,4812
+class KeywordNode:KeywordNode147,4912
+  const string value;149,4959
+  string thisclass(151,5006
+  void deepify(154,5090
+  vnode children(155,5109
+class SilentFeatureNode:SilentFeatureNode158,5154
+ SilentFeatureNode(161,5234
+class VariationsNode:VariationsNode164,5285
+ VariationsNode(167,5359
+class AnyNode:AnyNode171,5411
+  SquareMask getSquares(173,5450
+  bool match_position(174,5508
+  vnode children(175,5551
+  void deepify(177,5608
+class SimpleNode:SimpleNode181,5632
+  vnode children(184,5771
+  void deepify(185,5812
+class CheckNode:CheckNode188,5835
+class StalemateNode:StalemateNode193,5922
+class MateNode:MateNode198,6017
+class InitialNode:InitialNode205,6104
+class InVariationNode:InVariationNode210,6195
+class InMainlineNode:InMainlineNode216,6303
+class TerminalNode:TerminalNode224,6411
+class RangeNode:RangeNode230,6505
+  Range*const range;232,6544
+  Node* numeric{numeric233,6565
+  void deepify(240,6741
+  bool isNumeric(241,6786
+class MatchCountNode:MatchCountNode244,6828
+  Range*range{range246,6878
+  bool sort{sort248,6930
+  vnode children(250,6966
+  void deepify(252,7030
+class PgnNode:PgnNode255,7053
+ PgnNode(257,7096
+  string value;258,7126
+  vnode children(261,7174
+  void deepify(262,7215
+class OutputNode:OutputNode265,7238
+ OutputNode(267,7284
+  const string value;268,7317
+  vnode children(271,7374
+  void deepify(272,7415
+class ResultNode:ResultNode275,7438
+  resultT result{result278,7506
+  vnode children(284,7689
+class EloNode:EloNode288,7735
+  Range*range{range290,7778
+  colorT color 291,7799
+  vnode children(292,7825
+  bool isNumeric(299,8046
+class YearNode:YearNode305,8138
+  Range*range{range307,8182
+  vnode children(308,8203
+  bool isNumeric(314,8381
+class GameNumberNode:GameNumberNode317,8423
+  Range * range;319,8473
+  vnode children(322,8541
+  bool isNumeric(326,8678
+class CountSquaresNode:CountSquaresNode329,8720
+  SetBase* set;331,8765
+  vnode children(336,8902
+  virtual bool match_position(337,8947
+  bool isNumeric(338,8998
+  void deepify(339,9036
+class SquareCoordinateNode:SquareCoordinateNode346,9080
+  SetBase* theSquare;348,9130
+  bool isRank{isRank349,9152
+  void deepify(354,9297
+  bool isNumeric(357,9418
+class MoveNumberNode:MoveNumberNode365,9467
+  MoveNumberNode(368,9534
+  vnode children(369,9555
+  bool match_position(370,9596
+  bool isNumeric(373,9698
+  void deepify(374,9736
+class BetweenNode:BetweenNode377,9759
+  SetBase* source{source379,9804
+  SetBase* target{target380,9829
+  void deepify(385,9978
+  vnode children(386,10043
+class ExtensionNode:ExtensionNode390,10137
+  vnode children(394,10235
+  ExtensionNode(396,10292
+  void deepify(397,10313
+class PowerNode:PowerNode400,10336
+  SetBase* set;402,10375
+  void deepify(406,10472
+  vnode children(407,10508
+  bool match_position(409,10576
+  bool isNumeric(411,10658
+class NumberNode:NumberNode414,10700
+  const NumValue value{value417,10764
+  vnode children(421,10863
+  bool isNumeric(423,10934
+  void deepify(424,10972
+  bool isGameFilter(426,11012
+class VariableFilter 429,11059
+#undef CVV441,11239
+
+nonemptynode.h,75
+class NonemptyNode 3,31
+  SetBase*set{set5,74
+  string thisclass(7,121
+
+notnode.h,81
+class NotNode:NotNode3,31
+  Node* filter{filter5,67
+  string thisclass(6,89
+
+notransformnode.h,104
+class NoTransformNode:NoTransformNode3,31
+  Node* theFilter{theFilter5,78
+  string thisclass(6,104
+
+numericiteratornode.h,235
+class NumericIteratorNode:NumericIteratorNode5,61
+  NumericVariable* theVariable{theVariable7,109
+  Node* lowerBound{lowerBound8,147
+  Node* upperBound{upperBound9,173
+  Node* theBody{theBody10,199
+  string thisclass(12,308
+
+numericvariable.h,241
+class NumericVariable:NumericVariable5,62
+  NumValue value{value7,115
+  bool isNumeric(11,228
+  SortValueType getSortValueType(14,325
+  string thisclass(16,429
+[[nodiscard]]  NumericVariable* clone(17,491
+  bool isAtomizable(27,845
+
+numvalue.h,27
+typedef int NumValue;2,13
+
+onnode.h,119
+class OnNode:OnNode2,18
+  SetBase* clause1{clause14,57
+  SetBase* clause2{clause25,83
+  string thisclass(11,284
+
+optionalcon.h,226
+class OptionalCon 3,34
+  PathCon*theCon{theCon5,78
+  PathCon*getCon(getCon6,102
+  bool hasDash(8,167
+  bool isOptionalCon(13,335
+  OptionalCon* asOptionalCon(14,386
+  string thisclass(15,439
+  bool isWildcard(18,572
+
+orbitelement.h,128
+class OrbitElement{OrbitElement5,49
+  Transform* transform{transform7,78
+  Node* node{node8,108
+  string thisclass(9,128
+
+orbitnode.h,391
+class OrbitNode:OrbitNode4,57
+  Node* originalFilter{originalFilter7,155
+  vector<Transform*> transforms;10,229
+  Node* filter{filter11,262
+  Range*range{range12,284
+  string thisclass(13,305
+  vector<OrbitElement> theOrbit;16,412
+  bool theOrbitComputed{theOrbitComputed17,445
+  bool isOrbitComputed(25,702
+  vector<Transform*> getTransforms(29,856
+  Node* getSource(30,913
+
+ornode.h,113
+class OrNode:OrNode3,31
+  Node* clause1{clause15,67
+  Node* clause2{clause26,90
+  string thisclass(11,212
+
+parentnode.h,105
+class ParentNode 3,31
+  string thisclass(6,88
+  bool isPosition(11,272
+  bool canModifyCurpos(14,408
+
+pastmovenode.h,1293
+enum class PastMoveType{PastMoveType3,31
+enum class PastMoveType{None,None3,31
+enum class PastMoveType{None,Promote,3,31
+enum class PastMoveType{None,Promote,Capture,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,EnPassant,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,EnPassant,Primary,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,EnPassant,Primary,Secondary,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,EnPassant,Primary,Secondary,OO,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,EnPassant,Primary,Secondary,OO,OOO,3,31
+enum class PastMoveType{None,Promote,Capture,NullMove,EnPassant,Primary,Secondary,OO,OOO,Castle}Castle3,31
+class PastMoveNode 4,129
+  PastMoveType theType{theType7,205
+  PieceLoc* promotePieceLoc{promotePieceLoc8,249
+  Node* promoteStringFilter{promoteStringFilter9,284
+  SetBase*theCapture{theCapture10,319
+  bool isPromote(22,767
+  bool isNullMove(23,831
+  bool isEnPassant(24,897
+  bool isPrimary(25,965
+  bool isSecondary(26,1029
+  bool isCapture(27,1097
+  bool isCaptureNode(28,1161
+  bool canModifyCurpos(29,1246
+  bool isOO(30,1306
+  bool isOOO(31,1360
+  bool isCastle(32,1416
+  string thisclass(39,1670
+
+pastnode.h,126
+class PastNode 3,39
+  bool isFuture(5,86
+  bool isPast(6,119
+  string thisclass(8,195
+  SeqDir getSearchDirection(11,424
+
+path-atomic.h,204
+vector<Variable*> atomicVariables;4,89
+vector<Variable*>&getAtomicVariables(getAtomicVariables5,124
+Bindings bestAtomicBindings;6,188
+vector<Bindings> atomicBindingStack;7,217
+bool hasAtomics(8,254
+
+path-comment.h,79
+    CommentStack commentStack;4,102
+  CommentStack*mainStack{mainStack5,250
+
+path-nest.h,63
+  bool nestBan{nestBan6,82
+  std::set<QPos*> nestIds;11,438
+
+path-static.h,784
+vector<PathCon*> theCons;5,100
+vector<PathCon*>& getCons(6,126
+int ncons(9,175
+bool isPrimary{isPrimary13,286
+bool isSecondary{isSecondary14,309
+bool returnFinish{returnFinish15,334
+bool isQuiet{isQuiet16,360
+Focus*theFocus{theFocus17,381
+Node*theMax{theMax18,403
+PiecePathNode*piecePathNode{piecePathNode19,422
+Node*getMax(getMax20,457
+bool hasMax(21,492
+Focus*getFocus(getFocus22,533
+bool hasFocus(23,573
+Range*theRange{theRange24,618
+Range*getRange(getRange25,640
+bool theNestBan{theNestBan26,680
+QPos* theStartQPos{theStartQPos27,704
+QPos* getStartQPos(28,730
+bool isPosition(29,779
+bool isNumeric(30,833
+string theTitle;31,887
+string getTitle(32,904
+bool hasTitle(33,945
+bool isVerbose{isVerbose34,993
+bool keepAllBest{keepAllBest35,1016
+
+path-status.h,249
+int getCount(6,271
+vector<PathCon*>conStack;conStack8,348
+QPos*bestSoFar{bestSoFar10,425
+int bestLength{bestLength11,470
+vector<QPos*>otherBestPositions;otherBestPositions13,547
+bool bestMaxValid{bestMaxValid15,610
+bool isSuccess(18,667
+
+pathcon.h,943
+typedef vector<PathCon*>PathConStack;PathConStack19,272
+class PathCon 20,310
+  bool isPathCon(26,492
+  PathCon* asPathCon(27,539
+  bool theIsInitial{theIsInitial28,584
+  virtual bool isInitial(29,664
+  virtual void setIsInitial(30,719
+  bool canModifyCurpos(31,810
+  virtual bool isStarCon(34,882
+  virtual StarCon* asStarCon(35,929
+  virtual bool isChainCon(36,974
+  virtual ChainCon* asChainCon(37,1022
+  virtual bool isHolderCon(38,1069
+  virtual HolderCon* asHolderCon(39,1118
+  virtual bool isDashCon(40,1167
+  virtual DashCon* asDashCon(41,1214
+  virtual bool isPlusCon(42,1259
+  virtual PlusCon* asPlusCon(43,1306
+  virtual bool isRepeatCon(44,1351
+  virtual RepeatCon* asRepeatCon(45,1400
+  virtual bool isRepeatInProcessCon(46,1449
+  virtual RepeatInProcessCon* asRepeatInProcessCon(47,1507
+  virtual bool isOptionalCon(48,1574
+  virtual OptionalCon* asOptionalCon(49,1625
+  virtual bool isWildcard(50,1678
+
+pathcountnode.h,115
+class PathCountNode:PathCountNode3,44
+  bool isPathCount(5,99
+  string thisclass(7,167
+  bool isNumeric(9,266
+
+pathdebugnode.h,91
+class PathDebugNode:PathDebugNode3,44
+  bool isPathDebug(5,99
+  string thisclass(7,167
+
+pathlastpositionnode.h,138
+class PathLastPositionNode:PathLastPositionNode3,44
+  bool isPathLastPosition(5,106
+  string thisclass(7,188
+  bool isPosition(9,294
+
+pathmaxnode.h,109
+class PathMaxNode:PathMaxNode3,44
+  bool isPathMax(5,97
+  string thisclass(7,161
+  bool isNumeric(9,254
+
+pathnode.h,158
+class PathNode:PathNode10,220
+  bool isPathNode(30,687
+  PathNode*asPathNode(asPathNode31,736
+  string thisclass(37,988
+  bool canModifyCurpos(52,1572
+
+pathreferencenode.h,343
+class PathReferenceNode:PathReferenceNode5,66
+  virtual bool isPathCount(7,112
+  virtual bool isPathMax(8,161
+  virtual bool isPathLastPosition(9,208
+  virtual bool isPathStart(10,264
+  virtual bool isPathDebug(11,313
+  PathNode*thePath{thePath12,362
+  PathNode*getPath(getPath13,388
+  bool hasPath(15,459
+  vnode children(19,594
+
+pathstartnode.h,116
+class PathStartNode:PathStartNode3,44
+  bool isPathStart(5,99
+  string thisclass(7,167
+  bool isPosition(9,266
+
+pathstatus.h,349
+class PathStatus{PathStatus12,390
+  QPos*theStart{theStart14,416
+  QPos*theLast{theLast15,439
+  int theCount{theCount16,461
+  NumValue theMax{theMax17,480
+  QPos*getLast(getLast19,570
+  QPos*getStart(getStart20,609
+  int getCount(21,650
+  NumValue getMax(22,690
+  bool isSuccess(23,731
+  bool isFailure(24,779
+  PathStatus(25,828
+
+pgnsource.h,464
+class PgnSource{PgnSource8,121
+  int gameNumber{gameNumber10,147
+  size_t nRequests{nRequests11,168
+  size_t lineNumber{lineNumber22,399
+  size_t filePosition{filePosition23,457
+  int charInLine{charInLine24,520
+  int bufferPosition{bufferPosition25,541
+  char* theBuffer{theBuffer27,628
+  int bufferCapacity{bufferCapacity28,650
+  FILE* theFile{theFile30,698
+  string fileName;31,721
+  bool Eof{Eof33,757
+  bool isReading{isReading35,886
+
+pieceassignnode.h,112
+class PieceAssignNode 3,31
+  PieceIdVariable* var{var5,77
+  SetBase*set{set6,107
+  string thisclass(8,174
+
+pieceidnode.h,175
+class PieceIdNode:PieceIdNode3,31
+  PieceIdVariable*pieceidVariable{pieceidVariable5,72
+  SetBase*theSet{theSet6,113
+  string thisclass(10,226
+  bool isNumeric(14,334
+
+pieceidvariable.h,269
+class PieceIdVariable:PieceIdVariable4,36
+ private: markT pieceid;5,75
+  string thisclass(7,109
+[[nodiscard]]  PieceIdVariable* clone(8,162
+  bool isSet(11,288
+  bool isPieceId(12,322
+  bool isPieceIdVariable(16,443
+  PieceIdVariable* asPieceIdVariable(17,489
+
+pieceloc.h,244
+class PieceLoc:PieceLoc4,32
+  string thisclass(11,248
+  vnode children(13,327
+  void deepify(21,607
+  vector<pieceT> thePieces;23,636
+  SquareMask squaremask;24,664
+  std::array<std::array25,689
+  std::array<bool,2> colorFlags;25,689
+
+pieceloopnode.h,201
+class PieceLoopNode:PieceLoopNode3,31
+  PieceIdVariable*variable{variable9,265
+  SetBase*target{target10,299
+  Node* theBody{theBody11,323
+  bool isAll{isAll12,346
+  string thisclass(13,367
+
+piecenamenode.h,123
+class PieceNameNode:PieceNameNode4,70
+  SetBase* theSet{theSet6,113
+  string thisclass(11,272
+  bool isString(15,446
+
+piecepathnode.h,202
+class PiecePathNode 3,31
+  SetBase* theFrom{theFrom5,75
+  Node* theTo{theTo6,104
+  bool isVerbose{isVerbose7,146
+  bool isString(11,332
+  string thisclass(12,378
+  bool canModifyCurpos(17,570
+
+pinnode.h,305
+class PinNode:PinNode3,31
+  SetBase*fromFilter{fromFilter5,72
+  SetBase*throughFilter{throughFilter6,100
+  SetBase*toFilter{toFilter7,131
+  bool returnFrom{returnFrom8,157
+  bool returnThrough{returnThrough9,183
+  bool returnTo{returnTo10,212
+  string thisclass(18,400
+  bool isSet(24,660
+
+pluscon.h,230
+class PlusCon:PlusCon3,34
+  StarCon*theStar{theStar5,73
+  StarCon*getStar(getStar6,98
+  PathCon*getCon(getCon7,140
+  bool isPlusCon(13,330
+  PlusCon* asPlusCon(14,377
+  string thisclass(15,422
+  bool isWildcard(18,547
+
+plynode.h,189
+class PlyNode 3,31
+  PlyNode(5,69
+  string thisclass(6,84
+  string toString(9,203
+  vnode children(10,244
+  bool match_position(11,285
+  bool isNumeric(12,332
+  void deepify(13,370
+
+positionindexnode.h,99
+class PositionIndexNode:PositionIndexNode3,31
+  string thisclass(6,101
+  bool isNumeric(10,241
+
+positionvariable.h,195
+class PositionVariable:PositionVariable5,54
+  QPos* value;7,104
+  bool isPosition(11,161
+  string thisclass(15,331
+[[nodiscard]]  PositionVariable* clone(16,394
+  bool isAtomizable(21,587
+
+previousdashnode.h,236
+class PreviousDashNode:PreviousDashNode4,53
+  DashNode*theDash{theDash6,100
+  DashNode*getDash(getDash7,126
+  string thisclass(9,195
+  bool isNumeric(17,546
+  bool isPosition(18,609
+  bool isString(19,674
+  bool isSet(20,735
+
+qgame.h,1164
+class QGame{QGame10,216
+  Game*game{game16,365
+  bool pgnUseSource{pgnUseSource18,406
+  PgnSource* pgnSource{pgnSource19,434
+  static const int pgnBufferCapacity{pgnBufferCapacity20,464
+  char pgnBuffer[pgnBuffer21,511
+  int pgnGamesRead{pgnGamesRead22,548
+  QPos*root{root26,645
+  vector<QPos*>allQPos;allQPos27,664
+  PgnParser* thePgnParser{thePgnParser28,721
+  bool searchVariations{searchVariations31,810
+  MFile * theMFile;32,842
+  int theGameNumber{theGameNumber35,899
+  bool foundCook{foundCook36,923
+  bool foundCookValid{foundCookValid37,993
+  QPos*getRoot(getRoot38,1061
+  int getGameNumber(40,1116
+  CommentStack* getCommentStack(43,1208
+  RegexHistory* getRegexHistory(51,1545
+  const RegexHistory* getRegexHistory(52,1605
+  static const int QPosPoolSize{QPosPoolSize55,1700
+  std::array<std::array56,1740
+  std::array<QPos,QPosPoolSize> QPosPool;56,1740
+  int nextQPosIndex{nextQPosIndex57,1782
+  CommentStack theComments;58,1806
+  TagSection theTagSection;59,1834
+  RegexHistory theRegexHistory;60,1862
+  PathStatus thePathStatus;63,1917
+  PathStatus getPathStatus(64,1945
+  void setPathStatus(65,2002
+
+qmarkboard.h,34
+class QMarkBoard{QMarkBoard7,88
+
+qmove.h,609
+class QMove{QMove7,102
+  QMove(10,180
+  QPos*head{head11,193
+  QPos*tail{tail12,212
+  squareT from 13,231
+  squareT to 14,252
+  squareT enpassant{enpassant15,271
+  pieceT promote{promote16,296
+  bool valid{valid17,321
+  bool isNull(19,360
+  bool isEnPassant(21,421
+  squareT getEnPassantSquare(22,483
+  bool isCapture(26,635
+  bool isNonCastle(31,777
+  SquareMask castleKingFromMask(39,1043
+  SquareMask castleKingToMask(40,1132
+  SquareMask castleRookFromMask(41,1217
+  SquareMask castleRookToMask(42,1307
+  SquareMask getSimpleFromMask(49,1653
+  SquareMask getSimpleToMask(50,1729
+
+qpos.h,1631
+class QPos 6,94
+  markT squares_to_marks[squares_to_marks14,366
+  squareT marks_to_squares[marks_to_squares15,396
+  pieceT board[board16,434
+  colorT toMove{toMove20,505
+  moveT* id{id21,531
+  string originalComment;22,550
+  vector<int>nags;nags23,576
+  vector<string> addedComments;24,595
+  string identificationComment;25,627
+  vector<QPos*>children;children26,659
+  vector<QMove*>moves;moves27,684
+  QMove previousMove;28,707
+  bool theIsCheck{theIsCheck29,729
+  bool theIsStalemate{theIsStalemate30,755
+  bool theIsMate{theIsMate31,785
+  QPos*parent{parent32,810
+  std::array<std::array33,831
+  std::array<SquareMask,MAX_PIECE_TYPES>thePieceMasks;thePieceMasks33,831
+  std::array<std::array34,886
+  std::array<SquareMask,2>theColorMasks;theColorMasks34,886
+  QGame*qgame{qgame36,945
+  vector<QMove*>*getMoves(getMoves39,1006
+  const vector<QMove*>*getMoves(getMoves40,1050
+  colorT getToMove(41,1105
+  QGame*getQGame(getQGame42,1147
+  std::array<std::array44,1210
+  std::array<SquareMask,MAX_PIECE_TYPES>*getPieceMasks(getPieceMasks44,1210
+  SquareMask getColorMask(45,1291
+  int nChildren(46,1364
+  QPos*getChild(getChild51,1609
+  bool mate(52,1663
+  bool stalemate(53,1701
+  string getOriginalComment(56,1848
+  bool check(59,1958
+  bool initial(60,1998
+  bool terminal(61,2042
+  QMove* getPreviousMove(62,2091
+  const QMove* getPreviousMove(63,2141
+  QPos*getParent(getParent64,2202
+  const pieceT*getBoard(getBoard66,2260
+  int getPly(70,2424
+  markT getMark(76,2577
+  squareT getSquare(77,2643
+  bool deleteOriginalComment{deleteOriginalComment85,2923
+
+range.h,135
+class Range{Range3,36
+  string thisclass(5,58
+  NumericVariable* theMinv{theMinv18,374
+  NumericVariable* theMaxv{theMaxv19,408
+
+raynode.h,390
+class RayNode:RayNode5,66
+  vector<Direction>directions;directions12,223
+  vector<SetBase*> designators;13,254
+  bool isAttack{isAttack15,364
+  Range*theRange{theRange16,388
+  bool theReturnFirst{theReturnFirst17,412
+  string thisclass(19,484
+  int count{count36,1110
+  SquareMask destMask;37,1126
+  SquareMask fromMask;38,1149
+  vector<SquareMask> designatorMasks;39,1172
+
+readfilenode.h,116
+class ReadFileNode:ReadFileNode4,32
+  Node* fileNameNode;6,74
+  bool isString(11,208
+  string thisclass(12,246
+
+regexhistory.h,181
+class RegexHistory{RegexHistory4,48
+  vector<string>groupStrings;groupStrings13,312
+  vector<int>groupStarts;groupStarts14,342
+  vector<bool>groupMatched;groupMatched15,368
+
+relationalnode.h,277
+class RelationalNode 4,32
+  const string name;6,77
+  Node* left{left7,98
+  Node* right{right8,118
+  string thisclass(17,495
+  static vector<string>* theAllNames;28,896
+  static vector<string>* thePositionComparisonNames;29,934
+  bool positionArgs{positionArgs30,987
+
+removecommentnode.h,148
+class RemoveCommentNode:RemoveCommentNode3,31
+  RemoveCommentNode(5,77
+  string thisclass(6,102
+  vnode children(10,284
+  void deepify(11,334
+
+repeatcon.h,288
+class RepeatCon:RepeatCon3,34
+  PathCon*theCon{theCon5,75
+  PathCon*getCon(getCon6,99
+  string thisclass(9,212
+  int theMin=10,268
+  int theMax=11,285
+  int getMin(12,302
+  int getMax(13,338
+  bool isRepeatCon(18,491
+  RepeatCon* asRepeatCon(19,540
+  bool isWildcard(21,620
+
+repeatinprocesscon.h,303
+class RepeatInProcessCon:RepeatInProcessCon3,36
+  RepeatCon*repeatCon{repeatCon5,86
+  RepeatCon*getRepeatCon(getRepeatCon6,115
+  PathCon*getCon(getCon7,166
+  int nSeen{nSeen9,282
+  bool isRepeatInProcessCon(15,443
+  RepeatInProcessCon* asRepeatInProcessCon(16,501
+  string thisclass(17,568
+
+seqconstituent.h,1184
+typedef vector<SeqConstituent*>SeqStack;SeqStack4,49
+class SeqConstituent 5,90
+#define CVV(13,318
+class RepeatConstituent 16,410
+  SeqConstituent* constituent{constituent18,467
+  int min=21,577
+  int max=22,592
+  vnode children(25,645
+  void deepify(26,697
+class StarConstituent 30,798
+  SeqConstituent*constituent{constituent32,853
+  vnode children(38,1035
+  void deepify(39,1087
+class HolderConstituent 43,1188
+  Node*filter{filter46,1273
+  vnode children(49,1336
+  void deepify(50,1383
+class VectorConstituent 55,1496
+  vector<SeqConstituent*>constituents;constituents57,1553
+  SeqDir direction{direction59,1650
+  void deepify(63,1751
+class PlusConstituent 68,1864
+  StarConstituent* getStarConstituent(70,1919
+  vnode children(74,2084
+  void deepify(75,2143
+  StarConstituent* theStarConstituent{theStarConstituent80,2301
+class OptionalConstituent 83,2350
+  SeqConstituent*constituent{constituent86,2449
+  vnode children(89,2529
+  void deepify(90,2581
+class RepeatInProcessConstituent 95,2704
+  RepeatConstituent* theRepeatConstituent{theRepeatConstituent98,2820
+  int nSeen{nSeen99,2869
+  string thisclass(104,2984
+#undef CVV113,3195
+
+seqdir.h,149
+enum class SeqDir{SeqDir2,13
+enum class SeqDir{None,None2,13
+enum class SeqDir{None, Future,2,13
+enum class SeqDir{None, Future,Past}Past2,13
+
+sequencebase.h,810
+class SequenceBase 6,80
+  bool isSequence(10,185
+  bool canModifyCurpos(25,671
+  vector<SeqConstituent*> constituents;39,1354
+  Range*range{range41,1418
+  bool firstMatch{firstMatch43,1456
+  bool isPrimary{isPrimary44,1482
+  bool isSecondary{isSecondary45,1507
+  bool returnFinish{returnFinish46,1534
+  bool isQuiet{isQuiet47,1562
+  QPos*theQpos{theQpos53,1878
+  vector<SeqConstituent*>theStack;theStack55,1952
+  HolderConstituent* theWhiteHolder{theWhiteHolder57,1997
+  HolderConstituent* theBlackHolder{theBlackHolder58,2040
+  colorT theSkipColor{theSkipColor59,2083
+  bool nestBan{nestBan63,2142
+  std::set<QPos*> nestIds;68,2498
+  QPos*bestSoFar{bestSoFar72,2626
+    CommentStack commentStack;77,2714
+  CommentStack*mainStack{mainStack78,2862
+  SeqStack seqStack;94,3761
+
+sortnode.h,682
+class SortNode 6,99
+  string documentation;8,138
+  bool isQuiet{isQuiet9,190
+  Node*theFilter{theFilter10,253
+  bool isNumeric(13,441
+  bool isString(14,524
+  bool isMin(15,605
+  bool isMax(16,661
+  string thisclass(17,719
+  bool canModifyCurpos(25,1031
+  Variable* getVariable(30,1210
+  SortDirection getDirection(31,1262
+  CommentStack commentStack;35,1397
+  QGame*qgame{qgame36,1426
+  SortVariable * theVariable{theVariable37,1447
+  int gamenumber{gamenumber38,1483
+  const SortDirection theDirection{theDirection39,1504
+  SortValue commentValue;40,1561
+  SortValueType theSortValueType{theSortValueType41,1607
+  SortValueType getSortValueType(42,1662
+
+sortvalue.h,952
+enum class SortValueType{SortValueType3,31
+enum class SortValueType{None,None3,31
+enum class SortValueType{None, String,3,31
+enum class SortValueType{None, String,Numeric}Numeric3,31
+enum class SortDirection{SortDirection4,79
+enum class SortDirection{None,None4,79
+enum class SortDirection{None, Down,4,79
+enum class SortDirection{None, Down, Up}Up4,79
+class SortValue{SortValue5,121
+  bool isMax(7,147
+  bool isMin(8,210
+  bool isString(9,271
+  bool isNumeric(10,343
+  SortValue(17,654
+  bool isBound(18,671
+  bool isUnbound(19,713
+  string thisclass(20,758
+  SortValueType getType(21,805
+  void clear(22,862
+  void unbind(23,896
+  bool isNone(27,1005
+  SortDirection getDirection(28,1066
+  SortValueType theSortValueType{theSortValueType30,1134
+  NumValue theNumericValue{theNumericValue31,1189
+  string theStringValue;32,1260
+  SortDirection theDirection{theDirection33,1285
+  bool theIsBound{theIsBound34,1396
+
+sortvariable.h,243
+class SortVariable:SortVariable4,58
+  bool isSet(7,134
+  virtual bool isString(10,252
+  virtual bool isSort(11,298
+  virtual bool isNumeric(12,343
+  virtual SortVariable* asSortVariable(18,643
+[[nodiscard]]  SortVariable* clone(20,739
+
+sqrtnode.h,104
+class SqrtNode:SqrtNode3,31
+  Node*node{node5,69
+  string thisclass(7,107
+  bool isNumeric(14,313
+
+squareloopnode.h,202
+class SquareLoopNode:SquareLoopNode3,31
+  SquareVariable*variable{variable9,267
+  SetBase*target{target10,300
+  Node* theBody{theBody11,324
+  bool isAll{isAll12,347
+  string thisclass(13,368
+
+squaremask.h,619
+typedef unsigned long long Mask;4,60
+class SquareMask{SquareMask5,93
+  Mask mask{mask7,120
+  explicit SquareMask(8,136
+  static SquareMask fromSquare(9,175
+  SquareMask(11,297
+  string thisclass(16,416
+  void clear(19,501
+  bool empty(20,525
+  bool nonempty(22,589
+  int count(23,630
+  bool full(24,665
+  bool member(25,705
+  void insert(26,754
+  void operator|= operator|=29,865
+  SquareMask operator|(30,913
+  void operator&= operator&=31,988
+  bool operator==(operator==32,1036
+  bool operator<(33,1095
+  SquareMask operator&(34,1152
+  SquareMask operator~(35,1227
+#define ForMask(40,1334
+
+squareparitynode.h,131
+class SquareParityNode:SquareParityNode3,31
+  string thisclass(5,79
+  SquareMask theMask;6,133
+  SetBase* theSet{theSet7,155
+
+squarevariable.h,257
+class SquareVariable:SquareVariable3,35
+  SquareMask mask;5,83
+  bool used{used6,102
+  bool isSet(10,212
+  bool isSquare(11,255
+  bool isUsed(12,301
+  string thisclass(14,366
+[[nodiscard]]  SquareVariable* clone(15,427
+  bool isAtomizable(22,694
+
+starcon.h,217
+class StarCon:StarCon3,34
+  PathCon*theCon{theCon5,73
+  PathCon*getCon(getCon6,97
+  bool hasDash(8,158
+  bool isStarCon(13,326
+  StarCon* asStarCon(14,373
+  string thisclass(15,418
+  bool isWildcard(18,543
+
+stringasciinode.h,408
+enum class AsciiDirection{AsciiDirection3,31
+enum class AsciiDirection{None,None3,31
+enum class AsciiDirection{None,ToAscii,3,31
+enum class AsciiDirection{None,ToAscii, FromAscii}FromAscii3,31
+class StringAsciiNode 4,83
+  Node*theNode;theNode7,175
+  AsciiDirection theDirection{theDirection8,191
+  bool isString(9,244
+  bool isNumeric(10,316
+  string thisclass(11,387
+  vnode children(17,628
+
+stringconverter.h,136
+class StringConverter:StringConverter7,107
+  vector<Node*>theNodes;theNodes9,151
+  string thisclass(12,236
+  bool isString(15,401
+
+stringinnode.h,226
+class StringInNode:StringInNode3,31
+  Node*theLeft{theLeft5,72
+  Node*theRight{theRight6,94
+  bool computeIndex{computeIndex7,117
+  bool isImplicit{isImplicit8,185
+  bool isNumeric(13,506
+  string thisclass(15,570
+
+stringiteratornode.h,200
+class StringIteratorNode:StringIteratorNode5,75
+  Node* theTarget{theTarget7,122
+  string thePattern;8,147
+  Node* theBody{theBody9,168
+  string thisclass(11,260
+  std::regex theRegex;18,462
+
+stringlengthnode.h,110
+class StringLengthNode 3,31
+  Node*theNode{theNode6,105
+  string thisclass(7,127
+  bool isNumeric(13,323
+
+stringliteralnode.h,228
+class StringLiteralNode:StringLiteralNode4,32
+  bool isString(7,107
+  const string theName;8,144
+  string getName(9,168
+  vnode children(10,209
+  void deepify(14,378
+  string thisclass(15,397
+  bool isGameFilter(17,468
+
+stringmatchnode.h,187
+class StringMatchNode:StringMatchNode4,48
+  Node* targetNode{targetNode6,92
+  string thePattern;7,118
+  string thisclass(9,198
+  bool isString(15,419
+  std::regex theRegex;18,483
+
+stringtointnode.h,109
+class StringToIntNode 3,31
+  Node*theNode{theNode6,103
+  string thisclass(7,125
+  bool isNumeric(13,319
+
+stringvariable.h,304
+class StringVariable:StringVariable5,62
+  string value;7,114
+  bool isString(12,255
+  string thisclass(14,330
+[[nodiscard]]  StringVariable* clone(15,391
+  SortValueType getSortValueType(24,702
+  bool isStringVariable(25,776
+  StringVariable* asStringVariable(26,830
+  bool isAtomizable(29,959
+
+subsetnode.h,127
+class SubsetNode:SubsetNode3,31
+  SetBase*theLeft{theLeft5,70
+  SetBase*theRight{theRight6,95
+  string thisclass(10,206
+
+substringassignmentnode.h,208
+class SubstringAssignmentNode:SubstringAssignmentNode5,85
+  StringVariable*theTarget{theTarget8,219
+  BracketRange*theBracket{theBracket9,253
+  Node*theRight{theRight10,286
+  string thisclass(11,309
+
+substringnode.h,204
+class SubstringNode:SubstringNode4,57
+  Node*theTarget{theTarget7,150
+  BracketRange*theBracket{theBracket8,174
+  string thisclass(9,207
+  bool isString(11,297
+  static const NumValue End;17,464
+
+tagbuiltinnode.h,234
+class TagBuiltInNode 3,31
+  string theName;6,114
+  bool isString(9,207
+  string getName(10,244
+  vnode children(11,285
+  string thisclass(16,476
+  bool isGameFilter(20,615
+  static vector<string>builtInTags;builtInTags21,656
+
+tagentry.h,293
+using std::string;3,30
+class TagEntry{TagEntry4,49
+  const string theName;6,76
+  string theValue;7,100
+  string gameValue;8,119
+  bool isDeleted{isDeleted9,139
+  bool isModified{isModified10,164
+  bool isFromGame{isFromGame11,190
+  string getName(15,356
+  string getValue(16,397
+
+tagnode.h,201
+class TagNode:TagNode3,31
+  string theName;6,91
+  string getName(7,109
+  string thisclass(8,151
+  vnode children(10,229
+  void deepify(17,451
+  bool isString(18,471
+  bool isGameFilter(19,508
+
+tagsection.h,182
+class TagSection{TagSection5,66
+  vector<TagEntry>theEntries;theEntries7,93
+  static const vector<string> unchangeableTagNames;15,417
+  bool isInitialized{isInitialized16,469
+
+tagsetnode.h,258
+class TagSetNode:TagSetNode3,31
+  string theName;6,115
+  Node*theNode{theNode7,133
+  string getName(8,155
+  const Node*getNode(getNode9,197
+  Node*getNode(getNode10,242
+  string thisclass(11,276
+  static const vector<string> forbiddenTags;18,519
+
+token.h,5311
+class Token 10,138
+  static int CurrentLineNumber;12,160
+  static int CurrentColumnNumber;13,192
+  int lineNumber{lineNumber14,226
+  int columnNumber{columnNumber15,263
+  bool followsBlankLine{followsBlankLine16,304
+  string theTrueString;17,336
+  string getTrueString(18,360
+  void setTrueString(19,414
+  int getTrueStart(22,510
+  int getTrueStop(23,558
+  virtual string thisclass(28,748
+  virtual bool isLParenToken(31,890
+  virtual bool isRParenToken(32,941
+  virtual bool isLBracketToken(33,992
+  virtual bool isRBracketToken(34,1045
+  virtual bool isLBraceToken(35,1098
+  virtual bool isRBraceToken(36,1149
+  virtual bool isPathToken(37,1200
+  virtual bool isEndPathToken(38,1249
+  virtual bool isStarToken(39,1301
+  virtual bool isPlusToken(40,1350
+  virtual bool isWildcardStarToken(41,1399
+  virtual bool isWildcardPlusToken(42,1456
+  virtual bool isLeftDelimiter(43,1513
+  virtual bool isRightDelimiter(44,1566
+  virtual bool isLeftMatchFor(45,1620
+  virtual bool isBracedPlusToken(46,1684
+  virtual bool isBracedStarToken(47,1739
+  virtual bool isDashConToken(48,1794
+  virtual bool isBraceRepToken(49,1846
+  virtual bool isQuestionMarkToken(51,1938
+  virtual bool isWhiteSpaceToken(52,1995
+  virtual string colorizerClass(53,2050
+class StringToken:StringToken56,2106
+  const string value;58,2147
+  string getString(59,2169
+  virtual string thisclass(62,2265
+  string colorizerClass(64,2352
+class SpecialToken:SpecialToken67,2409
+  SpecialToken(69,2457
+  virtual string thisclass(70,2502
+  bool theFollowsWhitespace{theFollowsWhitespace71,2569
+  void setFollowsWhitespace(72,2605
+  bool followsWhitespace(73,2663
+  bool isLParenToken(74,2725
+  bool isRParenToken(75,2782
+  bool isLBraceToken(76,2839
+  bool isRBraceToken(77,2896
+  bool isLBracketToken(78,2953
+  bool isRBracketToken(79,3012
+  bool isPlusToken(80,3071
+  bool isStarToken(81,3126
+  bool isBracedPlusToken(82,3181
+  bool isBracedStarToken(83,3244
+  bool isQuestionMarkToken(87,3439
+class InputFileToken:InputFileToken91,3548
+  InputFileToken(93,3598
+  virtual string thisclass(94,3643
+  string colorizerClass(95,3712
+class OutputFileToken:OutputFileToken98,3769
+  OutputFileToken(100,3820
+  virtual string thisclass(101,3866
+  string colorizerClass(102,3936
+class NameToken:NameToken105,3993
+  NameToken(107,4038
+  virtual string thisclass(108,4078
+class QuotedStringToken:QuotedStringToken111,4146
+  QuotedStringToken(113,4199
+  virtual string thisclass(114,4246
+class GroupIndexToken:GroupIndexToken117,4322
+  int value;119,4367
+  GroupIndexToken(120,4380
+  virtual string thisclass(122,4450
+class GroupNumberToken:GroupNumberToken125,4524
+  int value;127,4570
+  GroupNumberToken(128,4583
+  virtual string thisclass(130,4654
+class BraceRepToken:BraceRepToken133,4731
+  string thisclass(139,4869
+  bool isBraceRepToken(140,4929
+class IntToken:IntToken143,4986
+  int value;145,5024
+  IntToken(146,5037
+  virtual string thisclass(148,5101
+class KeywordToken:KeywordToken151,5168
+  virtual string thisclass(153,5215
+  bool isPathToken(156,5344
+class IdToken:IdToken160,5447
+  IdToken(162,5490
+  virtual string thisclass(163,5528
+  string colorizerClass(164,5590
+class PieceToken:PieceToken168,5659
+  char value{value170,5699
+  bool isA(175,5843
+  bool isa(176,5881
+  bool is_(177,5919
+  virtual string thisclass(178,5957
+class PieceDesignatorToken:PieceDesignatorToken181,6026
+  const vector<PieceToken*>pieces;pieces184,6107
+  const vector<SquareToken*> squares;185,6142
+  virtual string thisclass(188,6281
+  string colorizerClass(196,6549
+typedef PieceDesignatorToken PDT;198,6619
+class SquareToken:SquareToken200,6654
+  int minfile;202,6695
+  int maxfile;203,6710
+  int minrank;204,6725
+  int maxrank;205,6740
+  virtual string thisclass(209,6895
+  bool isAll(210,6961
+class EndPathToken:EndPathToken213,7041
+  string thisclass(216,7133
+  bool isEndPathToken(217,7192
+class WildcardStarToken:WildcardStarToken220,7250
+  string thisclass(223,7339
+  bool isWildcardStarToken(224,7398
+class WildcardPlusToken:WildcardPlusToken227,7459
+  string thisclass(230,7548
+  bool isWildcardPlusToken(231,7607
+class DashToken:DashToken234,7668
+  bool theIsLeftTie{theIsLeftTie236,7707
+  bool theIsRightTie{theIsRightTie237,7735
+  CaptureType theCaptureType{theCaptureType238,7764
+  CaptureType getCaptureType(239,7813
+  bool theIsConToken{theIsConToken240,7873
+  bool isCon(244,8002
+  bool isNonCon(245,8045
+  void setIsCon(246,8092
+  bool isLeftTie(247,8131
+  bool isRightTie(248,8177
+  string thisclass(249,8225
+  bool isCapture(250,8281
+  bool isNonCapture(251,8351
+  string colorizerClass(253,8463
+class WhiteSpaceToken:WhiteSpaceToken256,8525
+  bool theHasBlankLine{theHasBlankLine259,8624
+  bool theHasNewline{theHasNewline260,8655
+  bool hasBlankLine(261,8684
+  bool hasNewline(262,8736
+  bool isWhiteSpaceToken(263,8784
+  string thisclass(264,8839
+  string colorizerClass(265,8901
+class LineCommentToken:LineCommentToken268,8958
+  string thisclass(270,9005
+class EndLineCommentToken:EndLineCommentToken273,9072
+  string thisclass(275,9122
+class PieceDeclarationToken:PieceDeclarationToken278,9192
+  string thisclass(280,9243
+  string colorizerClass(281,9311
+
+tokens.h,191
+class Tokens{Tokens9,135
+  Environment*environment{environment12,179
+  Environment* getEnvironment(13,212
+  int bottom;15,323
+  vector<Token*>tokens;tokens16,337
+  void reset(21,432
+
+tomovenode.h,81
+class ToMoveNode:ToMoveNode3,31
+  string thisclass(5,70
+  colorT color;8,164
+
+tomovevaluenode.h,131
+class ToMoveValueNode 3,31
+  static const NumValue WhiteValue{WhiteValue5,77
+  string thisclass(8,177
+  bool isNumeric(15,396
+
+tonode.h,75
+class ToNode:ToNode3,37
+  string thisclass(7,162
+  bool isToNode(9,227
+
+transform.h,1071
+class Transform 2,13
+  virtual bool flipsSquareParity(5,87
+  virtual bool flipsColor(15,572
+class PiOver4Transform:PiOver4Transform22,777
+  string thisclass(24,827
+class DihedralTransform 38,1311
+  string thisclass(40,1364
+  bool reflectx{reflectx41,1428
+  bool reflecty{reflecty42,1452
+  bool swap{swap43,1476
+class ShiftTransform 59,2063
+  string thisclass(61,2113
+  int xoffset{xoffset62,2174
+  int yoffset{yoffset63,2192
+  Direction transform(66,2304
+class ColorTransform 77,2693
+  virtual bool flipsSquareParity(79,2743
+  squareT transform(80,2807
+  Direction transform(81,2863
+  SquareMask transform(82,2924
+  string thisclass(83,2986
+  bool flipsColor(84,3047
+class IdentityTransform 90,3213
+  virtual bool flipsSquareParity(92,3266
+  squareT transform(93,3330
+  Direction transform(94,3386
+  SquareMask transform(95,3446
+  string thisclass(96,3508
+  string toString(97,3572
+  bool isIdentity(98,3618
+class ComposeTransform:ComposeTransform101,3670
+  vector<const Transform*> transforms;103,3721
+  string thisclass(112,4217
+
+transformvariable.h,176
+class TransformVariable:TransformVariable5,54
+  Transform* value;7,105
+  bool isTransform(11,168
+  string thisclass(14,263
+[[nodiscard]]  TransformVariable* clone(15,318
+
+truenode.h,177
+class TrueNode:TrueNode3,31
+  bool match_position(5,69
+  TrueNode(6,120
+  vnode children(7,136
+  string thisclass(9,211
+  bool isGameFilter(11,308
+  void deepify(12,358
+
+typenamenode.h,121
+class TypeNameNode:TypeNameNode4,70
+  SetBase* theSet{theSet6,112
+  string thisclass(11,269
+  bool isString(15,442
+
+uchar-strings.h,2646
+enum class UnicodePieces{UnicodePieces4,55
+enum class UnicodePieces{None=None4,55
+enum class UnicodePieces{None=0,Start=4,55
+enum class UnicodePieces{None=0,Start=0x2654, K=4,55
+enum class UnicodePieces{None=0,Start=0x2654, K=0x2654,Q,4,55
+enum class UnicodePieces{None=0,Start=0x2654, K=0x2654,Q,R,4,55
+enum class UnicodePieces{None=0,Start=0x2654, K=0x2654,Q,R,B,4,55
+enum class UnicodePieces{None=0,Start=0x2654, K=0x2654,Q,R,B,N,4,55
+enum class UnicodePieces{None=0,Start=0x2654, K=0x2654,Q,R,B,N,P,4,55
+			   k,5,121
+			   k,q,5,121
+			   k,q,r,5,121
+			   k,q,r,b,5,121
+			   k,q,r,b,n,5,121
+			   k,q,r,b,n,p,5,121
+			   k,q,r,b,n,p,Last=5,121
+const int UnicodeTimes=8,164
+const int UnicodeWhitePiece=9,193
+const int UnicodeBlackPiece=10,229
+const int UnicodePiece=11,265
+const int UnicodeEmptySquare=12,296
+const int UnicodeWhiteRightPointingPointer=13,333
+const int UnicodeBlackRightPointingPointer=14,384
+const int UnicodeDash=15,435
+const int UnicodeGrid=16,491
+const int UnicodeIntersection=17,521
+const int UnicodeUnion=18,560
+const int UnicodeDoubleVertical=19,599
+const int UnicodeVerticalSingleAndRight=20,639
+const int UnicodeVerticalSingleAndLeft=21,687
+const int UnicodeLightVertical=22,734
+const int UnicodeDoubleHorizontal=23,773
+const int UnicodeHorizontalBar=24,815
+const int UnicodeTurnstile=25,854
+const vector<int>UnicodeDashCodes=UnicodeDashCodes26,889
+const int UnicodeApproximatelyEqual=27,968
+const int UnicodeEightPointedStar=28,1012
+const int UnicodeHalfBlackSquare=29,1054
+const int UnicodeBOM=30,1095
+const int UnicodeElement=31,1124
+const int UnicodeForAll=32,1157
+const int UnicodeLE=33,1189
+const int UnicodeGE=34,1217
+const int UnicodeNE=35,1245
+const int UnicodeDottedArrow=36,1273
+const int UnicodeDottedCircle=37,1310
+const int UnicodeConcentricCircles=38,1348
+const int UnicodeBullet=39,1407
+const int UnicodeLeftArrow=40,1439
+const int UnicodeRightArrow=41,1474
+const int UnicodePrecedes=42,1510
+const int UnicodeSucceeds=43,1544
+const int UnicodePrecedesOrEqualTo=44,1578
+const int UnicodeSucceedsOrEqualTo=45,1621
+const string CaptureAscii=50,1689
+const string DashAscii=51,1722
+const string ForAllAscii=52,1751
+const string ElementAscii=53,1788
+const string UnicodeDashString=56,1865
+const string UnicodeBOMString=57,1924
+const string UnicodeUnionString=58,1970
+const string UnicodeIntersectionString=59,2018
+const std::map<int,string>UnicodeNames=UnicodeNames62,2103
+const vector<std::pair<string,int>> test1=111,4354
+const vector<std::pair<string,int>> test2=116,4433
+const vector<std::pair<string,int>> AsciiToUnicode=121,4510
+
+uchar.h,199
+class UChar{UChar4,67
+  UChar(8,129
+  string errorMessage;9,165
+  bool isValid(11,208
+  bool isInvalid(12,251
+  bool isAscii(13,295
+  int getValue(14,353
+  bool operator==(operator==31,906
+
+unbindnode.h,102
+class UnbindNode:UnbindNode4,53
+  Variable*theVariable{theVariable7,126
+  string thisclass(8,156
+
+unionnode.h,125
+class UnionNode:UnionNode3,31
+  SetBase* clause1{clause15,73
+  SetBase* clause2{clause26,99
+  string thisclass(12,265
+
+util-template.h,43
+template<class T> static bool member(3,71
+
+util.h,24
+class util{util36,789
+
+variable.h,626
+class Variable:Variable17,513
+  virtual bool isSet(24,715
+  string name;26,809
+  bool theIsPersistent{theIsPersistent27,824
+  bool isPersistent(28,855
+  bool bound{bound31,962
+  virtual bool isSquare(32,983
+  virtual bool isPieceId(33,1030
+  virtual bool isNumeric(34,1078
+  virtual bool isPosition(35,1135
+  virtual bool isSort(36,1193
+  virtual bool isLambda(37,1238
+  virtual bool isTransform(38,1285
+  virtual bool isAtomizable(39,1335
+  bool isBound(57,2069
+  bool isUnbound(58,2107
+  bool isVariable(59,2152
+  Variable*asVariable(asVariable60,2200
+  vnode children(65,2372
+  void deepify(67,2453
+
+vectornode.h,243
+class VectorNode 3,31
+  DirectionParameter parameter;5,75
+  SetBase* source{source6,107
+  string thisclass(7,132
+  void deepify(15,425
+  SquareMask neighborhoods[neighborhoods18,515
+  bool neighborhoodsvalid{neighborhoodsvalid21,585
+
+virtualmainlinenode.h,132
+class VirtualMainlineNode 3,31
+  VirtualMainlineNode(5,81
+  string thisclass(6,108
+  vnode children(8,209
+  void deepify(9,250
+
+whilenode.h,106
+class WhileNode 3,31
+  Node*theTest{theTest5,71
+  Node*theBody{theBody6,93
+  string thisclass(7,115
+
+withpositionnode.h,189
+class WithPositionNode 3,31
+  Node* theTarget{theTarget5,82
+  Node* theFilter{theFilter6,107
+  string thisclass(9,187
+  bool isWithPositionNode(24,782
+  bool canModifyCurpos(25,838
+
+writefilenode.h,239
+class WriteFileNode:WriteFileNode7,67
+  Node* fileNameNode{fileNameNode9,110
+  Node*contentNode{contentNode10,138
+  string thisclass(14,257
+  static std::map<std::map19,406
+  static std::map<string,std::ofstream*> fileMap;19,406
+
+abortnode.cpp,79
+AbortNode::AbortNode(2,23
+bool AbortNode::match_position(match_position3,82
+
+absnode.cpp,199
+AbsNode::AbsNode(2,21
+vnode AbsNode::children(children6,108
+void AbsNode::deepify(deepify10,165
+bool AbsNode::match_count(match_count14,215
+bool AbsNode::match_position(match_position24,438
+
+andnode.cpp,203
+AndNode::AndNode(6,193
+bool AndNode::match_position(match_position12,427
+vnode AndNode::children(children21,634
+void AndNode::deepify(deepify25,702
+bool AndNode::isGameFilter(isGameFilter30,786
+
+anticipate-parse.cpp,118
+Node*Tokens::match_anticipatenode(match_anticipatenode7,111
+string Tokens::get_unique_name(get_unique_name36,1406
+
+anticipatedb.cpp,824
+vector<Transform*> AnticipateDb::pawnlessTransforms;2,26
+vector<Transform*>AnticipateDb::pawnTransforms;AnticipateDb::pawnTransforms3,79
+vector<Transform*>AnticipateDb::idTransforms;AnticipateDb::idTransforms4,127
+AnticipateDb* AnticipateDb::AnticipateDbP{AnticipateDb::AnticipateDbP5,173
+AnticipateDb*AnticipateDb::create(create6,222
+AnticipateDb::AnticipateDb(AnticipateDb20,872
+void AnticipateDb::initializeTransforms(initializeTransforms28,1144
+void AnticipateDb::initialize(initialize47,2055
+void AnticipateDb::insertQGame(insertQGame62,2715
+void AnticipateDb::insertQPos(insertQPos69,2866
+void AnticipateDb::insertEntry(insertEntry82,3208
+bool AnticipateDb::find(find97,3668
+const vector<AnticipateEntry>& AnticipateDb::lookup(lookup101,3790
+bool AnticipateDb::isPawnless(isPawnless109,4052
+
+anticipateentry.cpp,550
+using std::array;3,53
+AnticipateEntry::AnticipateEntry4,71
+bool AnticipateEntry::transformable(transformable22,480
+array<pieceT,64> AnticipateEntry::transform(transform31,726
+string AnticipateEntry::toString(toString45,1113
+array<pieceT,64> AnticipateEntry::convertBoard(convertBoard57,1423
+string AnticipateEntry::computeKey(computeKey63,1571
+vector<AnticipateEntry> AnticipateEntry::entriesFromQPos(entriesFromQPos77,1906
+string AnticipateEntry::computeKey(computeKey102,2605
+string AnticipateEntry::computeKey(computeKey106,2736
+
+anticipatenode.cpp,213
+AnticipateNode::AnticipateNode(2,28
+bool AnticipateNode::match_position(match_position11,355
+void AnticipateNode::updateMinRemoteQGame(updateMinRemoteQGame33,960
+void AnticipateNode::deepify(deepify43,1231
+
+anyvalue.cpp,691
+string AnyValue::stringValue(stringValue5,64
+NumValue AnyValue::numValue(numValue10,196
+SquareMask AnyValue::squareMaskValue(squareMaskValue15,322
+QPos* AnyValue::qPosValue(qPosValue20,463
+bool AnyValue::logicalValue(logicalValue25,575
+class tmpAnyValueToString{tmpAnyValueToString30,691
+  string operator()(operator()32,726
+  string operator() operator()33,786
+  string operator()(operator()38,895
+  string operator()(operator()43,1002
+  string operator()(operator()48,1122
+string AnyValue::toString(toString54,1210
+AnyValue::Any AnyValue::eval(eval58,1299
+bool AnyValue::isUnbound(isUnbound91,2019
+bool AnyValue::isBound(isBound99,2220
+bool AnyLess(103,2284
+
+arithmeticnode.cpp,366
+const string ArithmeticNode::Ops=3,119
+bool ArithmeticNode::isOp(isOp5,162
+bool ArithmeticNode::isOp(isOp9,243
+ArithmeticNode::ArithmeticNode(13,335
+bool ArithmeticNode::match_position(match_position26,769
+bool ArithmeticNode::match_count(match_count30,853
+NumValue ArithmeticNode::operate(operate42,1172
+vnode ArithmeticNode::children(children60,1660
+
+assertnode.cpp,168
+AssertNode::AssertNode(3,46
+bool AssertNode::match_position(match_position7,165
+void AssertNode::deepify(deepify21,569
+vnode AssertNode::children(children25,628
+
+assignment-parse.cpp,233
+bool Tokens::isOpAssignmentName(isOpAssignmentName10,202
+Node*Tokens::make_op_node(make_op_node16,400
+string Tokens::match_opassignmentname(match_opassignmentname39,1448
+Node* Tokens::match_assignment(match_assignment49,1624
+
+assignnode.cpp,691
+AssignNode* AssignNode::create(create9,189
+AssignNumericNode::AssignNumericNode(62,2096
+AssignStringNode::AssignStringNode(67,2349
+bool AssignNumericNode::match_position(match_position72,2603
+bool AssignStringNode::match_position(match_position79,2787
+AssignPositionNode::AssignPositionNode(87,2967
+bool AssignPositionNode::match_position(match_position92,3232
+AssignSquareNode::AssignSquareNode(103,3507
+bool AssignSquareNode::match_position(match_position110,3854
+vnode AssignNumericNode::children(children118,4120
+vnode AssignStringNode::children(children123,4243
+vnode AssignPositionNode::children(children129,4366
+vnode AssignSquareNode::children(children135,4491
+
+atomic.cpp,691
+Bindings Atomic::createBindings(createBindings2,20
+void Atomic::applyBindings(applyBindings9,168
+void Atomic::applyBinding(applyBinding14,278
+Variable* Atomic::variable_from_binding(variable_from_binding20,421
+Variable* Atomic::variable_from_binding(variable_from_binding24,513
+const Any& Atomic::value_from_binding(value_from_binding28,599
+Any& Atomic::value_from_binding(value_from_binding32,690
+Any Atomic::value_from_variable(value_from_variable36,769
+void Atomic::assign(assign40,846
+string Atomic::toString(toString45,917
+string Atomic::toString(toString51,1064
+bool Atomic::isAtomizable(isAtomizable58,1202
+Binding Atomic::createBinding(createBinding63,1335
+
+attack.cpp,818
+void Attack::initialize(initialize2,20
+SquareMask Attack::attacksquares(attacksquares12,229
+SquareMask Attack::attacksquare(attacksquare25,526
+SquareMask Attack::orthogonalShift(orthogonalShift67,1613
+SquareMask Attack::diagonalShift(diagonalShift85,2206
+SquareMask Attack::betweenmask(betweenmask103,2792
+SquareMask Attack::kingAttacks(kingAttacks117,3219
+SquareMask Attack::pawnAttacks(pawnAttacks136,3766
+SquareMask Attack::knightAttacks(knightAttacks160,4499
+squareT Attack::shift(shift179,5055
+SquareMask Attack::pawnNormalMove(pawnNormalMove188,5391
+bool Attack::enpassantAttack(enpassantAttack207,6147
+bool Attack::incheck(incheck252,7764
+void Attack::masks_from_board(masks_from_board266,8301
+SquareMask Attack::castle(castle281,8794
+SquareMask Attack::moveTos(moveTos319,10425
+
+attackarrowdirection.cpp,160
+bool AttackArrowDirectionIsValid(2,34
+bool AttackArrowDirectionIsInvalid(3,130
+bool AttackArrowDirectionIsLeft(4,228
+bool AttackArrowDirectionIsRight(5,323
+
+attacknode.cpp,224
+AttackNode::AttackNode(4,45
+vnode AttackNode::children(children14,360
+void AttackNode::compute(compute21,492
+bool AttackNode::match_position(match_position41,1257
+SquareMask AttackNode::getSquares(getSquares45,1343
+
+betweennode.cpp,97
+BetweenNode::BetweenNode(BetweenNode3,19
+SquareMask BetweenNode::getSquares(getSquares10,142
+
+bracketrange.cpp,274
+using std::max;3,47
+using std::min;4,63
+BracketRange::BracketRange(13,323
+bool BracketRange::getBounds(getBounds40,1383
+void BracketRange::deepify(deepify73,2240
+bool BracketRange::match_position(match_position79,2349
+vnode BracketRange::children(children84,2494
+
+capturetype.cpp,134
+string captureTypeToString(3,48
+bool captureTypeIsCapture(12,295
+bool captureTypeIsNonCapture(15,373
+bool captureTypeValid(18,457
+
+caseconvertnode.cpp,261
+CaseConvertNode::CaseConvertNode(2,29
+bool CaseConvertNode::match_position(match_position8,285
+bool CaseConvertNode::match_stringvalue(match_stringvalue12,559
+vnode CaseConvertNode::children(children31,1047
+void CaseConvertNode::deepify(deepify35,1115
+
+chaincon.cpp,305
+ChainCon::ChainCon(2,22
+bool ChainCon::hasDash(hasDash10,294
+vnode ChainCon::children(children16,401
+void ChainCon::deepify(deepify23,573
+ChainCon*ChainCon::makeChainCon2(makeChainCon231,834
+ChainCon*ChainCon::makeChainCon3(makeChainCon336,998
+void ChainCon::setIsInitial(setIsInitial41,1211
+
+chesstypes.cpp,340
+string direction_to_string(2,24
+string color_string(17,364
+bool file_valid(25,549
+bool rank_valid(29,596
+char file_to_char(33,647
+char rank_to_char(39,752
+bool piece_valid(44,856
+char piece_to_char(55,1050
+string square_to_string(79,1475
+string result_to_string(90,1733
+bool direction_valid(101,1990
+colorT color_other(109,2204
+
+childnode.cpp,227
+ChildNode::ChildNode(2,23
+void ChildNode::deepify(deepify6,140
+vnode ChildNode::children(children10,202
+bool ChildNode::match_position(match_position14,266
+bool ChildNode::match_positionvalue(match_positionvalue19,375
+
+clone.cpp,19
+#define CCCC(4,44
+
+colortransform.cpp,168
+bool ColorTransform::isIdentity(isIdentity2,18
+Transform* ColorTransform::flipColorTransform(flipColorTransform3,72
+string ColorTransform::toString(toString9,239
+
+colortypenode.cpp,364
+ColorTypeNode::ColorTypeNode(2,27
+vnode ColorTypeNode::children(children6,131
+void ColorTypeNode::deepify(deepify10,196
+bool ColorTypeNode::match_position(match_position14,256
+bool ColorTypeNode::match_count(match_count19,364
+int ColorTypeNode::colortype_from_piece(colortype_from_piece34,777
+int ColorTypeNode::type_from_piece(type_from_piece44,1065
+
+colorvaluenode.cpp,282
+ColorValueNode::ColorValueNode(3,57
+string ColorValueNode::name(name7,166
+vnode ColorValueNode::children(children14,316
+void ColorValueNode::deepify(deepify15,371
+bool ColorValueNode::match_position(match_position18,456
+bool ColorValueNode::match_count(match_count23,595
+
+commententry.cpp,80
+CommentEntry::CommentEntry(5,121
+string CommentEntry::toString(toString8,247
+
+commentnode.cpp,175
+CommentNode::CommentNode(7,231
+vnode CommentNode::children(children16,472
+void CommentNode::deepify(deepify20,548
+bool CommentNode::match_position(match_position24,618
+
+commentstack.cpp,628
+CommentStack::CommentStack(CommentStack5,148
+int CommentStack::size(size8,203
+bool CommentStack::empty(empty11,261
+bool CommentStack::nonempty(nonempty14,315
+void CommentStack::pop(pop18,368
+string CommentStack::toString(toString22,417
+CommentEntry& CommentStack::at(at30,643
+void CommentStack::transfer(transfer35,762
+void CommentStack::clear(clear49,1415
+void CommentStack::push(push53,1467
+int CommentStack::markComments(markComments57,1553
+void CommentStack::restoreComments(restoreComments61,1607
+void CommentStack::deleteComments(deleteComments69,1885
+void CommentStack::reverse(reverse77,2160
+
+complementnode.cpp,285
+ComplementNode::ComplementNode(2,28
+vnode ComplementNode::children(children5,113
+void ComplementNode::deepify(deepify9,179
+SquareMask ComplementNode::getSquares(getSquares13,249
+bool ComplementNode::match_position(match_position17,340
+bool ComplementNode::isSet(isSet21,429
+
+composetransform.cpp,646
+bool ComposeTransform::isIdentity(isIdentity2,18
+squareT ComposeTransform::transform(transform8,144
+SquareMask ComposeTransform::transform(transform18,437
+ComposeTransform::ComposeTransform(26,581
+ComposeTransform::ComposeTransform(ComposeTransform31,806
+Direction ComposeTransform::transform(transform37,996
+bool ComposeTransform::flipsColor(flipsColor43,1154
+vector<Transform*> ComposeTransform::composeVectors(composeVectors49,1296
+vector<Transform*> ComposeTransform::composeVectors(composeVectors57,1520
+string ComposeTransform::toString(toString65,1756
+bool ComposeTransform::flipsSquareParity(flipsSquareParity80,2161
+
+compoundnode.cpp,648
+vnode CompoundNode::children(children2,26
+CompoundNode::CompoundNode(6,109
+Node* CompoundNode::last(last13,309
+bool CompoundNode::match_position(match_position18,411
+bool CompoundNode::isNumeric(isNumeric28,634
+bool CompoundNode::isPosition(isPosition33,717
+bool CompoundNode::isSet(isSet39,802
+bool CompoundNode::isString(isString43,864
+SquareMask CompoundNode::getSquares(getSquares47,932
+bool CompoundNode::match_count(match_count63,1456
+bool CompoundNode::match_positionvalue(match_positionvalue83,2118
+bool CompoundNode::match_stringvalue(match_stringvalue108,2814
+bool CompoundNode::isGameFilter(isGameFilter128,3480
+
+computeorbit.cpp,421
+void OrbitNode::deepify(deepify3,45
+OrbitNode* OrbitNode::clone(clone8,163
+void OrbitNode::computeOrbit(computeOrbit16,357
+void Node::computeOrbit(computeOrbit36,1120
+bool Node::hasEmptySquareMask(hasEmptySquareMask48,1466
+bool OrbitNode::hasEmptySquareMask(hasEmptySquareMask54,1606
+bool PieceLoc::hasEmptySquareMask(hasEmptySquareMask59,1761
+void OrbitNode::transform_in_place(transform_in_place69,1971
+
+concatenationnode.cpp,326
+ConcatenationNode::ConcatenationNode(4,60
+bool ConcatenationNode::match_position(match_position10,386
+bool ConcatenationNode::match_stringvalue(match_stringvalue35,1338
+void ConcatenationNode::deepify(deepify46,1717
+vnode ConcatenationNode::children(children50,1812
+bool ConcatenationNode::isString(isString57,1949
+
+consecutivemovesnode.cpp,805
+using std::make_pair;2,34
+ConsecutiveMovesNode::ConsecutiveMovesNode(3,56
+bool ConsecutiveMovesNode::isNumeric(isNumeric13,481
+void ConsecutiveMovesNode::deepify(deepify20,650
+bool ConsecutiveMovesNode::match_count(match_count25,737
+bool ConsecutiveMovesNode::match_position(match_position42,1323
+void ConsecutiveMovesNode::clear(clear47,1435
+void ConsecutiveMovesNode::annotate(annotate51,1498
+vnode ConsecutiveMovesNode::children(children58,1673
+vector<QMove*> ConsecutiveMovesNode::movepath(movepath64,1794
+vector<pair<QMove*,QMove*>> ConsecutiveMovesNode::compute(compute82,2496
+void ConsecutiveMovesNode::makeComments(makeComments113,4067
+vector<int>ConsecutiveMovesNode::movepath_to_ints(movepath_to_ints138,4961
+int ConsecutiveMovesNode::qmove_to_int(qmove_to_int145,5143
+
+converttoascii.cpp,646
+using std::ofstream;6,107
+string ConvertToAscii::convert(convert7,128
+string ConvertToAscii::convert(convert25,698
+string ConvertToAscii::convert(convert43,1486
+string ConvertToAscii::convert(convert48,1606
+string ConvertToAscii::fromSimpleString(fromSimpleString52,1725
+string ConvertToAscii::convert(convert57,1809
+string ConvertToAscii::convert(convert63,1926
+string ConvertToAscii::convert(convert67,2013
+string ConvertToAscii::convert(convert72,2141
+string ConvertToAscii::convert(convert88,2510
+string ConvertToAscii::fromCqlFile(fromCqlFile111,2986
+void ConvertToAscii::fromCqlFileToFile(fromCqlFileToFile119,3277
+
+converttocolorize.cpp,472
+using std::ofstream;7,130
+string ConvertToColorize::convert(convert8,151
+string ConvertToColorize::convert(convert13,236
+string ConvertToColorize::convert(convert24,512
+string ConvertToColorize::escapeAscii(escapeAscii30,702
+string ConvertToColorize::escape(escape41,964
+string readstdin(67,1789
+string ConvertToColorize::span(span75,1888
+string ConvertToColorize::escapeTitle(escapeTitle91,2196
+string ConvertToColorize::escapeClass(escapeClass133,3788
+
+converttoecho.cpp,50
+void ConvertToEcho::fromCqlFile(fromCqlFile6,88
+
+converttoexternal.cpp,128
+using std::ofstream;6,122
+string ConvertToExternal::escape(escape8,144
+void ConvertToExternal::exporthtml(exporthtml23,401
+
+converttounicode.cpp,855
+using std::ofstream;6,109
+string ConvertToUnicode::convert(convert7,130
+string ConvertToUnicode::convert(convert18,406
+string ConvertToUnicode::convert(convert36,1202
+string ConvertToUnicode::convert(convert41,1324
+string ConvertToUnicode::fromSimpleString(fromSimpleString45,1445
+string ConvertToUnicode::convert(convert58,1771
+string ConvertToUnicode::convert(convert64,1925
+string ConvertToUnicode::convert(convert68,2028
+string ConvertToUnicode::convert(convert73,2184
+string ConvertToUnicode::convert(convert88,2554
+string ConvertToUnicode::convert(convert94,2686
+string ConvertToUnicode::pieceCharToString(pieceCharToString112,3090
+int ConvertToUnicode::pieceCharToCode(pieceCharToCode116,3192
+string ConvertToUnicode::fromCqlFile(fromCqlFile138,3951
+void ConvertToUnicode::fromCqlFileToFile(fromCqlFileToFile146,4246
+
+countsquaresnode.cpp,95
+bool CountSquaresNode::match_count(match_count2,18
+CountSquaresNode::CountSquaresNode(8,167
+
+cql.cpp,94
+int main(15,351
+void parseargs(34,833
+bool matchoption(545,22466
+void printhelp(559,22880
+
+cqleassert.cpp,279
+using std::string;2,18
+void eassert(6,82
+void eassert(10,146
+void eassert(15,232
+void eassert(24,472
+void eassert(33,724
+void eassert(37,786
+void eassert(42,868
+void eassert(48,1014
+void eassert(53,1125
+void eassert(57,1221
+void eassert(61,1318
+void eassert(65,1403
+
+cqlexit.cpp,90
+void cql_gui_exit(5,85
+void cql_exit(17,364
+void cql_exit(31,852
+void cql_exit(35,888
+
+cqlglobals.cpp,1881
+using std::set;3,51
+bool CqlDebug=5,68
+bool CqlParseOnly=6,89
+bool CqlShowParse=7,114
+bool CqlShowLex=8,139
+bool CqlEcho=9,162
+int CqlNumberThreads=10,182
+bool CqlLexOnly=11,206
+bool CqlCommentHeader=12,229
+const char* CqlMatchString=13,258
+bool CqlMatchStringSet=14,291
+int CqlLineIncrementOutput=15,321
+bool CqlRunningThreads=16,351
+bool CqlPgnStdin=17,381
+bool CqlPgnStdout=18,406
+bool CqlShowThread=19,432
+bool CqlShowMatches=20,458
+bool CqlSearchVariations=21,485
+bool CqlSortComments=22,517
+bool CqlSearchVariationsCommandLineSet=23,544
+bool CqlUniqueComments=24,590
+bool CqlIsExiting=25,619
+CommentLevel CqlCommentLevel=26,644
+bool CqlUsePgnSourceAlways=27,700
+bool CqlShowOutput=28,754
+const char* CqlFilename=29,805
+const char* CqlPgnFilename=30,832
+const char* CqlOutputFilename=31,862
+Range* CqlGameNumberRange=32,895
+Range* CqlMatchCountRange=33,924
+Range* CqlYearRange=34,953
+int CqlThreadPlyMax=35,976
+const char* CqlPlayer=36,1046
+int MarkBoard_gameAppendComment_lastignored=37,1071
+int Tokens_nextid=38,1147
+Tokens* CqlGlobalTokens=39,1228
+CqlNode* CqlParseRoot=40,1296
+bool CqlDoNotLinearize=41,1362
+bool CqlFixNestedComments=42,1392
+bool CqlSmartComments=43,1449
+std::vector<string>*CqlPreambleStrings=CqlPreambleStrings44,1477
+std::vector<string>*CqlPreambleTransforms=CqlPreambleTransforms45,1522
+const char *CqlGuiMessageStart;CqlGuiMessageStart46,1570
+const char* CqlGuiMessageStop;47,1602
+const char* CqlGuiVariable;48,1633
+const char* CqlGuiErrorStart;49,1661
+const char* CqlGuiErrorStop;50,1691
+const char* CqlGuiNormalExit;51,1720
+bool CqlGui;52,1750
+int CqlPgnOutputBufferSize;53,1763
+bool CqlShowFromString=54,1791
+bool CqlNoRemoveComment=55,1821
+bool CqlNoSetTag=56,1852
+int CqlLastGameNumber=57,1876
+void cqlglobals_initialize(59,1902
+void setCqlGlobal(103,3366
+string getCqlGlobal(110,3506
+
+cqlinitialize.cpp,26
+void cql_initialize(6,80
+
+cqlnode-parse.cpp,664
+CqlNode* Tokens::match_cqlnode(match_cqlnode6,146
+Node*Tokens::apply_preamble_transforms(apply_preamble_transforms40,1847
+Node*Tokens::match_preamble(match_preamble54,2422
+vector<Transform*> Tokens::transforms_from_keyword(transforms_from_keyword70,2875
+vector<Node*> Tokens::match_some_cqlfeatures(match_some_cqlfeatures103,4039
+bool Tokens::match_cqlfeature(match_cqlfeature113,4220
+PgnNode* Tokens::match_pgnnode(match_pgnnode129,4629
+OutputNode* Tokens::match_outputnode(match_outputnode143,5025
+bool Tokens::match_matchstringfeature(match_matchstringfeature164,5811
+bool Tokens::match_commentlevelfeature(match_commentlevelfeature178,6290
+
+cqlnode.cpp,1638
+CqlNode::CqlNode(9,181
+string CqlNode::outputFileFromCqlFile(outputFileFromCqlFile111,4093
+vnode CqlNode::children(children120,4348
+void CqlNode::setFirstComment(setFirstComment130,4712
+vector<Variable*> CqlNode::getPersistentVariables(getPersistentVariables147,5332
+bool CqlNode::isQuietPersistentVariable(isQuietPersistentVariable152,5479
+GameSortInfo CqlNode::makeInfo(makeInfo157,5630
+void CqlNode::computeAllSequences(computeAllSequences171,6124
+void CqlNode::computeAllPaths(computeAllPaths179,6388
+bool CqlNode::hasLastGameNumber(hasLastGameNumber189,6635
+bool CqlNode::isSingleThread(isSingleThread196,6793
+void CqlNode::computeAllSortNodes(computeAllSortNodes208,7085
+void CqlNode::computeAllConsecutiveMovesNodes(computeAllConsecutiveMovesNodes217,7366
+void CqlNode::consecutiveMovesNodesClear(consecutiveMovesNodesClear227,7764
+void CqlNode::sortNodesClear(sortNodesClear234,7930
+void CqlNode::annotateSortNodes(annotateSortNodes241,8079
+void CqlNode::annotateConsecutiveMovesNodes(annotateConsecutiveMovesNodes246,8185
+void CqlNode::nestsClear(nestsClear252,8357
+CqlNode* CqlNode::create(create264,8602
+CqlNode* CqlNode::clone(clone281,9222
+void CqlNode::completeIsBoundNodes(completeIsBoundNodes289,9434
+void CqlNode::checkAssertVariations(checkAssertVariations300,9841
+void CqlNode::completePathReferenceNodes(completePathReferenceNodes314,10321
+void CqlNode::completePathReferenceNodesInPath(completePathReferenceNodesInPath324,10615
+void CqlNode::completeDashOwners(completeDashOwners344,11621
+void CqlNode::completeDashOwnersFromNode(completeDashOwnersFromNode365,12488
+
+cqlnodematch.cpp,83
+void CqlNode::do_match(do_match6,146
+bool CqlNode::match_game(match_game20,548
+
+cqlthread.cpp,225
+using std::thread;10,192
+void cql_execute(11,211
+vector<CqlNode*> generateCqlNodes(127,4521
+void thread_exec(180,6550
+void cql_output_status(218,7610
+void cqlcheckvalid(245,8415
+int cql_compute_number_threads(262,9033
+
+cqluassert.cpp,315
+using std::string;2,18
+const string UassertPreamble=6,82
+void uassert(7,135
+void uassert(11,199
+void uassert(16,285
+void uassert(25,541
+void uassert(34,793
+void uassert(38,855
+void uassert(43,937
+void uassert(49,1099
+void uassert(54,1210
+void uassert(58,1306
+void uassert(62,1403
+void uassert(66,1488
+
+currentfen.cpp,474
+bool CurrentFen::match_position(match_position2,24
+bool CurrentFen::match_stringvalue(match_stringvalue7,241
+string CurrentFen::toFen(toFen13,390
+string CurrentFen::getColorString(getColorString48,1143
+string CurrentFen::getCastleString(getCastleString60,1401
+SquareMask CurrentFen::currentForbiddenCastleMask(currentForbiddenCastleMask77,1772
+SquareMask CurrentFen::forbiddenCastleMask(forbiddenCastleMask88,2143
+string CurrentFen::epString(epString99,2387
+
+currentnode.cpp,292
+CurrentNode::CurrentNode(CurrentNode2,25
+bool CurrentNode::match_position(match_position3,54
+void CurrentNode::deepify(deepify4,112
+CurrentNode* CurrentNode::clone(clone5,142
+vnode CurrentNode::children(children6,190
+bool CurrentNode::match_positionvalue(match_positionvalue7,242
+
+currenttransformnode.cpp,404
+CurrentTransformNode::CurrentTransformNode(CurrentTransformNode3,119
+bool CurrentTransformNode::match_position(match_position6,170
+bool CurrentTransformNode::match_stringvalue(match_stringvalue11,380
+void CurrentTransformNode::deepify(deepify32,951
+void CurrentTransformNode::transform_members(transform_members35,992
+bool CurrentTransformNode::transformmemberless(transformmemberless42,1253
+
+dash-legal-parse.cpp,63
+MoveLegalNode* Tokens::match_legal_dash(match_legal_dash5,61
+
+dash-parse.cpp,355
+SetBase*Tokens::match_dash_right(match_dash_right6,89
+bool Tokens::peek_equals_sign(peek_equals_sign27,592
+bool Tokens::peek_lparen(peek_lparen32,721
+Node*Tokens::match_dashnode_from_prefix(match_dashnode_from_prefix38,846
+Node* Tokens::match_dash_promotion(match_dash_promotion66,2304
+Node* Tokens::match_dash_target(match_dash_target81,2913
+
+dashcon.cpp,244
+DashCon::DashCon(2,21
+vnode DashCon::children(children10,241
+void DashCon::deepify(deepify21,503
+void DashCon::setLeft(setLeft28,661
+void DashCon::setOwnedMasks(setOwnedMasks33,755
+void DashCon::unsetOwnedMasks(unsetOwnedMasks37,888
+
+dashnode.cpp,691
+DashNode::DashNode(4,68
+bool DashNode::match_count(match_count12,326
+bool DashNode::match_position(match_position23,557
+bool DashNode::match_stringvalue(match_stringvalue32,718
+bool DashNode::match_positionvalue(match_positionvalue40,888
+SquareMask DashNode::getSquares(getSquares47,1056
+bool DashNode::isNumeric(isNumeric53,1199
+bool DashNode::isPosition(isPosition57,1299
+bool DashNode::isString(isString61,1403
+bool DashNode::isSet(isSet65,1502
+vnode DashNode::children(children70,1596
+void DashNode::deepify(deepify78,1775
+bool DashNode::compute(compute85,1956
+bool DashNode::handleTarget(handleTarget109,2788
+int DashNode::computeCount(computeCount128,3397
+
+depthnode.cpp,46
+bool DepthNode::match_count(match_count2,23
+
+descendantnode.cpp,188
+DescendantNode::DescendantNode(2,28
+vnode DescendantNode::children(children7,249
+void DescendantNode::deepify(deepify13,363
+bool DescendantNode::match_position(match_position18,444
+
+dictionary-parse.cpp,454
+Node* Tokens::match_dictionaryretrieveorassign(match_dictionaryretrieveorassign11,210
+Dictionary* Tokens::match_dictionary(match_dictionary71,2641
+Dictionary* Tokens::match_dictionary_variable(match_dictionary_variable109,3849
+Node*Tokens::match_dictionaryiterator(match_dictionaryiterator126,4196
+Node*Tokens::match_dictionary_unbind(match_dictionary_unbind171,5705
+Node*Tokens::match_dictionaryiterator61(match_dictionaryiterator61195,6629
+
+dictionary.cpp,831
+bool Dictionary::match_position(match_position4,26
+Dictionary::Dictionary(Dictionary8,89
+void Dictionary::deleteKey(deleteKey18,326
+int Dictionary::count(count22,393
+void Dictionary::clear(clear26,455
+string Dictionary::toString(toString30,502
+bool Dictionary::hasKey(hasKey38,782
+void Dictionary::assignValue(assignValue42,860
+bool Dictionary::getValue(getValue46,947
+vector<Any>Dictionary::getKeys(getKeys53,1100
+bool Dictionary::verifyKey(verifyKey60,1233
+bool Dictionary::verifyValue(verifyValue71,1529
+bool Dictionary::isNumericValue(isNumericValue82,1849
+bool Dictionary::isSetValue(isSetValue86,1931
+bool Dictionary::isStringValue(isStringValue90,2006
+bool Dictionary::isPositionValue(isPositionValue95,2090
+void Dictionary::setTypes(setTypes100,2176
+void Dictionary::reset(reset111,2557
+
+dictionaryaccessnode.cpp,217
+DictionaryAccessNode::DictionaryAccessNode(3,35
+SquareMask DictionaryAccessNode::getSquares(getSquares17,319
+vnode DictionaryAccessNode::children(children22,496
+void DictionaryAccessNode::deepify(deepify33,814
+
+dictionaryassignnode.cpp,113
+DictionaryAssignNode::DictionaryAssignNode(2,34
+bool DictionaryAssignNode::match_position(match_position8,291
+
+dictionarycountnode.cpp,168
+DictionaryCountNode::DictionaryCountNode(2,34
+bool DictionaryCountNode::match_position(match_position5,117
+bool DictionaryCountNode::match_count(match_count10,334
+
+dictionarydeletedictionarynode.cpp,143
+DictionaryDeleteDictionaryNode::DictionaryDeleteDictionaryNode(2,34
+bool DictionaryDeleteDictionaryNode::match_position(match_position5,139
+
+dictionarydeleteentrynode.cpp,128
+DictionaryDeleteEntryNode::DictionaryDeleteEntryNode(2,34
+bool DictionaryDeleteEntryNode::match_position(match_position7,240
+
+dictionaryiteratenode.cpp,117
+DictionaryIterateNode::DictionaryIterateNode(2,34
+bool DictionaryIterateNode::match_position(match_position10,476
+
+dictionaryretrievenode.cpp,621
+DictionaryRetrieveNode::DictionaryRetrieveNode(2,34
+bool DictionaryRetrieveNode::match_position(match_position8,233
+bool DictionaryRetrieveNode::match_stringvalue(match_stringvalue14,426
+bool DictionaryRetrieveNode::match_positionvalue(match_positionvalue26,890
+bool DictionaryRetrieveNode::match_count(match_count38,1355
+SquareMask DictionaryRetrieveNode::getSquares(getSquares50,1816
+bool DictionaryRetrieveNode::isNumeric(isNumeric62,2268
+bool DictionaryRetrieveNode::isString(isString66,2360
+bool DictionaryRetrieveNode::isPosition(isPosition70,2450
+bool DictionaryRetrieveNode::isSet(isSet74,2544
+
+dihedraltransform.cpp,718
+bool DihedralTransform::isIdentity(isIdentity3,19
+bool DihedralTransform::flipsSquareParity(flipsSquareParity6,124
+squareT DihedralTransform::transform(transform10,206
+DihedralTransform::DihedralTransform(25,648
+  : reflectx{rx}, reflecty{reflecty26,712
+vector<Transform*>DihedralTransform::allDihedral(allDihedral28,756
+Direction DihedralTransform::transform(transform38,997
+DihedralTransform* DihedralTransform::flipVertical(flipVertical56,1555
+DihedralTransform* DihedralTransform::flipHorizontal(flipHorizontal60,1662
+vector<Transform*> DihedralTransform::rotations(rotations64,1771
+SquareMask DihedralTransform::transform(transform72,2001
+string DihedralTransform::toString(toString83,2286
+
+direction.cpp,696
+squareT Direction::apply(apply3,19
+squareT Direction::apply(apply7,96
+bool Direction::reachable(reachable22,583
+SquareMask Direction::between(between39,1115
+Direction::Direction(66,1962
+bool Direction::validOffset(validOffset70,2100
+bool Direction::validOffset(validOffset76,2223
+bool Direction::eq(eq80,2290
+vector<Direction>Direction::orthogonalDirections(orthogonalDirections84,2402
+vector<Direction>Direction::diagonalDirections(diagonalDirections92,2584
+vector<Direction>Direction::allDirections(allDirections100,2761
+bool Direction::isCompatible(isCompatible110,2971
+bool Direction::isOrthogonal(isOrthogonal118,3223
+bool Direction::isDiagonal(isDiagonal122,3296
+
+directionmatch.cpp,179
+vector<Direction> Direction::directionsFromString(directionsFromString3,19
+  typedef Direction D;4,80
+  typedef vector<Direction>V;V5,103
+#define X(24,581
+#define Y(35,774
+
+directionparameter.cpp,194
+SquareMask DirectionParameter::neighborhood(neighborhood3,19
+SquareMask DirectionParameter::neighborhood(neighborhood22,595
+DirectionParameter::DirectionParameter(DirectionParameter29,760
+
+distancenode.cpp,229
+DistanceNode::DistanceNode(3,47
+vnode DistanceNode::children(children8,260
+void DistanceNode::deepify(deepify14,372
+bool DistanceNode::match_position(match_position19,451
+bool DistanceNode::match_count(match_count24,621
+
+echonode.cpp,336
+EchoNode::EchoNode(2,22
+bool EchoNode::compute(compute8,331
+bool EchoNode::match_position(match_position57,2270
+bool EchoNode::isNumeric(isNumeric61,2339
+bool EchoNode::match_count(match_count65,2398
+vnode EchoNode::children(children74,2613
+void EchoNode::deepify(deepify81,2769
+void EchoNode::setIsSort(setIsSort85,2830
+
+elonode.cpp,112
+EloNode::EloNode(2,18
+bool EloNode::match_count(match_count7,190
+bool EloNode::match_game(match_game28,790
+
+environment.cpp,1670
+vector<SortVariable*>* Environment::getSortVariables(getSortVariables12,264
+Variable* Environment::find(find16,351
+void Environment::registerVariable(registerVariable25,554
+Variable* Environment::createVariable(createVariable32,750
+NumericVariable* Environment::createNumericVariable(createNumericVariable68,1738
+StringVariable* Environment::createStringVariable(createStringVariable76,1977
+PositionVariable* Environment::createPositionVariable(createPositionVariable84,2212
+TransformVariable* Environment::createTransformVariable(createTransformVariable92,2463
+SquareVariable* Environment::createSquareVariable(createSquareVariable100,2718
+Dictionary* Environment::createDictionary(createDictionary108,2953
+PieceIdVariable* Environment::createPieceIdVariable(createPieceIdVariable118,3273
+LambdaVariable* Environment::createLambdaVariable(createLambdaVariable126,3512
+void Environment::unbindPieceIds(unbindPieceIds134,3798
+NumericVariable* Environment::matchCountVariable(matchCountVariable145,4109
+void Environment::registerSortVariable(registerSortVariable157,4439
+SortDirection Environment::getSortDirection(getSortDirection168,4981
+bool Environment::isQuietSortVariable(isQuietSortVariable178,5348
+void Environment::setQuietSortVariable(setQuietSortVariable184,5566
+bool Environment::isQuietPersistentVariable(isQuietPersistentVariable192,5866
+void Environment::setQuietPersistentVariable(setQuietPersistentVariable196,5983
+void Environment::reset(reset202,6220
+vector<Variable*>Environment::getPersistentVariables(getPersistentVariables209,6367
+void Environment::registerAtomicVariable(registerAtomicVariable219,6572
+
+equalitynode.cpp,178
+EqualityNode::EqualityNode(2,26
+bool EqualityNode::match_position(match_position6,154
+vnode EqualityNode::children(children16,492
+void EqualityNode::deepify(deepify22,608
+
+extensionnode.cpp,56
+bool ExtensionNode::match_position(match_position3,19
+
+extremalnode.cpp,430
+ExtremalNode::ExtremalNode(2,26
+bool ExtremalNode::match_position(match_position12,474
+bool ExtremalNode::match_count(match_count17,660
+bool ExtremalNode::match_stringvalue(match_stringvalue46,1586
+void ExtremalNode::deepify(deepify75,2516
+vnode ExtremalNode::children(children79,2588
+string ExtremalNode::name(name83,2647
+bool ExtremalNode::isNumeric(isNumeric88,2733
+bool ExtremalNode::isString(isString92,2821
+
+fen.cpp,48
+Node* Tokens::node_from_fen(node_from_fen5,75
+
+filename.cpp,231
+bool filename_is_pgn(8,120
+bool filename_is_cql(13,270
+bool filename_is_cqo(20,457
+string filename_extension(26,610
+string filename_stem(35,939
+string filename_trim_path_prefix(41,1094
+string filename_trim_extension(49,1384
+
+findnode.cpp,394
+FindNode::FindNode(2,22
+bool FindNode::isPosition(isPosition7,207
+bool FindNode::isNumeric(isNumeric11,266
+bool FindNode::match_position(match_position15,324
+bool FindNode::match_count(match_count28,595
+QPos* FindNode::next(next53,1403
+bool FindNode::match_positionvalue(match_positionvalue66,1788
+vnode FindNode::children(children80,2155
+void FindNode::deepify(deepify84,2215
+
+focus.cpp,430
+Focus::Focus(15,272
+vnode Focus::children(children24,439
+void Focus::deepify(deepify30,528
+vector<QMove*> Focus::getFocusedChildMoves(getFocusedChildMoves51,1321
+vector<QMove*> Focus::getFocusedMoves(getFocusedMoves62,1556
+bool Focus::inFocus(inFocus86,2376
+bool Focus::inFocus(inFocus93,2567
+bool Focus::markFocused(markFocused123,3628
+void Focus::initialize(initialize130,3830
+void Focus::clear(clear164,5148
+
+focuscapturenode.cpp,201
+FocusCaptureNode::FocusCaptureNode(10,256
+vnode FocusCaptureNode::children(children13,353
+bool FocusCaptureNode::match_position(match_position17,421
+void FocusCaptureNode::deepify(deepify32,918
+
+focustype.cpp,33
+string focustype_to_string(3,46
+
+fromnode.cpp,83
+FromNode::FromNode(FromNode3,65
+SquareMask FromNode::getSquares(getSquares5,89
+
+fromtonode.cpp,218
+void FromToNode::setMasks(setMasks5,90
+void FromToNode::unsetMasks(unsetMasks13,347
+void FromToNode::setOwner(setOwner19,450
+vnode FromToNode::children(children38,1139
+void FromToNode::deepify(deepify42,1195
+
+futurenode.cpp,69
+FutureNode::FutureNode(4,43
+void FutureNode::compute(compute7,300
+
+gamefilterwrapper.cpp,256
+GameFilterWrapper::GameFilterWrapper(2,31
+void GameFilterWrapper::deepify(deepify6,121
+vnode GameFilterWrapper::children(children9,186
+bool GameFilterWrapper::match_game(match_game13,256
+bool GameFilterWrapper::match_position(match_position19,411
+
+gamenumbernode.cpp,140
+GameNumberNode::GameNumberNode(2,18
+bool GameNumberNode::match_count(match_count6,120
+bool GameNumberNode::match_game(match_game15,313
+
+gamesortinfo.cpp,265
+GameSortInfo::GameSortInfo(4,45
+void GameSortInfo::output(output12,240
+void GameSortInfo::output(output30,976
+void GameSortInfo::preamble(preamble34,1057
+void GameSortInfo::output(output44,1439
+void GameSortInfo::sort(sort52,1637
+bool operator<(57,1731
+
+genericequalnode.cpp,198
+GenericEqualNode::GenericEqualNode(4,53
+bool GenericEqualNode::match_position(match_position7,171
+vnode GenericEqualNode::children(children13,354
+void GenericEqualNode::deepify(deepify21,530
+
+gotonode.cpp,221
+GotoNode::GotoNode(2,22
+bool GotoNode::match_position(match_position7,350
+bool GotoNode::match_positionvalue(match_positionvalue13,471
+vnode GotoNode::children(children26,800
+void GotoNode::deepify(deepify29,859
+
+groupnumbernode.cpp,349
+GroupNumberNode::GroupNumberNode(2,29
+bool GroupNumberNode::match_position(match_position9,262
+bool GroupNumberNode::match_groupindex(match_groupindex13,352
+void GroupNumberNode::makeComputeIndex(makeComputeIndex33,1086
+bool GroupNumberNode::match_count(match_count38,1289
+bool GroupNumberNode::match_stringvalue(match_stringvalue43,1489
+
+hascommentnode.cpp,275
+HasCommentNode::HasCommentNode(5,48
+HasCommentNode::HasCommentNode(HasCommentNode10,186
+bool HasCommentNode::match_position(match_position14,241
+bool HasCommentNode::match_stringvalue(match_stringvalue20,382
+int HasCommentNode::nag_from_string(nag_from_string29,767
+
+hhdb-cql.cpp,862
+const string hhdbcomposer=16,511
+const string hhdbcook=29,941
+const string hhdbcooked=32,1012
+const string hhdbdiagram 35,1062
+const string hhdbdual=38,1128
+const string hhdbeg=40,1197
+const string hhdbegdiagram=43,1256
+const string hhdbfirstcomment=49,1374
+const string hhdbgbr=52,1443
+const string hhdbgbrmaterial=58,1607
+const string hhdbgbrpieces=60,1660
+const string hhdbgbrpawns=62,1710
+const string hhdbgbrkings=64,1759
+const string hhdbmain=67,1809
+const string hhdbmainline=72,2030
+const string hhdbminor_dual=78,2308
+const string hhdbor 80,2389
+const string hhdbsearch=86,2605
+const string hhdbsound=101,3087
+const string hhdbunsound=108,3236
+const string hhdbstipulation 111,3321
+const string hhdbvariation=117,3444
+const map<string,string> HhdbKeyword::KeyToCql=123,3723
+string HhdbKeyword::cql_from_key(cql_from_key150,4464
+
+hhdb-options-parse.cpp,63
+void hhdb_parse_option(13,357
+void hhdb_option_error(67,2254
+
+hhdb-parse.cpp,162
+Node*Tokens::match_hhdb(match_hhdb6,91
+bool Tokens::match_hhdb_keyword(match_hhdb_keyword24,747
+string Tokens::match_hhdb_keyword(match_hhdb_keyword40,1165
+
+hhdbaward-parse.cpp,54
+Node* Tokens::match_hhdb_award(match_hhdb_award6,91
+
+hhdbaward-sort.cpp,50
+Node* Tokens::hhdbaward_sort(hhdbaward_sort6,91
+
+hhdbawardnode.cpp,280
+HhdbAwardNode::HhdbAwardNode(4,70
+  restrictSpecial{restrictSpecial6,181
+bool HhdbAwardNode::match_count(match_count17,558
+bool HhdbAwardNode::match_position(match_position25,734
+bool HhdbAwardNode::compute(compute36,1119
+bool HhdbAwardNode::readRanks(readRanks82,2763
+
+hhdbhascooknode.cpp,58
+bool HhdbHasCookNode::match_position(match_position2,29
+
+hhdbkeyword-vars.cpp,204
+const vector<string> HhdbKeyword::playerBlackKeys=21,506
+const vector<string>HhdbKeyword::otherKeys=HhdbKeyword::otherKeys42,792
+const vector<pair<string,string>> HhdbKeyword::abbreviationMap=69,1326
+
+hhdbkeyword.cpp,660
+bool HhdbKeyword::isIn(isIn4,62
+bool HhdbKeyword::isPlayerBlackKey(isPlayerBlackKey8,156
+bool HhdbKeyword::isAwardKey(isAwardKey11,249
+bool HhdbKeyword::isOtherKey(isOtherKey14,330
+bool HhdbKeyword::isAwardTypeKey(isAwardTypeKey17,411
+bool HhdbKeyword::isKey(isKey21,500
+bool HhdbKeyword::isGbrKey(isGbrKey29,669
+bool HhdbKeyword::isAbbreviation(isAbbreviation33,746
+string HhdbKeyword::matchAbbreviation(matchAbbreviation36,841
+vector<string>HhdbKeyword::allKeys(allKeys43,1057
+string HhdbKeyword::showKeys(showKeys57,1424
+bool HhdbKeyword::takesParameterKey(takesParameterKey74,1756
+bool HhdbKeyword::isQuotedKey(isQuotedKey78,1853
+
+holdercon.cpp,109
+HolderCon::HolderCon(2,23
+vnode HolderCon::children(children6,109
+void HolderCon::deepify(deepify10,173
+
+holderconstituent.cpp,98
+HolderConstituent::HolderConstituent(3,27
+bool HolderConstituent::matchesNull(matchesNull9,139
+
+ifnode.cpp,521
+IfNode::IfNode(2,20
+bool IfNode::match_position(match_position9,214
+bool IfNode::isSet(isSet17,425
+bool IfNode::isPosition(isPosition21,518
+bool IfNode::isString(isString25,626
+bool IfNode::isNumeric(isNumeric29,728
+bool IfNode::match_positionvalue(match_positionvalue33,833
+bool IfNode::match_stringvalue(match_stringvalue41,1151
+bool IfNode::match_count(match_count49,1467
+SquareMask IfNode::getSquares(getSquares60,1963
+void IfNode::deepify(deepify75,2485
+vnode IfNode::children(children81,2638
+
+isboundnode.cpp,223
+IsBoundNode::IsBoundNode(2,25
+vnode IsBoundNode::children(children5,127
+void IsBoundNode::deepify(deepify11,239
+bool IsBoundNode::match_position(match_position13,270
+void IsBoundNode::setVariable(setVariable18,400
+
+keywords.cpp,84
+bool KeywordToken::isReserved(isReserved2,18
+KeywordToken::KeywordToken(219,3597
+
+lambdacallnode.cpp,695
+bool LambdaCallNode::isSet(isSet7,124
+bool LambdaCallNode::isNumeric(isNumeric11,190
+bool LambdaCallNode::isString(isString15,264
+bool LambdaCallNode::isPosition(isPosition19,336
+SquareMask LambdaCallNode::getSquares(getSquares23,412
+bool LambdaCallNode::match_count(match_count36,831
+bool LambdaCallNode::match_positionvalue(match_positionvalue46,1202
+bool LambdaCallNode::match_stringvalue(match_stringvalue56,1598
+bool LambdaCallNode::match_position(match_position67,1984
+LambdaCallNode::LambdaCallNode(76,2235
+vnode LambdaCallNode::children(children133,4738
+void LambdaCallNode::deepify(deepify141,4901
+vector<Token*> LambdaCallNode::replacebody(replacebody148,5078
+
+lambdamatch.cpp,204
+Node* Tokens::match_lambda_definition(match_lambda_definition7,120
+vector<Token*> Tokens::match_lambda_body(match_lambda_body39,1456
+LambdaCallNode* Tokens::match_lambda_use(match_lambda_use65,2092
+
+lambdavalue.cpp,69
+LambdaValue::LambdaValue(4,70
+void LambdaValue::print(print12,359
+
+lambdavariable.cpp,141
+void LambdaVariable::bindLambda(bindLambda3,29
+LambdaValue LambdaVariable::getValue(getValue8,105
+LambdaVariable::LambdaVariable(12,169
+
+lastgamenumbernode.cpp,172
+bool LastGameNumberNode::match_position(match_position4,51
+bool LastGameNumberNode::match_count(match_count9,285
+void LastGameNumberNode::initialize(initialize16,517
+
+lcanode.cpp,215
+LcaNode::LcaNode(2,21
+vnode LcaNode::children(children7,214
+void LcaNode::deepify(deepify13,321
+bool LcaNode::match_position(match_position18,395
+bool LcaNode::match_positionvalue(match_positionvalue23,555
+
+lexer-cleanup.cpp,140
+vector<Token*> Lexer::fixPath(fixPath21,811
+bool Lexer::atPathTopLevel(atPathTopLevel103,4134
+string Lexer::toString(toString114,4471
+
+lexer-convert.cpp,56
+string Lexer::convertEchoString(convertEchoString3,42
+
+lexer-fix-whitespace.cpp,57
+vector<Token*>Lexer::fixWhiteSpace(fixWhiteSpace23,646
+
+lexer.cpp,2821
+Token* Lexer::nextToken(nextToken10,164
+Lexer::Lexer(52,1801
+void Lexer::syncLocation(syncLocation68,2391
+int Lexer::getCurrentLine(getCurrentLine74,2503
+int Lexer::getCurrentColumn(getCurrentColumn81,2654
+vector<Token*> Lexer::lexString(lexString93,2818
+vector<Token*> Lexer::lexStringNested(lexStringNested100,3061
+vector<Token*> Lexer::lexFile(lexFile106,3236
+vector<Token*>Lexer::lex(lex115,3467
+Token*Lexer::match_castle(match_castle130,3843
+Token* Lexer::match_filenametoken(match_filenametoken149,4312
+StringToken* Lexer::match_result_string(match_result_string168,4778
+string Lexer::next_filename(next_filename191,5255
+string Lexer::next_word(next_word206,5603
+Token* Lexer::match_id(match_id223,5865
+Token* Lexer::match_keyword(match_keyword232,6038
+bool Lexer::isReserved(isReserved240,6219
+bool Lexer::word_start(word_start244,6294
+bool Lexer::word_constituent(word_constituent253,6413
+char Lexer::forward(forward259,6509
+char Lexer::peek(peek268,6669
+int Lexer::save(save274,6829
+void Lexer::restore(restore278,6878
+Token* Lexer::match_special_unicode(match_special_unicode284,7002
+Token* Lexer::match_special(match_special330,8761
+bool Lexer::match_char(match_char351,9321
+bool Lexer::match_string(match_string360,9456
+QuotedStringToken* Lexer::match_quotedstringtoken(match_quotedstringtoken370,9644
+Token* Lexer::match_int(match_int386,10074
+string Lexer::next_digits(next_digits397,10290
+bool Lexer::word_boundary(word_boundary408,10456
+LineCommentToken* Lexer::match_linecommenttoken(match_linecommenttoken413,10526
+bool Lexer::peekslashslashslash(peekslashslashslash420,10745
+WhiteSpaceToken* Lexer::match_whitespacetoken(match_whitespacetoken429,10913
+void Lexer::read_to_starslash(read_to_starslash467,11866
+void Lexer::show_error(show_error475,12017
+string Lexer::locationString(locationString480,12124
+bool Lexer::match_files(match_files489,12296
+bool Lexer::match_filerange(match_filerange499,12465
+bool Lexer::match_file(match_file513,12779
+bool Lexer::match_ranks(match_ranks523,12929
+bool Lexer::match_rankrange(match_rankrange533,13098
+bool Lexer::match_rank(match_rank547,13412
+Token* Lexer::match_predefined(match_predefined557,13562
+Token* Lexer::match_groupnumber(match_groupnumber561,13614
+QuotedStringToken* Lexer::match_special_string(match_special_string580,14187
+DashToken* Lexer::match_dashtoken(match_dashtoken599,14776
+BraceRepToken*Lexer::match_bracereptoken(match_bracereptoken624,15328
+UChar Lexer::match_uchar(match_uchar678,17053
+bool Lexer::match_uvalue(match_uvalue694,17463
+string Lexer::match_entity_string(match_entity_string707,17757
+void Lexer::bomTrim(bomTrim719,18222
+PieceDeclarationToken* Lexer::match_piecedeclarationtoken(match_piecedeclarationtoken729,18461
+
+linearize.cpp,120
+void FutureNode::computeLinearize(computeLinearize10,186
+vector<MoveFutureNode*> * Node::linearize(linearize63,2887
+
+longestcommonsubstring.cpp,57
+using std::vector;2,18
+int longestCommonSubstring(5,95
+
+loopnode.cpp,155
+LoopNode::LoopNode(2,22
+vnode LoopNode::children(children6,93
+void LoopNode::deepify(deepify7,146
+bool LoopNode::match_position(match_position8,192
+
+makesquarenode.cpp,428
+MakeSquareNode::MakeSquareNode(2,28
+MakeSquareNode::MakeSquareNode(6,210
+vnode MakeSquareNode::children(children10,325
+SquareMask MakeSquareNode::getSquaresString(getSquaresString21,632
+SquareMask MakeSquareNode::getSquares(getSquares35,1001
+SquareMask MakeSquareNode::getSquaresNumeric(getSquaresNumeric44,1263
+bool MakeSquareNode::match_position(match_position59,1654
+void MakeSquareNode::deepify(deepify64,1746
+
+markboardstatic.cpp,2303
+int  MarkBoard::number_children(number_children7,98
+pieceT MarkBoard::piece_at_square(piece_at_square19,431
+moveT* MarkBoard::identity(identity26,674
+simpleMoveT* MarkBoard::getCurrentMove(getCurrentMove30,744
+void MarkBoard::move_to_child(move_to_child41,984
+bool MarkBoard::inMainline(inMainline55,1364
+bool MarkBoard::inVariation(inVariation59,1439
+bool MarkBoard::atVarEnd(atVarEnd63,1514
+bool MarkBoard::atVarStart(atVarStart67,1581
+int MarkBoard::getCurrentPly(getCurrentPly71,1652
+bool MarkBoard::isInitial(isInitial75,1735
+bool MarkBoard::isTerminal(isTerminal79,1809
+void MarkBoard::MoveIntoVariation(MoveIntoVariation83,1876
+void MarkBoard::gameForward(gameForward88,2013
+void MarkBoard::gameBackup(gameBackup103,2884
+void MarkBoard::gameMoveToPly(gameMoveToPly110,3072
+void MarkBoard::make_move(make_move116,3199
+void MarkBoard::gameToIdentity(gameToIdentity132,3612
+void MarkBoard::gameToChild(gameToChild139,3831
+bool MarkBoard::gameSeekIdDescendants(gameSeekIdDescendants150,4211
+void MarkBoard::gameDeleteComment(gameDeleteComment161,4577
+void MarkBoard::gameAppendComment(gameAppendComment166,4688
+void MarkBoard::cleanCommentBuffer(cleanCommentBuffer187,5339
+vector<simpleMoveT*> MarkBoard::getMoves(getMoves202,5629
+vector<simpleMoveT*> MarkBoard::getLegalMoves(getLegalMoves220,6249
+string MarkBoard::getEvent(getEvent243,7101
+string MarkBoard::getSite(getSite251,7264
+vector<int>MarkBoard::getNags(getNags259,7424
+string MarkBoard::getComment(getComment275,7891
+string MarkBoard::getPlayer(getPlayer283,8063
+bool MarkBoard::check(check295,8357
+bool MarkBoard::mate(mate299,8464
+bool MarkBoard::stalemate(stalemate303,8569
+simpleMoveT* MarkBoard::getPreviousMove(getPreviousMove308,8685
+pieceT* MarkBoard::getBoard(getBoard315,8937
+colorT MarkBoard::getToMove(getToMove322,9102
+int MarkBoard::getNumber(getNumber329,9284
+string MarkBoard::getECO(getECO333,9352
+string MarkBoard::getDate(getDate345,9679
+string MarkBoard::getEventDate(getEventDate358,10095
+int MarkBoard::getYear(getYear370,10500
+int MarkBoard::getElo(getElo374,10585
+resultT MarkBoard::getResult(getResult381,10784
+string MarkBoard::getStartFen(getStartFen385,10856
+void MarkBoard::setNonstandardTag(setNonstandardTag393,11090
+
+markt.cpp,80
+string markT::toString(toString2,19
+std::ostream&operator<<(operator<<9,186
+
+match.cpp,393
+bool InitialNode::match_position(match_position3,19
+bool TerminalNode::match_position(match_position7,93
+bool CheckNode::match_position(match_position12,170
+bool InVariationNode::match_position(match_position16,240
+bool InMainlineNode::match_position(match_position20,321
+bool MateNode::match_position(match_position24,402
+bool StalemateNode::match_position(match_position29,471
+
+matchcomplexnode.cpp,56
+Node* Tokens::match_complexnode(match_complexnode4,39
+
+matchcountnode.cpp,37
+MatchCountNode::MatchCountNode(3,19
+
+matchnode.cpp,476
+MatchNode::MatchNode(2,23
+vnode MatchNode::children(children12,409
+void MatchNode::deepify(deepify18,518
+bool MatchNode::isSet(isSet23,594
+SquareMask MatchNode::getSquares(getSquares25,638
+SquareMask MatchNode::getSquaresSimple(getSquaresSimple39,1217
+#define lrcompare(42,1347
+bool MatchNode::match_position(match_position62,1799
+SquareMask MatchNode::getSquaresGeneral(getSquaresGeneral68,2076
+const pieceT* MatchNode::boardTransform(boardTransform93,2992
+
+matefunction.cpp,115
+void Tokens::load_matefunction(load_matefunction7,115
+Node*Tokens::match_matefunction(match_matefunction16,460
+
+move-parse.cpp,403
+Node* Tokens::match_movebase(match_movebase8,137
+bool Tokens::match_move_promote(match_move_promote118,5060
+bool Tokens::match_move_enpassant(match_move_enpassant131,5571
+bool Tokens::match_move_capture(match_move_capture151,6150
+bool Tokens::match_move_castle(match_move_castle161,6445
+bool Tokens::match_move_from(match_move_from196,7607
+bool Tokens::match_move_to(match_move_to208,7951
+
+movebase.cpp,303
+MoveBase::MoveBase(3,44
+squareT MoveBase::returnSquare(returnSquare32,692
+void MoveBase::setMasks(setMasks43,1075
+bool MoveBase::match_position(match_position56,1461
+bool MoveBase::match_move(match_move60,1544
+vnode MoveBase::children(children91,2526
+void MoveBase::deepify(deepify104,2985
+
+movefuture.cpp,94
+MoveFutureNode::MoveFutureNode(2,22
+SquareMask MoveFutureNode::getSquares(getSquares16,430
+
+movelegalnode.cpp,639
+MoveLegalNode::MoveLegalNode(10,534
+  fromNode(fromn),toNode(ton), enpassantSquare(enpassant),range{rn},pseudoFlag(pseudo),returnFrom(returnfrom),returnTo(11,669
+void MoveLegalNode::compute(compute15,930
+SquareMask MoveLegalNode::filterPseudoLegal(filterPseudoLegal105,4071
+vnode MoveLegalNode::children(children124,4734
+void MoveLegalNode::deepify(deepify134,4993
+bool MoveLegalNode::match_position(match_position141,5151
+bool MoveLegalNode::isSet(isSet148,5377
+bool MoveLegalNode::isNumeric(isNumeric152,5436
+bool MoveLegalNode::match_count(match_count156,5499
+SquareMask MoveLegalNode::getSquares(getSquares167,5825
+
+movenumbernode.cpp,51
+bool MoveNumberNode::match_count(match_count3,19
+
+movepast.cpp,88
+MovePastNode::MovePastNode(3,23
+SquareMask MovePastNode::getSquares(getSquares17,383
+
+node-parse.cpp,10452
+Variable* Tokens::match_variable_use(match_variable_use6,89
+PlyNode* Tokens::match_plynode(match_plynode20,307
+Node* Tokens::match_movenumbernode(match_movenumbernode25,408
+GameNumberNode* Tokens::match_gamenumbernode(match_gamenumbernode30,528
+GameNumberNode* Tokens::match_gamenumberrange(match_gamenumberrange36,700
+Node* Tokens::match_compoundnode(match_compoundnode46,932
+NotNode* Tokens::match_notnode(match_notnode71,1666
+Node* Tokens::match_pinnode(match_pinnode80,1871
+RayNode* Tokens::match_raynode(match_raynode121,3168
+vector<Direction> Tokens::match_raydirections(match_raydirections155,4327
+vector<directionT>Tokens::directionsFromRayKeyword(directionsFromRayKeyword179,5000
+Node* Tokens::match_simplenode(match_simplenode193,5528
+VariationsNode* Tokens::match_variationsnode(match_variationsnode215,6135
+KeywordToken*Tokens::match_raykeyword(match_raykeyword221,6268
+OrbitNode* Tokens::match_orbitnode(match_orbitnode235,6639
+int Tokens::nextid(nextid242,6781
+MatchCountNode* Tokens::match_matchcountnode(match_matchcountnode248,6836
+Node* Tokens::match_stringtointnode(match_stringtointnode267,7336
+Node* Tokens::match_player(match_player277,7613
+Node* Tokens::match_tagbuiltinnode(match_tagbuiltinnode291,7951
+EloNode* Tokens::match_elonode(match_elonode313,8523
+YearNode* Tokens::match_yearnode(match_yearnode321,8706
+ResultNode* Tokens::match_resultnode(match_resultnode328,8856
+StringToken*Tokens::match_stringtoken(match_stringtoken342,9324
+vector<Node*> Tokens::match_some_basicnodes(match_some_basicnodes348,9453
+KeywordToken* Tokens::match_keyword(match_keyword359,9617
+bool Tokens::match_keywords(match_keywords368,9808
+PieceLoc* Tokens::match_pieceloc(match_pieceloc376,9965
+Node* Tokens::match_parens(match_parens386,10165
+NumberNode* Tokens::match_numbernode(match_numbernode401,10804
+bool Tokens::match_intvalue(match_intvalue411,10941
+Node* Tokens::match_makesquare(match_makesquare430,11293
+Node* Tokens::match_squarecoordinate(match_squarecoordinate461,12597
+void Tokens::show_error(show_error479,13043
+void Tokens::show_error(show_error487,13247
+VectorNode* Tokens::match_vectornode(match_vectornode505,13678
+vector<Direction>Tokens::match_direction(match_direction514,13961
+DirectionParameter* Tokens::match_directionparameter(match_directionparameter526,14288
+FindNode* Tokens::match_findnode(match_findnode535,14578
+Node* Tokens::match_count_something(match_count_something563,15438
+SetBase* Tokens::match_inexpr(match_inexpr580,15983
+BetweenNode* Tokens::match_betweennode(match_betweennode589,16211
+ExtensionNode* Tokens::match_extensionnode(match_extensionnode606,16786
+AnyNode* Tokens::match_anynode(match_anynode612,16916
+Node* Tokens::match_powernode(match_powernode620,17190
+Node* Tokens::match_squareloopnode(match_squareloopnode631,17421
+Node* Tokens::match_pieceloopnode(match_pieceloopnode647,17982
+Node* Tokens::match_hascommentnode(match_hascommentnode663,18628
+string Tokens::match_nonemptyquotedstring(match_nonemptyquotedstring686,19426
+bool Tokens::match_quotedstringvalue(match_quotedstringvalue695,19686
+StringLiteralNode* Tokens::match_stringliteralnode(match_stringliteralnode703,19885
+colorT Tokens::match_color(match_color710,20050
+string Tokens::match_relationoperator(match_relationoperator717,20188
+string Tokens::match_plusoperator(match_plusoperator730,20519
+string Tokens::match_addoperator(match_addoperator744,20824
+string Tokens::match_multoperator(match_multoperator758,21092
+string Tokens::match_arithmeticoperator(match_arithmeticoperator771,21370
+string Tokens::match_special(match_special778,21516
+bool Tokens::match_bar(match_bar789,21704
+bool Tokens::match_tildetilde(match_tildetilde793,21762
+bool Tokens::match_colon(match_colon797,21828
+bool Tokens::match_ampersand(match_ampersand801,21888
+bool Tokens::match_lparen(match_lparen807,22066
+bool Tokens::match_rparen(match_rparen811,22127
+bool Tokens::match_lbrace(match_lbrace815,22188
+bool Tokens::match_rbrace(match_rbrace819,22249
+bool Tokens::match_lbracket(match_lbracket822,22309
+bool Tokens::match_equalsign(match_equalsign826,22372
+bool Tokens::match_rbracket(match_rbracket830,22436
+bool Tokens::match_comma(match_comma834,22499
+bool Tokens::match_star(match_star838,22559
+bool Tokens::match_plus(match_plus842,22618
+bool Tokens::match_colonequal(match_colonequal846,22677
+bool Tokens::match_special(match_special850,22743
+string Tokens::match_id(match_id858,22924
+Node* Tokens::make_relational_op_node(make_relational_op_node867,23133
+Node* Tokens::match_ifnode(match_ifnode912,25112
+SetBase*Tokens::match_connectedpawns(match_connectedpawns930,25676
+SetBase*Tokens::match_isolatedpawns(match_isolatedpawns942,25962
+SetBase* Tokens::match_doubledpawns(match_doubledpawns958,26347
+SetBase* Tokens::match_passedpawns(match_passedpawns967,26575
+Node* Tokens::match_fen(match_fen977,26835
+VirtualMainlineNode* Tokens::match_virtualmainlinenode(match_virtualmainlinenode989,27097
+Node* Tokens::match_true(match_true994,27247
+Node* Tokens::match_false(match_false998,27343
+CurrentNode* Tokens::match_currentnode(match_currentnode1003,27462
+EchoNode*Tokens::match_echonode(match_echonode1010,27617
+Node* Tokens::match_distancenode(match_distancenode1038,28600
+LcaNode* Tokens::match_lcanode(match_lcanode1058,29312
+ExtremalNode*Tokens::match_extremalnode(match_extremalnode1079,29980
+NoTransformNode* Tokens::match_notransformnode(match_notransformnode1109,30921
+ToMoveValueNode* Tokens::match_tomovevaluenode(match_tomovevaluenode1117,31158
+ColorValueNode* Tokens::match_colorvaluenode(match_colorvaluenode1122,31290
+Node* Tokens::match_consecutivemovesnode(match_consecutivemovesnode1138,31669
+Range* Tokens::match_range(match_range1161,32523
+bool Tokens::match_rangeconstituent(match_rangeconstituent1181,33156
+Range* Tokens::match_constant_range(match_constant_range1217,34459
+PositionIndexNode* Tokens::match_positionindexnode(match_positionindexnode1228,34645
+Node* Tokens::match_type(match_type1233,34783
+TypeNameNode* Tokens::match_typenamenode(match_typenamenode1241,34989
+PieceNameNode* Tokens::match_piecenamenode(match_piecenamenode1249,35239
+AbsNode* Tokens::match_absnode(match_absnode1258,35494
+ColorTypeNode* Tokens::match_colortypenode(match_colortypenode1266,35701
+SetBase* Tokens::match_colorsquare(match_colorsquare1274,35931
+SetBase* Tokens::set_from_string(set_from_string1293,36654
+Node* Tokens::match_unaryminus(match_unaryminus1301,36974
+bool Tokens::match_leftarrow(match_leftarrow1311,37294
+bool Tokens::match_rightarrow(match_rightarrow1315,37360
+DashToken* Tokens::getDash(getDash1321,37474
+ChildNode*Tokens::match_childnode(match_childnode1329,37625
+ParentNode*Tokens::match_parentnode(match_parentnode1345,38056
+PieceAssignNode* Tokens::match_pieceassignnode(match_pieceassignnode1351,38173
+LoopNode* Tokens::match_loopnode(match_loopnode1376,38739
+PieceIdNode* Tokens::match_pieceidnode(match_pieceidnode1386,38944
+DescendantNode* Tokens::match_descendantnode(match_descendantnode1395,39186
+SqrtNode* Tokens::match_sqrtnode(match_sqrtnode1424,40239
+DepthNode*Tokens::match_depthnode(match_depthnode1433,40452
+GotoNode*Tokens::match_gotonode(match_gotonode1439,40564
+Node* Tokens::match_error(match_error1450,40876
+Node* Tokens::match_assertvariationsnode(match_assertvariationsnode1458,41225
+Node*Tokens::match_tagnode(match_tagnode1467,41532
+Node*Tokens::match_tagsetnode(match_tagsetnode1477,41774
+Node* Tokens::match_stringindex(match_stringindex1505,43016
+Node * Tokens::match_groupindexnode(match_groupindexnode1522,43603
+Node * Tokens::match_groupnumbernode(match_groupnumbernode1530,43850
+bool Tokens::match_groupnumbertoken(match_groupnumbertoken1541,44224
+bool Tokens::match_groupindextoken(match_groupindextoken1550,44498
+Node* Tokens::match_keyword_optional_regex(match_keyword_optional_regex1559,44768
+Node* Tokens::match_trailing_quoted_string(match_trailing_quoted_string1571,45057
+Node* Tokens::match_assertnode(match_assertnode1605,46414
+AbortNode* Tokens::match_abortnode(match_abortnode1615,46674
+Node*Tokens::match_isboundnode(match_isboundnode1622,46841
+StringAsciiNode* Tokens::match_stringasciinode(match_stringasciinode1641,47340
+BracketRange*Tokens::match_bracketrange(match_bracketrange1657,47844
+ReadFileNode* Tokens::match_readfilenode(match_readfilenode1687,48701
+WriteFileNode* Tokens::match_writefilenode(match_writefilenode1696,48936
+HhdbHasCookNode* Tokens::match_hhdbhascooknode(match_hhdbhascooknode1712,49549
+Node* Tokens::match_removecommentnode(match_removecommentnode1719,49693
+CurrentTransformNode*Tokens::match_currenttransformnode(match_currenttransformnode1725,49826
+Node*Tokens::match_whilenode(match_whilenode1731,49983
+Node* Tokens::match_emptyset(match_emptyset1754,50798
+Node* Tokens::match_unbind(match_unbind1761,50974
+CaseConvertNode*Tokens::match_caseconvertnode(match_caseconvertnode1772,51360
+PathStartNode*Tokens::match_pathstartnode(match_pathstartnode1785,51798
+PathDebugNode*Tokens::match_pathdebugnode(match_pathdebugnode1791,51926
+PathCountNode*Tokens::match_pathcountnode(match_pathcountnode1797,52054
+PathLastPositionNode*Tokens::match_pathlastpositionnode(match_pathlastpositionnode1803,52182
+Node*Tokens::match_pathcountunfocused(match_pathcountunfocused1809,52338
+GenericEqualNode* Tokens::match_genericequalnode(match_genericequalnode1816,52500
+PiecePathNode* Tokens::match_piecepathnode(match_piecepathnode1833,52995
+FromNode* Tokens::match_fromnode(match_fromnode1840,53247
+ToNode* Tokens::match_tonode(match_tonode1847,53396
+PreviousDashNode* Tokens::match_previousdashnode(match_previousdashnode1853,53498
+Node* Tokens::match_countmoves(match_countmoves1868,54043
+bool Tokens::match_linecomment(match_linecomment1901,55095
+bool Tokens::match_endlinecomment(match_endlinecomment1909,55243
+Node* Tokens::match_try(match_try1917,55399
+bool Tokens::match_attackarrow(match_attackarrow1927,55620
+AttackArrowDirection Tokens::match_attackarrow(match_attackarrow1936,55870
+bool Tokens::match_Aa(match_Aa1944,56097
+bool Tokens::match_element(match_element1954,56272
+bool Tokens::match_forall(match_forall1958,56342
+LastGameNumberNode* Tokens::match_lastgamenumbernode(match_lastgamenumbernode1962,56410
+
+node.cpp,981
+bool GameFilter::match_position(match_position12,247
+void Node::cloneverify(cloneverify16,328
+KeywordNode::KeywordNode(49,1367
+bool KeywordNode::eq(eq53,1483
+vnode Node::descendants(descendants59,1539
+void Node::alldescendants(alldescendants65,1632
+ResultNode::ResultNode(ResultNode75,1785
+bool ResultNode::match_game(match_game87,2009
+bool Node::match_count(match_count95,2187
+bool Node::match_positionvalue(match_positionvalue100,2378
+bool Node::match_stringvalue(match_stringvalue105,2592
+GameFilter* Node::createVirtualPlayerNode(createVirtualPlayerNode114,2916
+ValueType Node::valuetype(valuetype125,3247
+bool Node::valuetypeIsAssignable(valuetypeIsAssignable133,3484
+bool Node::valuetypeIsPersistent(valuetypeIsPersistent145,3700
+string Node::valuetypeToString(valuetypeToString153,3883
+bool Node::match_game(match_game166,4261
+Dictionary* Node::asDictionary(asDictionary176,4537
+const Dictionary* Node::asDictionary(asDictionary184,4708
+
+nodetransform.cpp,95
+Node* Node::transform(transform2,18
+void Node::transform_in_place(transform_in_place18,545
+
+nonemptynode.cpp,178
+NonemptyNode::NonemptyNode(2,26
+void NonemptyNode::deepify(deepify6,104
+vnode NonemptyNode::children(children10,157
+bool NonemptyNode::match_position(match_position14,218
+
+notnode.cpp,201
+NotNode::NotNode(3,22
+bool NotNode::match_position(match_position8,135
+vnode NotNode::children(children16,300
+void NotNode::deepify(deepify19,358
+bool NotNode::isGameFilter(isGameFilter22,411
+
+notransformnode.cpp,759
+NoTransformNode::NoTransformNode(2,29
+vnode NoTransformNode::children(children6,162
+bool NoTransformNode::match_position(match_position8,228
+SquareMask NoTransformNode::getSquares(getSquares12,322
+void NoTransformNode::deepify(deepify16,423
+bool NoTransformNode::isSet(isSet20,491
+bool NoTransformNode::isPosition(isPosition24,559
+bool NoTransformNode::isString(isString28,637
+bool NoTransformNode::isNumeric(isNumeric32,711
+bool NoTransformNode::match_count(match_count36,787
+bool NoTransformNode::match_positionvalue(match_positionvalue40,896
+bool NoTransformNode::match_stringvalue(match_stringvalue44,1021
+bool NoTransformNode::isGameFilter(isGameFilter48,1143
+void NoTransformNode::transform_in_place(transform_in_place54,1272
+
+numbernode.cpp,175
+NumberNode::NumberNode(2,18
+bool NumberNode::match_count(match_count3,64
+string NumberNode::toString(toString7,143
+bool NumberNode::match_position(match_position13,225
+
+numericiteratornode.cpp,215
+NumericIteratorNode::NumericIteratorNode2,33
+bool NumericIteratorNode::match_position(match_position15,331
+vnode NumericIteratorNode::children(children39,1126
+void NumericIteratorNode::deepify(deepify47,1294
+
+numericvariable.cpp,584
+bool NumericVariable::match_position(match_position5,65
+void NumericVariable::bindNumeric(bindNumeric10,276
+NumValue NumericVariable::getValue(getValue17,407
+NumericVariable::NumericVariable(NumericVariable23,578
+void NumericVariable::increment(increment29,682
+bool NumericVariable::match_count(match_count33,749
+void NumericVariable::reset(reset40,939
+void NumericVariable::assignSortValue(assignSortValue45,1078
+void NumericVariable::bindSortValue(bindSortValue54,1378
+void NumericVariable::assignAny(assignAny61,1543
+Any NumericVariable::getAny(getAny69,1741
+
+onnode.cpp,213
+SetBase*OnNode::makeVirtualOnNode(makeVirtualOnNode3,21
+OnNode::OnNode(OnNode9,180
+void OnNode::deepify(deepify15,351
+vnode OnNode::children(children20,434
+SquareMask OnNode::getSquares(getSquares27,555
+
+optionalcon.cpp,169
+OptionalCon::OptionalCon(2,25
+vnode OptionalCon::children(children6,109
+void OptionalCon::deepify(deepify10,172
+void OptionalCon::setIsInitial(setIsInitial15,231
+
+optionalconstituent.cpp,124
+OptionalConstituent::OptionalConstituent(OptionalConstituent2,26
+bool OptionalConstituent::matchesNull(matchesNull8,126
+
+orbitelement.cpp,33
+OrbitElement::OrbitElement(2,26
+
+orbitnode.cpp,574
+OrbitNode* OrbitNode::create(create4,104
+bool OrbitNode::isSet(isSet20,731
+bool OrbitNode::isNumeric(isNumeric27,937
+SquareMask OrbitNode::getSquares(getSquares35,1158
+int OrbitNode::orbitLength(orbitLength48,1741
+vnode OrbitNode::children(children53,1873
+OrbitNode::OrbitNode(65,2097
+int OrbitNode::compute_match_count(compute_match_count74,2384
+bool OrbitNode::match_position(match_position82,2588
+bool OrbitNode::match_range(match_range95,2956
+bool OrbitNode::match_count(match_count105,3286
+bool OrbitNode::match_count_max(match_count_max112,3627
+
+origChanges.cpp,404
+Game::WritePGN_changed WritePGN_changed23,649
+void Game::handleinitialcomment_changed(handleinitialcomment_changed241,8977
+Game::WriteToPGN_changed(WriteToPGN_changed250,9238
+  Position::myIsKingInMate myIsKingInMate254,9323
+bool Position::myIsKingInCheck(myIsKingInCheck265,9620
+bool Position::myIsKingInStalemate(myIsKingInStalemate268,9719
+void MFile::skipNonAscii(skipNonAscii280,10237
+
+ornode.cpp,195
+OrNode::OrNode(2,20
+bool OrNode::match_position(match_position8,250
+vnode OrNode::children(children17,472
+void OrNode::deepify(deepify21,539
+bool OrNode::isGameFilter(isGameFilter26,622
+
+parentnode.cpp,241
+ParentNode::ParentNode(ParentNode2,24
+void ParentNode::deepify(deepify4,52
+vnode ParentNode::children(children7,83
+bool ParentNode::match_position(match_position10,138
+bool ParentNode::match_positionvalue(match_positionvalue15,248
+
+pastmove-parse.cpp,58
+Node* Tokens::match_pastmovenode(match_pastmovenode6,89
+
+pastmovenode.cpp,860
+PastMoveNode::PastMoveNode(4,49
+PastMoveNode*PastMoveNode::makePromote(makePromote7,107
+PastMoveNode*PastMoveNode::makeNullMove(makeNullMove20,468
+PastMoveNode*PastMoveNode::makePrimary(makePrimary24,565
+PastMoveNode*PastMoveNode::makeSecondary(makeSecondary28,660
+PastMoveNode*PastMoveNode::makeEnPassant(makeEnPassant32,759
+PastMoveNode*PastMoveNode::makeOO(makeOO36,858
+PastMoveNode*PastMoveNode::makeOOO(makeOOO39,942
+PastMoveNode*PastMoveNode::makeCastle(makeCastle42,1028
+PastMoveNode*PastMoveNode::makeCapture(makeCapture45,1120
+bool PastMoveNode::isSet(isSet53,1331
+bool PastMoveNode::match_position(match_position57,1390
+SquareMask PastMoveNode::getSquares(getSquares103,2591
+void PastMoveNode::deepify(deepify123,3243
+vnode PastMoveNode::children(children132,3700
+string PastMoveNode::typetostring(typetostring141,3974
+
+pastnode.cpp,63
+PastNode::PastNode(3,23
+void PastNode::compute(compute7,354
+
+path-atomic.cpp,249
+Bindings PathNode::createAtomicBindings(createAtomicBindings2,22
+void PathNode::pushAtomicBindings(pushAtomicBindings6,118
+void PathNode::popAtomicBindings(popAtomicBindings11,235
+void PathNode::applyAtomicBindings(applyAtomicBindings19,464
+
+path-comment.cpp,369
+void PathNode::commentStacksValid(commentStacksValid3,23
+void PathNode::restoreComments(restoreComments8,327
+void PathNode::popComment(popComment20,807
+void PathNode::swapComments(swapComments35,1223
+void PathNode::pushComments(pushComments45,1578
+int PathNode::markComments(markComments56,1845
+void PathNode::initializeComments(initializeComments60,1914
+
+path-compute-dashfocused.cpp,66
+void PathNode::computeDashConFocused(computeDashConFocused8,161
+
+path-compute-dashunfocused.cpp,70
+void PathNode::computeDashConUnfocused(computeDashConUnfocused9,196
+
+path-compute.cpp,460
+void PathNode::compute(compute11,211
+void PathNode::computeChainCon(computeChainCon53,1510
+void PathNode::computeHolderCon(computeHolderCon70,2062
+void PathNode::computeStarCon(computeStarCon80,2455
+void PathNode::computePlusCon(computePlusCon93,2838
+void PathNode::computeOptionalCon(computeOptionalCon106,3240
+void PathNode::computeRepeatCon(computeRepeatCon119,3626
+void PathNode::computeRepeatInProcessCon(computeRepeatInProcessCon131,4052
+
+path-nest.cpp,247
+void PathNode::nestRegisterPosition(nestRegisterPosition3,23
+bool PathNode::nestSeenPosition(nestSeenPosition8,124
+void PathNode::nestClearPositions(nestClearPositions14,276
+void PathNode::nestRegisterPositions(nestRegisterPositions18,335
+
+path-parse.cpp,721
+PathNode*Tokens::match_pathnode(match_pathnode8,100
+vector<PathCon*>Tokens::match_pathcons(match_pathcons144,4735
+PathCon* Tokens::match_pathcon(match_pathcon160,5122
+PathCon*Tokens::add_wildcard(add_wildcard176,5595
+ChainCon* Tokens::match_chaincon(match_chaincon201,6376
+HolderCon* Tokens::match_holdercon(match_holdercon212,6735
+DashCon*Tokens::match_dashcon(match_dashcon273,9235
+DashCon*Tokens::match_ignoreleft_dashcon(match_ignoreleft_dashcon297,9867
+Node*Tokens::match_dashcon_target(match_dashcon_target314,10369
+Token* Tokens::read_wildcard(read_wildcard327,10686
+PathCon*Tokens::create_wildcard_node(create_wildcard_node335,10839
+bool Tokens::left_tie_follows(left_tie_follows353,11625
+
+pathcountnode.cpp,143
+PathCountNode::PathCountNode(2,27
+bool PathCountNode::match_position(match_position4,81
+bool PathCountNode::match_count(match_count11,342
+
+pathdebugnode.cpp,91
+PathDebugNode::PathDebugNode(2,27
+bool PathDebugNode::match_position(match_position4,81
+
+pathlastpositionnode.cpp,189
+PathLastPositionNode::PathLastPositionNode(6,143
+bool PathLastPositionNode::match_position(match_position8,211
+bool PathLastPositionNode::match_positionvalue(match_positionvalue13,333
+
+pathmaxnode.cpp,134
+PathMaxNode::PathMaxNode(2,25
+bool PathMaxNode::match_position(match_position4,75
+bool PathMaxNode::match_count(match_count9,181
+
+pathnode.cpp,652
+PathNode::PathNode(PathNode4,120
+void PathNode::deepify(deepify46,1411
+vnode PathNode::children(children59,1982
+int PathNode::ncons(ncons81,2529
+bool PathNode::valid_con valid_con85,2592
+PathCon* PathNode::getCon(getCon90,2693
+bool PathNode::match_position(match_position95,2821
+void PathNode::notate(notate147,4555
+void PathNode::exitMatch(exitMatch187,5969
+PathStatus PathNode::createPathStatus(createPathStatus198,6275
+bool PathNode::isSuccess(isSuccess207,6479
+bool PathNode::match_count(match_count222,6924
+bool PathNode::match_positionvalue(match_positionvalue238,7460
+void PathNode::mergeSuccess(mergeSuccess247,7695
+
+pathreferencenode.cpp,201
+void PathReferenceNode::deepify(deepify2,31
+void PathReferenceNode::setPath(setPath6,170
+bool PathReferenceNode::isInternal(isInternal12,311
+bool PathReferenceNode::isExternal(isExternal16,381
+
+pathstartnode.cpp,158
+PathStartNode::PathStartNode(2,27
+bool PathStartNode::match_position(match_position4,81
+bool PathStartNode::match_positionvalue(match_positionvalue9,196
+
+pathstatus.cpp,29
+PathStatus::PathStatus(4,65
+
+pgnsource.cpp,883
+std::mutex pgnSourceMutex;12,203
+PgnSource::PgnSource(14,231
+void PgnSource::skipNonAsciiBuffer(skipNonAsciiBuffer34,1118
+bool PgnSource::nextGame(nextGame44,1310
+string PgnSource::toString(toString90,2717
+enum class ParserState{ParserState107,3111
+  seekingTag,108,3135
+  readingTags,109,3149
+  readingGame}readingGame110,3164
+bool PgnSource::mainLoop(mainLoop112,3183
+int PgnSource::getChar(getChar143,4293
+void PgnSource::writeBuffer(writeBuffer159,4644
+void PgnSource::skipLine(skipLine177,5586
+void PgnSource::skipTagLine(skipTagLine186,5781
+int PgnSource::getPreviousCharacter(getPreviousCharacter201,6173
+void PgnSource::skipComment(skipComment209,6424
+bool PgnSource::seen_result(seen_result242,7544
+int PgnSource::peek(peek252,7886
+bool PgnSource::seen_result_string(seen_result_string263,8130
+void PgnSource::pgnAssert(pgnAssert291,9058
+
+pieceassignnode.cpp,193
+PieceAssignNode::PieceAssignNode(4,59
+void PieceAssignNode::deepify(deepify8,171
+vnode PieceAssignNode::children(children12,227
+bool PieceAssignNode::match_position(match_position18,337
+
+piecedesignator-lex.cpp,919
+Token* Lexer::match_piecedesignator(match_piecedesignator20,505
+PieceDesignatorToken* Lexer::match_pd_Aa_followed_by_id(match_pd_Aa_followed_by_id31,837
+Token* Lexer::match_pd_emptysquare(match_pd_emptysquare58,1495
+Token* Lexer::match_pd_emptypiece(match_pd_emptypiece73,1921
+Token* Lexer::match_pd_nonempty(match_pd_nonempty93,2406
+bool Lexer::end_of_pd(end_of_pd105,2714
+vector<PieceToken*>Lexer::match_piecespecifier(match_piecespecifier123,3226
+vector<PieceToken*>Lexer::match_simplepiecespecifier(match_simplepiecespecifier133,3552
+vector<SquareToken*>Lexer::match_squarespecifier(match_squarespecifier152,3975
+vector<SquareToken*>Lexer::match_simplesquarespecifier(match_simplesquarespecifier159,4170
+vector<SquareToken*>Lexer::match_compoundsquarespecifier(match_compoundsquarespecifier171,4471
+vector<PieceToken*>Lexer::match_compoundpiecespecifier(match_compoundpiecespecifier194,5102
+
+piecedesignator-unicode.cpp,274
+char Lexer::charFromUnicodePieceSpecifier(charFromUnicodePieceSpecifier27,780
+vector<PieceToken*>Lexer::match_singleunicodepiecespecifier(match_singleunicodepiecespecifier58,1871
+vector<PieceToken*>Lexer::match_unicodepiecespecifier(match_unicodepiecespecifier74,2306
+
+pieceidnode.cpp,238
+PieceIdNode::PieceIdNode(PieceIdNode3,54
+bool PieceIdNode::match_count(match_count10,308
+bool PieceIdNode::match_position(match_position29,945
+vnode PieceIdNode::children(children34,1053
+void PieceIdNode::deepify(deepify42,1256
+
+pieceidvariable.cpp,269
+PieceIdVariable::PieceIdVariable(PieceIdVariable4,31
+bool PieceIdVariable::getSquare(getSquare9,126
+void PieceIdVariable::bindPieceId(bindPieceId18,381
+markT PieceIdVariable::getPieceId(getPieceId25,576
+SquareMask PieceIdVariable::getSquares(getSquares30,690
+
+pieceloc.cpp,311
+PieceLoc::PieceLoc(PieceLoc4,41
+vector<pieceT> PieceLoc::piecesFromChar(piecesFromChar38,1118
+bool PieceLoc::isPurePiece(isPurePiece83,2209
+SquareMask PieceLoc::getSquares(getSquares93,2449
+SquareMask PieceLoc::getPieceMask(getPieceMask99,2592
+bool PieceLoc::match_piecetype(match_piecetype115,3053
+
+pieceloopnode.cpp,379
+PieceLoopNode::PieceLoopNode(4,113
+bool PieceLoopNode::isSet(isSet9,373
+void PieceLoopNode::execute(execute14,467
+bool PieceLoopNode::match_body(match_body43,1443
+vnode PieceLoopNode::children(children63,2144
+void PieceLoopNode::deepify(deepify68,2267
+bool PieceLoopNode::match_position(match_position73,2365
+SquareMask PieceLoopNode::getSquares(getSquares85,2685
+
+piecenamenode.cpp,247
+PieceNameNode::PieceNameNode(3,67
+vnode PieceNameNode::children(children8,158
+void PieceNameNode::deepify(deepify12,223
+bool PieceNameNode::match_stringvalue(match_stringvalue16,283
+bool PieceNameNode::match_position(match_position30,668
+
+piecepathnode.cpp,303
+PiecePathNode::PiecePathNode(2,27
+bool PiecePathNode::match_position(match_position10,264
+bool PiecePathNode::match_stringvalue(match_stringvalue15,478
+string PiecePathNode::pathstring(pathstring42,1287
+void PiecePathNode::deepify(deepify80,2652
+vnode PiecePathNode::children(children85,2738
+
+piecesquareloop-parse.cpp,245
+SquareLoopNode* Tokens::match_symbolicsquareloop(match_symbolicsquareloop9,168
+PieceLoopNode* Tokens::match_symbolicpieceloop(match_symbolicpieceloop44,1110
+bool Tokens::match_symbolicpiecedeclaration(match_symbolicpiecedeclaration77,2137
+
+pinnode.cpp,263
+PinNode::PinNode(4,59
+SquareMask PinNode::getSquares(getSquares20,405
+SquareMask PinNode::computexrays(computexrays51,1567
+bool PinNode::match_position(match_position89,2946
+vnode PinNode::children(children94,3052
+void PinNode::deepify(deepify102,3248
+
+piover4transform.cpp,497
+bool PiOver4Transform::isIdentity(isIdentity3,19
+squareT PiOver4Transform::transform(transform7,85
+bool PiOver4Transform::flipsSquareParity(flipsSquareParity12,299
+PiOver4Transform::PiOver4Transform(17,579
+vector<Transform*>PiOver4Transform::rotations(rotations21,687
+Direction PiOver4Transform::transform(transform28,841
+Direction PiOver4Transform::rotate45(rotate4535,985
+SquareMask PiOver4Transform::transform(transform54,1494
+string PiOver4Transform::toString(toString61,1708
+
+pluscon.cpp,195
+PlusCon::PlusCon(PlusCon3,42
+bool PlusCon::hasDash(hasDash8,137
+vnode PlusCon::children(children12,200
+void PlusCon::deepify(deepify16,260
+void PlusCon::setIsInitial(setIsInitial20,316
+
+plusconstituent.cpp,179
+PlusConstituent::PlusConstituent(PlusConstituent2,26
+bool PlusConstituent::matchesNull(matchesNull8,152
+SeqConstituent* PlusConstituent::getConstituent(getConstituent12,234
+
+plynode.cpp,44
+bool PlyNode::match_count(match_count2,21
+
+positionindexnode.cpp,332
+PositionIndexNode::PositionIndexNode(PositionIndexNode2,31
+vnode PositionIndexNode::children(children5,74
+void PositionIndexNode::deepify(deepify9,137
+bool PositionIndexNode::match_position(match_position12,175
+bool PositionIndexNode::match_count(match_count17,352
+PositionIndexNode*PositionIndexNode::clone(clone22,453
+
+positionvariable.cpp,392
+void PositionVariable::bindPosition(bindPosition3,31
+QPos* PositionVariable::getValue(getValue9,176
+PositionVariable::PositionVariable(PositionVariable13,236
+bool PositionVariable::match_positionvalue(match_positionvalue19,346
+bool PositionVariable::match_position(match_position25,553
+void PositionVariable::assignAny(assignAny31,878
+Any PositionVariable::getAny(getAny39,1090
+
+powernode.cpp,118
+PowerNode::PowerNode(2,18
+bool PowerNode::match_count(match_count7,96
+int PowerNode::pieceValue(pieceValue19,406
+
+previousdashnode.cpp,451
+PreviousDashNode::PreviousDashNode(3,31
+vnode PreviousDashNode::children(children7,152
+void PreviousDashNode::deepify(deepify12,256
+bool PreviousDashNode::match_position(match_position17,352
+bool PreviousDashNode::match_stringvalue(match_stringvalue22,517
+bool PreviousDashNode::match_positionvalue(match_positionvalue28,705
+SquareMask PreviousDashNode::getSquares(getSquares34,898
+bool PreviousDashNode::match_count(match_count40,1068
+
+print.cpp,7584
+void Node::print(print5,62
+void square_print(8,122
+void AttackNode::print(print17,356
+void BetweenNode::print(print27,596
+void ComposeTransform::print(print40,852
+void CountSquaresNode::print(print45,982
+void CqlNode::print(print51,1086
+void DihedralTransform::print(print76,1734
+void Direction::print(print79,1844
+void DirectionParameter::print(print82,1913
+void EloNode::print(print92,2089
+void SquareLoopNode::print(print97,2215
+void PieceLoopNode::print(print114,2593
+void ExtensionNode::print(print132,2971
+void FindNode::print(print136,3041
+void LoopNode::print(print148,3305
+void WhileNode::print(print157,3476
+void GameSortInfo::print(print171,3733
+void HolderConstituent::print(print174,3781
+void HasCommentNode::print(print179,3888
+void MatchCountNode::print(print185,4023
+void MoveBase::print(print191,4154
+void MoveNumberNode::print(print220,4768
+void ToMoveNode::print(print223,4838
+void KeywordNode::print(print231,4996
+void PgnNode::print(print235,5081
+void OutputNode::print(print239,5163
+void Range::print(print242,5247
+void ResultNode::print(print251,5484
+void GameNumberNode::print(print255,5587
+void CurrentFen::print(print262,5720
+void CommentNode::print(print266,5774
+void IsBoundNode::print(print277,5963
+void UnbindNode::print(print285,6140
+void NotNode::print(print289,6220
+void StringAsciiNode::print(print299,6354
+void NoTransformNode::print(print313,6658
+void StringToIntNode::print(print323,6820
+void StringLengthNode::print(print333,6980
+void GameFilterWrapper::print(print343,7141
+void SquareParityNode::print(print353,7297
+void OnNode::print(print365,7521
+void OptionalConstituent::print(print376,7772
+void OrNode::print(print382,7887
+void AndNode::print(print393,8150
+void StringMatchNode::print(print405,8415
+void PieceLoc::print(print415,8654
+void PiOver4Transform::print(print426,8932
+void PlusConstituent::print(print429,9025
+void PlyNode::print(print434,9140
+void DepthNode::print(print438,9189
+void CompoundNode::print(print442,9242
+void PowerNode::print(print454,9548
+void RayNode::print(print459,9650
+void RepeatInProcessConstituent::print(print485,10207
+void RepeatConstituent::print(print491,10338
+void GotoNode::print(print498,10480
+void PathReferenceNode::print(print504,10566
+void SequenceBase::print(print510,10683
+void ShiftTransform::print(print531,11298
+void SortValue::print(print534,11395
+void SquareMask::print(print550,11714
+void SquareMask::boardprint(boardprint563,11926
+void SquareMask::boardprint(boardprint577,12263
+void SquareMask::printnl(printnl581,12333
+void mask_print(586,12391
+void StarConstituent::print(print589,12445
+void Transform::print(print595,12556
+void OrbitNode::print(print599,12627
+void OrbitElement::print(print615,13007
+void VectorConstituent::print(print624,13199
+void VectorNode::print(print637,13550
+void YearNode::print(print648,13797
+void TagNode::print(print654,13895
+void TagSetNode::print(print658,13978
+void AssertNode::print(print664,14109
+string TransformVariable::toString(toString670,14240
+string PieceIdVariable::toString(toString676,14356
+string SquareVariable::toString(toString685,14522
+string NumericVariable::toString(toString697,14747
+string StringVariable::toString(toString709,14990
+string SquareMask::listString(listString723,15233
+void Variable::print(print743,15629
+void AssignNumericNode::print(print746,15690
+void AssignStringNode::print(print757,15939
+void AssignSquareNode::print(print768,16187
+void CurrentNode::print(print780,16458
+void AssignPositionNode::print(print783,16514
+void RelationalNode::print(print794,16743
+void ArithmeticNode::print(print807,17022
+void NumberNode::print(print820,17294
+void RangeNode::print(print824,17367
+void NumericVariable::print(print830,17477
+void StringVariable::print(print833,17530
+void StringConverter::print(print838,17584
+void CurrentTransformNode::print(print853,17889
+void IfNode::print(print858,17961
+void SubstringNode::print(print877,18295
+void SubstringAssignmentNode::print(print890,18539
+string LambdaValue::toString(toString905,18872
+string LambdaVariable::toString(toString920,19244
+string PositionVariable::toString(toString929,19429
+void LambdaCallNode::print(print938,19629
+void MoveLegalNode::print(print958,20159
+void SquareCoordinateNode::print(print986,20709
+void PieceIdNode::print(print995,20898
+void MakeSquareNode::print(print1006,21152
+void QPos::print(print1030,21619
+void QMove::print(print1046,22014
+void QGame::print(print1058,22324
+void Environment::print(print1073,22727
+void PinNode::print(print1086,23188
+void SubsetNode::print(print1119,23796
+void StringInNode::print(print1132,24051
+void ConcatenationNode::print(print1147,24392
+void VirtualMainlineNode::print(print1161,24699
+void WithPositionNode::print(print1165,24775
+void EchoNode::print(print1178,25042
+void MatchNode::print(print1190,25386
+void LcaNode::print(print1199,25543
+void DistanceNode::print(print1208,25698
+void DescendantNode::print(print1217,25858
+void ExtremalNode::print(print1226,26020
+void BracketRange::print(print1241,26311
+void ToMoveValueNode::print(print1261,26699
+void ColorValueNode::print(print1265,26771
+void ConsecutiveMovesNode::print(print1270,26863
+void UnionNode::print(print1280,27061
+void ComplementNode::print(print1291,27315
+void EqualityNode::print(print1301,27452
+void PositionIndexNode::print(print1314,27713
+void ColorTypeNode::print(print1318,27782
+void SortNode::print(print1324,27886
+void AbsNode::print(print1334,28096
+void SqrtNode::print(print1339,28191
+void NonemptyNode::print(print1345,28288
+void ChildNode::print(print1351,28388
+void ParentNode::print(print1357,28498
+void PieceAssignNode::print(print1361,28553
+void CommentEntry::print(print1372,28805
+void CommentStack::print(print1376,28887
+void HhdbAwardNode::print(print1380,28953
+void HhdbHasCookNode::print(print1390,29213
+void AssertVariationsNode::print(print1395,29288
+void AbortNode::print(print1399,29386
+void StringLiteralNode::print(print1403,29475
+void GroupNumberNode::print(print1407,29568
+void TagBuiltInNode::print(print1411,29631
+void StringIteratorNode::print(print1415,29721
+void Dictionary::print(print1436,30108
+void CaseConvertNode::print(print1440,30248
+void ReadFileNode::print(print1456,30644
+void WriteFileNode::print(print1464,30768
+void NumericIteratorNode::print(print1479,31039
+void RemoveCommentNode::print(print1502,31485
+void PreviousDashNode::print(print1507,31555
+void DashNode::print(print1516,31761
+void PastMoveNode::print(print1543,32354
+void ChainCon::print(print1563,32713
+void StarCon::print(print1579,33088
+void OptionalCon::print(print1584,33185
+void PlusCon::print(print1589,33286
+void DashCon::print(print1595,33386
+void HolderCon::print(print1620,33927
+void PathNode::print(print1628,34105
+void FocusCaptureNode::print(print1671,35193
+void Focus::print(print1678,35324
+void GenericEqualNode::print(print1689,35586
+void RepeatInProcessCon::print(print1702,35872
+void RepeatCon::print(print1708,35984
+void PiecePathNode::print(print1715,36119
+void FromToNode::print(print1728,36404
+void PieceNameNode::print(print1732,36506
+void TrueNode::print(print1738,36610
+void TypeNameNode::print(print1742,36675
+void DictionaryAccessNode::print(print1748,36778
+void LastGameNumberNode::print(print1784,37427
+void AnticipateNode::print(print1788,37502
+
+qgame.cpp,801
+const TagSection* QGame::getTagSection(getTagSection7,112
+TagSection* QGame::getTagSection(getTagSection12,267
+QGame::QGame(17,404
+bool QGame::parseNextGame(parseNextGame27,694
+QPos* QGame::getQPos(getQPos37,940
+int QGame::nQPos(nQPos42,1070
+void QGame::verifyRoot(verifyRoot48,1169
+void QGame::mergeComments(mergeComments58,1455
+QPos* QGame::getNewQPos(getNewQPos75,1818
+bool QGame::pgnParseNextGame(pgnParseNextGame88,2124
+void QGame::registerRegexMatch(registerRegexMatch118,3089
+void QGame::clearRegexHistory(clearRegexHistory122,3184
+void QGame::pushComment(pushComment126,3247
+void QGame::doSetTag(doSetTag131,3370
+int QGame::markComments(markComments135,3472
+void QGame::deleteComments(deleteComments139,3539
+void QGame::restoreComments(restoreComments143,3632
+
+qmarkboard.cpp,499
+string QMarkBoard::getECO(getECO6,94
+string QMarkBoard::getDate(getDate10,178
+string QMarkBoard::getEventDate(getEventDate14,264
+string QMarkBoard::getEvent(getEvent18,360
+string QMarkBoard::getPlayer(getPlayer22,448
+int QMarkBoard::getElo(getElo25,556
+string QMarkBoard::getSite(getSite28,655
+string QMarkBoard::getStartFen(getStartFen32,741
+int QMarkBoard::getResult(getResult36,835
+int QMarkBoard::getYear(getYear39,921
+string QMarkBoard::getTagBuiltIn(getTagBuiltIn43,1063
+
+qmove.cpp,1062
+QMove::QMove(QMove7,136
+pieceT QMove::getMovingPiece(getMovingPiece34,1090
+markT QMove::movingPieceId(movingPieceId45,1480
+markT QMove::castleKingId(castleKingId54,1816
+markT QMove::castleRookId(castleRookId67,2270
+bool QMove::isNonCapture(isNonCapture77,2563
+squareT QMove::getCaptureSquare(getCaptureSquare82,2659
+markT QMove::capturedPieceId(capturedPieceId97,3112
+bool QMove::isOO(isOO106,3405
+bool QMove::isOOO(isOOO117,3562
+bool QMove::isCastle(isCastle128,3720
+squareT QMove::castleKingFrom(castleKingFrom132,3778
+squareT QMove::castleKingTo(castleKingTo138,3881
+squareT QMove::castleRookFrom(castleRookFrom144,3979
+squareT QMove::castleRookTo(castleRookTo154,4273
+SquareMask QMove::fatFrom(fatFrom164,4567
+SquareMask QMove::fatTo(fatTo170,4741
+SquareMask QMove::castleFrom(castleFrom177,4910
+SquareMask QMove::castleTo(castleTo183,5076
+bool QMove::validMove(validMove194,5414
+bool QMove::invalidMove(invalidMove205,5842
+SquareMask QMove::smartFrom(smartFrom209,5973
+SquareMask QMove::smartTo(smartTo225,6401
+
+qpos-visit.cpp,87
+void QPos::visitRoot(visitRoot5,66
+bool QPos::slowDescendant(slowDescendant53,1802
+
+qpos.cpp,1603
+void QPos::clear(clear6,139
+QPos* QPos::createRoot(createRoot29,626
+QPos* QPos::createFromParent(createFromParent37,809
+void QPos::setMarks(setMarks58,1760
+void QPos::initializeMarks(initializeMarks75,2269
+void QPos::marks_make_move(marks_make_move92,2771
+vector<QPos*>QPos::getDescendants(getDescendants154,5179
+void QPos::verifyDescendants(verifyDescendants164,5403
+void QPos::verify(verify175,5667
+int QPos::getDepth(getDepth217,7443
+Game*QPos::getGame(getGame226,7651
+vector<QPos*>QPos::descendants(descendants231,7744
+QPos::QPos(QPos239,7984
+QPos* QPos::createQPos(createQPos243,8012
+void QPos::initialize(initialize251,8176
+int QPos::getGameNumber(getGameNumber278,9071
+bool QPos::virtualmainline(virtualmainline280,9135
+int QPos::getSiblingIndex(getSiblingIndex288,9443
+QPos* QPos::lca(lca297,9695
+void QPos::deleteComments(deleteComments313,10132
+int QPos::distance(distance317,10227
+int QPos::getMoveNumber(getMoveNumber328,10555
+string QPos::idString(idString340,10816
+void QPos::appendComment(appendComment358,11156
+void QPos::appendCommentLocally(appendCommentLocally367,11457
+void QPos::mergeCommentsCurrent(mergeCommentsCurrent375,11699
+void QPos::mergeComments(mergeComments402,12461
+int QPos::markComments(markComments416,12909
+void QPos::restoreComments(restoreComments419,12969
+bool QPos::hasNag(hasNag423,13036
+bool QPos::isProperAncestor(isProperAncestor430,13216
+bool QPos::isImproperAncestor(isImproperAncestor439,13470
+pieceT QPos::getPiece(getPiece443,13573
+vector<QMove*>QPos::pathBetween(pathBetween454,13933
+
+range.cpp,241
+Range::Range(4,66
+Range::Range(7,110
+Range::Range(15,325
+int Range::getMin(getMin20,462
+int Range::getMax(getMax26,646
+bool Range::valid(valid32,830
+string Range::toString(toString38,924
+bool Range::isConstant(isConstant51,1131
+
+rangenode.cpp,171
+RangeNode::RangeNode(2,18
+bool RangeNode::match_position(match_position6,153
+bool RangeNode::match_count(match_count11,259
+vnode RangeNode::children(children20,477
+
+raynode.cpp,505
+bool RayNode::isSet(isSet2,21
+bool RayNode::isNumeric(isNumeric6,77
+RayNode::RayNode(RayNode11,138
+void RayNode::compute(compute31,799
+bool RayNode::match_position(match_position62,1731
+bool RayNode::match_count(match_count73,1971
+SquareMask RayNode::match_starting(match_starting88,2498
+SquareMask RayNode::getSquares(getSquares143,4915
+void RayNode::deepify(deepify152,5136
+vnode RayNode::children(children156,5189
+RayNode* RayNode::makeFromAttackArrow(makeFromAttackArrow165,5367
+
+readfilenode.cpp,243
+ReadFileNode::ReadFileNode(4,63
+bool ReadFileNode::match_position(match_position8,162
+bool ReadFileNode::match_stringvalue(match_stringvalue13,343
+void ReadFileNode::deepify(deepify29,1008
+vnode ReadFileNode::children(children32,1078
+
+regexhistory.cpp,290
+void RegexHistory::registerMatch(registerMatch4,104
+int RegexHistory::getNgroups(getNgroups23,698
+bool RegexHistory::groupString(groupString28,830
+int RegexHistory::groupStart(groupStart44,1350
+void RegexHistory::clear(clear56,1717
+string RegexHistory::toString(toString62,1819
+
+relationalnode.cpp,1024
+vector<string>* RelationalNode::theAllNames{RelationalNode::theAllNames2,28
+vector<string>* RelationalNode::thePositionComparisonNames{RelationalNode::thePositionComparisonNames3,79
+RelationalNode::RelationalNode(4,145
+const vector<string>* RelationalNode::allNames(allNames21,736
+const vector<string>* RelationalNode::positionComparisonNames(positionComparisonNames39,1017
+bool RelationalNode::match_count(match_count48,1246
+bool RelationalNode::match_stringvalue(match_stringvalue63,1669
+bool RelationalNode::match_positionvalue(match_positionvalue77,2073
+bool RelationalNode::match_position(match_position92,2499
+bool RelationalNode::compare(compare104,2792
+bool RelationalNode::compare(compare124,3600
+bool RelationalNode::compare(compare135,3917
+vnode RelationalNode::children(children146,4244
+bool RelationalNode::isNumeric(isNumeric151,4353
+bool RelationalNode::isPosition(isPosition155,4443
+bool RelationalNode::isString(isString159,4536
+void RelationalNode::deepify(deepify163,4623
+
+removecommentnode.cpp,60
+bool RemoveCommentNode::match_position(match_position2,31
+
+repeatcon.cpp,199
+RepeatCon::RepeatCon(2,23
+bool RepeatCon::hasDash(hasDash5,185
+vnode RepeatCon::children(children10,278
+void RepeatCon::deepify(deepify14,339
+void RepeatCon::setIsInitial(setIsInitial19,396
+
+repeatconstituent.cpp,117
+RepeatConstituent::RepeatConstituent(RepeatConstituent2,26
+bool RepeatConstituent::matchesNull(matchesNull10,256
+
+repeatinprocesscon.cpp,391
+RepeatInProcessCon::RepeatInProcessCon(2,32
+int RepeatInProcessCon::min(min5,133
+int RepeatInProcessCon::max(max9,202
+bool RepeatInProcessCon::hasDash(hasDash13,271
+vnode RepeatInProcessCon::children(children18,359
+void RepeatInProcessCon::deepify(deepify23,450
+void RepeatInProcessCon::setIsInitial(setIsInitial28,517
+RepeatInProcessCon*RepeatInProcessCon::clone(clone32,590
+
+repeatinprocessconstituent.cpp,504
+RepeatInProcessConstituent::RepeatInProcessConstituent(14,748
+int RepeatInProcessConstituent::min(min21,1175
+RepeatInProcessConstituent*RepeatInProcessConstituent::clone(clone25,1253
+SeqConstituent*RepeatInProcessConstituent::getConstituent(getConstituent31,1367
+int RepeatInProcessConstituent::max(max35,1475
+bool RepeatInProcessConstituent::matchesNull(matchesNull39,1553
+void RepeatInProcessConstituent::deepify(deepify43,1646
+vnode RepeatInProcessConstituent::children(children47,1726
+
+seqconstituent.cpp,340
+void RepeatConstituent::compute(compute3,27
+void StarConstituent::compute(compute7,120
+void PlusConstituent::compute(compute11,211
+void VectorConstituent::compute(compute15,302
+void HolderConstituent::compute(compute21,397
+void OptionalConstituent::compute(compute25,490
+void RepeatInProcessConstituent::compute(compute29,585
+
+sequence-parse.cpp,786
+SequenceBase*Tokens::match_sequencenode(match_sequencenode4,39
+vector<SeqConstituent*>Tokens::match_seqconstituents(match_seqconstituents72,2542
+SeqConstituent* Tokens::match_seqconstituent(match_seqconstituent96,3340
+SeqConstituent* Tokens::match_seqsuffix(match_seqsuffix105,3663
+VectorConstituent* Tokens::match_vectorconstituent(match_vectorconstituent140,5559
+HolderConstituent* Tokens::match_holderconstituent(match_holderconstituent152,6054
+Range*Tokens::match_repeat_range(match_repeat_range190,7672
+string Tokens::match_wildcardcharacter(match_wildcardcharacter204,8093
+bool Tokens::at_wildcard_terminator(at_wildcard_terminator218,8424
+bool Tokens::match_wildcardplus(match_wildcardplus234,8730
+bool Tokens::match_wildcardstar(match_wildcardstar242,8878
+
+sequencebase-comments.cpp,452
+void SequenceBase::mergeSuccess(mergeSuccess2,26
+void SequenceBase::commentStacksValid(commentStacksValid22,474
+void SequenceBase::restoreComments(restoreComments27,782
+void SequenceBase::popComment(popComment39,1266
+void SequenceBase::swapComments(swapComments54,1686
+void SequenceBase::pushComments(pushComments64,1997
+int SequenceBase::markComments(markComments75,2268
+void SequenceBase::initializeComments(initializeComments79,2341
+
+sequencebase.cpp,1700
+bool seqdir_valid(5,69
+vnode SequenceBase::children(children9,146
+SequenceBase::SequenceBase(SequenceBase20,515
+bool SequenceBase::valid_constituent valid_constituent38,1146
+SeqConstituent* SequenceBase::getConstituent getConstituent43,1267
+int SequenceBase::nconstituents(nconstituents48,1436
+bool SequenceBase::match_position(match_position53,1517
+void SequenceBase::exitMatch(exitMatch84,2390
+void SequenceBase::compute(compute94,2578
+void SequenceBase::compute(compute107,2959
+void SequenceBase::compute(compute117,3321
+void SequenceBase::compute(compute141,4533
+void SequenceBase::compute(compute154,4957
+void SequenceBase::compute(compute169,5402
+void SequenceBase::compute(compute182,5830
+bool SequenceBase::computeNull(computeNull199,6399
+void SequenceBase::deepify(deepify205,6515
+void SequenceBase::initializeSkip(initializeSkip213,6830
+void SequenceBase::computeSkip(computeSkip223,7084
+HolderConstituent*SequenceBase::getSkipConstituent(getSkipConstituent230,7300
+bool SequenceBase::isSkip(isSkip242,7616
+colorT SequenceBase::getSkipColor(getSkipColor246,7684
+bool SequenceBase::skipColor(skipColor253,7855
+void SequenceBase::clearSkipColor(clearSkipColor258,7979
+void SequenceBase::setSkipColor(setSkipColor264,8137
+bool SequenceBase::skipCurrentPosition(skipCurrentPosition270,8297
+bool SequenceBase::match_positionvalue(match_positionvalue278,8498
+bool SequenceBase::match_count(match_count288,8751
+void SequenceBase::notate(notate298,8999
+bool SequenceBase::isNumeric(isNumeric317,9805
+bool SequenceBase::isPosition(isPosition321,9869
+bool SequenceBase::isFalse(isFalse325,9933
+bool SequenceBase::isTrue(isTrue329,9992
+
+sequencenest.cpp,263
+void SequenceBase::nestRegisterPosition(nestRegisterPosition3,27
+bool SequenceBase::nestSeenPosition(nestSeenPosition8,132
+void SequenceBase::nestClearPositions(nestClearPositions14,288
+void SequenceBase::nestRegisterPositions(nestRegisterPositions18,351
+
+setbase.cpp,87
+bool SetBase::match_position(match_position2,18
+SetBase* SetBase::asSet(asSet6,100
+
+shifttransform.cpp,514
+bool ShiftTransform::isIdentity(isIdentity3,19
+squareT ShiftTransform::transform(transform7,97
+ShiftTransform::ShiftTransform(18,382
+bool ShiftTransform::flipsSquareParity(flipsSquareParity25,600
+vector<Transform*>ShiftTransform::allShift(allShift31,757
+vector<Transform*>ShiftTransform::shiftHorizontal(shiftHorizontal40,956
+vector<Transform*>ShiftTransform::shiftVertical(shiftVertical48,1131
+SquareMask ShiftTransform::transform(transform56,1304
+string ShiftTransform::toString(toString97,2476
+
+sort-parse.cpp,54
+SortNode* Tokens::match_sortnode(match_sortnode5,88
+
+sortnode.cpp,659
+string SortNode::prefix(prefix7,121
+SortNode::SortNode(11,181
+bool SortNode::match_position(match_position44,1712
+void SortNode::clear(clear50,1935
+bool SortNode::match_sortvalue(match_sortvalue57,2040
+bool SortNode::match_filtersortvalue(match_filtersortvalue73,2477
+bool SortNode::match_count(match_count94,3032
+bool SortNode::match_stringvalue(match_stringvalue103,3250
+void SortNode::handle_new_value(handle_new_value118,3776
+void SortNode::makeComments(makeComments141,4563
+vnode SortNode::children(children166,5506
+void SortNode::deepify(deepify172,5638
+string SortNode::convertName(convertName177,5756
+bool operator< 189,6229
+
+sortvalue.cpp,340
+SortValue::SortValue(3,33
+SortValue::SortValue(12,238
+SortValue::SortValue(20,437
+NumValue SortValue::getNumericValue(getNumericValue30,670
+string SortValue::getStringValue(getStringValue35,809
+bool operator< 44,1068
+void SortValue::bind(bind79,2112
+void SortValue::bind(bind85,2259
+string SortValue::toString(toString91,2401
+
+sortvariable.cpp,224
+bool  SortVariable::getSquare(getSquare3,55
+string SortVariable::getStringValue(getStringValue8,335
+NumValue SortVariable::getNumericValue(getNumericValue13,480
+bool SortVariable::match_position(match_position19,630
+
+sqrtnode.cpp,205
+SqrtNode::SqrtNode(3,40
+vnode SqrtNode::children(children7,130
+void SqrtNode::deepify(deepify11,188
+bool SqrtNode::match_count(match_count15,239
+bool SqrtNode::match_position(match_position26,515
+
+squarecoordinatenode.cpp,226
+SquareCoordinateNode::SquareCoordinateNode(2,18
+vnode SquareCoordinateNode::children(children6,157
+bool SquareCoordinateNode::match_position(match_position11,233
+bool SquareCoordinateNode::match_count(match_count15,339
+
+squareloopnode.cpp,387
+SquareLoopNode::SquareLoopNode(3,56
+bool SquareLoopNode::isSet(isSet8,318
+void SquareLoopNode::execute(execute13,413
+bool SquareLoopNode::match_body(match_body39,1231
+vnode SquareLoopNode::children(children59,1934
+void SquareLoopNode::deepify(deepify64,2058
+bool SquareLoopNode::match_position(match_position69,2157
+SquareMask SquareLoopNode::getSquares(getSquares81,2426
+
+squaremask.cpp,215
+int SquareMask::size(size3,19
+vector<squareT> SquareMask::getSquares(getSquares14,140
+SquareMask::SquareMask(SquareMask21,281
+int SquareMask::rankCount(rankCount27,399
+SquareMask SquareMask::all(all37,628
+
+squareparitynode.cpp,658
+SquareParityNode::SquareParityNode(2,30
+SquareMask SquareParityNode::getSquares(getSquares8,228
+bool SquareParityNode::match_position(match_position12,329
+vnode SquareParityNode::children(children16,420
+void SquareParityNode::transform_members(transform_members20,488
+void SquareParityNode::deepify(deepify25,600
+bool SquareParityNode::isLight(isLight29,663
+bool SquareParityNode::isDark(isDark33,739
+SquareMask SquareParityNode::getDarkMask(getDarkMask36,812
+SquareMask SquareParityNode::getLightMask(getLightMask44,970
+bool SquareParityNode::squareIsLight(squareIsLight48,1045
+bool SquareParityNode::squareIsDark(squareIsDark51,1164
+
+squarevariable.cpp,348
+SquareVariable::SquareVariable(SquareVariable3,31
+SquareMask SquareVariable::getSquares(getSquares8,126
+SquareMask SquareVariable::getMask(getMask12,262
+void SquareVariable::bindMask(bindMask17,421
+void SquareVariable::bindSquare(bindSquare23,507
+void SquareVariable::assignAny(assignAny32,757
+Any SquareVariable::getAny(getAny40,961
+
+starcon.cpp,148
+StarCon::StarCon(2,21
+vnode StarCon::children(children6,97
+void StarCon::deepify(deepify10,156
+void StarCon::setIsInitial(setIsInitial14,210
+
+starconstituent.cpp,108
+StarConstituent::StarConstituent(StarConstituent2,26
+bool StarConstituent::matchesNull(matchesNull8,124
+
+stringasciinode.cpp,267
+StringAsciiNode::StringAsciiNode(2,29
+bool StringAsciiNode::match_position(match_position10,445
+bool StringAsciiNode::match_stringvalue(match_stringvalue16,597
+bool StringAsciiNode::match_count(match_count41,1430
+void StringAsciiNode::deepify(deepify58,1917
+
+stringconverter-parse.cpp,128
+Node* Tokens::match_stringconverter(match_stringconverter6,93
+Node*Tokens::match_strconstituent(match_strconstituent68,2626
+
+stringconverter.cpp,942
+StringConverter::StringConverter(StringConverter2,29
+StringConverter::StringConverter(7,135
+bool StringConverter::match_position(match_position13,326
+string StringConverter::convert(convert18,523
+bool StringConverter::match_stringvalue(match_stringvalue25,706
+void StringConverter::deepify(deepify33,897
+vnode StringConverter::children(children38,1015
+void StringConverter::convertnode(convertnode46,1165
+bool StringConverter::convertUnboundVariable(convertUnboundVariable63,1722
+bool StringConverter::convertString(convertString74,1950
+bool StringConverter::convertSet(convertSet86,2207
+bool StringConverter::convertNumeric(convertNumeric96,2502
+bool StringConverter::convertPieceIdVariable(convertPieceIdVariable107,2803
+bool StringConverter::convertPosition(convertPosition121,3335
+bool StringConverter::convertDictionary(convertDictionary132,3606
+bool StringConverter::convertLogical(convertLogical139,3818
+
+stringinnode.cpp,230
+StringInNode::StringInNode(2,26
+bool StringInNode::match_position(match_position6,234
+bool StringInNode::match_count(match_count10,316
+vnode StringInNode::children(children26,917
+void StringInNode::deepify(deepify33,1047
+
+stringiteratornode.cpp,244
+using std::sregex_iterator;3,49
+StringIteratorNode::StringIteratorNode(4,77
+bool StringIteratorNode::match_position(match_position23,614
+vnode StringIteratorNode::children(children44,1315
+void StringIteratorNode::deepify(deepify50,1424
+
+stringlengthnode.cpp,253
+StringLengthNode::StringLengthNode(3,58
+bool StringLengthNode::match_position(match_position7,177
+bool StringLengthNode::match_count(match_count12,408
+void StringLengthNode::deepify(deepify29,927
+vnode StringLengthNode::children(children33,992
+
+stringliteralnode.cpp,171
+StringLiteralNode::StringLiteralNode(3,32
+bool StringLiteralNode::match_stringvalue(match_stringvalue6,96
+bool StringLiteralNode::match_position(match_position11,203
+
+stringmatchnode.cpp,262
+StringMatchNode::StringMatchNode(4,61
+bool StringMatchNode::match_position(match_position20,567
+bool StringMatchNode::match_stringvalue(match_stringvalue24,658
+vnode StringMatchNode::children(children39,1102
+void StringMatchNode::deepify(deepify45,1299
+
+stringtointnode.cpp,247
+StringToIntNode::StringToIntNode(2,29
+bool StringToIntNode::match_position(match_position6,144
+bool StringToIntNode::match_count(match_count10,229
+void StringToIntNode::deepify(deepify21,497
+vnode StringToIntNode::children(children25,561
+
+stringvariable.cpp,587
+bool StringVariable::match_position(match_position4,30
+void StringVariable::bindString(bindString9,239
+string StringVariable::getValue(getValue16,372
+StringVariable::StringVariable(StringVariable22,539
+bool StringVariable::match_stringvalue(match_stringvalue28,641
+void StringVariable::reset(reset34,832
+void StringVariable::assignSortValue(assignSortValue39,966
+void StringVariable::bindSortValue(bindSortValue48,1264
+string& StringVariable::getReference(getReference55,1426
+void StringVariable::assignAny(assignAny60,1572
+Any StringVariable::getAny(getAny68,1782
+
+subsetnode.cpp,168
+SubsetNode::SubsetNode(2,24
+bool SubsetNode::match_position(match_position5,143
+vnode SubsetNode::children(children10,310
+void SubsetNode::deepify(deepify17,438
+
+substringassignmentnode.cpp,236
+SubstringAssignmentNode::SubstringAssignmentNode(2,37
+bool SubstringAssignmentNode::match_position(match_position13,319
+void SubstringAssignmentNode::deepify(deepify37,1439
+vnode SubstringAssignmentNode::children(children42,1578
+
+substringnode.cpp,250
+SubstringNode::SubstringNode(3,55
+bool SubstringNode::match_position(match_position10,257
+bool SubstringNode::match_stringvalue(match_stringvalue14,346
+void SubstringNode::deepify(deepify67,2121
+vnode SubstringNode::children(children71,2220
+
+tagbuiltinnode.cpp,390
+TagBuiltInNode::TagBuiltInNode(12,173
+bool TagBuiltInNode::isBuiltInTag(isBuiltInTag17,313
+bool TagBuiltInNode::match_position(match_position21,411
+bool TagBuiltInNode::match_game(match_game25,496
+bool TagBuiltInNode::match_stringvalue_game(match_stringvalue_game29,590
+bool TagBuiltInNode::match_stringvalue(match_stringvalue37,808
+void TagBuiltInNode::deepify(deepify42,1015
+
+tagentry.cpp,160
+TagEntry::TagEntry(3,40
+string TagEntry::toString(toString14,355
+void TagEntry::setValue(setValue36,718
+string TagEntry::getGameValue(getGameValue43,824
+
+tagnode.cpp,336
+Node* TagNode::create(create25,983
+bool TagNode::isQueryable(isQueryable32,1198
+TagNode::TagNode(38,1370
+bool TagNode::match_position(match_position44,1586
+bool TagNode::match_game(match_game48,1664
+bool TagNode::match_stringvalue_game(match_stringvalue_game52,1751
+bool TagNode::match_stringvalue(match_stringvalue57,1914
+
+tagsection.cpp,279
+void TagSection::initialize(initialize33,543
+bool TagSection::isForbiddenName(isForbiddenName48,1016
+bool TagSection::exists(exists52,1122
+bool TagSection::getGameValue(getGameValue58,1276
+void TagSection::setValue(setValue67,1529
+void TagSection::merge(merge76,1767
+
+tagsetnode.cpp,351
+bool isTagChar(2,24
+bool isTagStartChar(10,140
+const vector<string>TagSetNode::forbiddenTags=TagSetNode::forbiddenTags15,207
+bool TagSetNode::isSettable(isSettable29,547
+TagSetNode::TagSetNode(78,2008
+vnode TagSetNode::children(children86,2310
+bool TagSetNode::match_position(match_position89,2370
+void TagSetNode::deepify(deepify98,2569
+
+token.cpp,2259
+using std::stringstream;4,56
+int Token::CurrentLineNumber{Token::CurrentLineNumber5,81
+int Token::CurrentColumnNumber{Token::CurrentColumnNumber6,114
+string Token::locationString(locationString10,158
+StringToken::StringToken(19,426
+bool PieceToken::isAllowed(isAllowed22,474
+PieceToken::PieceToken(PieceToken29,644
+PieceToken* PieceToken::create(create34,724
+SquareToken::SquareToken(SquareToken39,827
+bool SquareToken::isAllowed(isAllowed47,1030
+bool StringToken::eq(eq56,1220
+string SquareToken::toString(toString61,1275
+string StringToken::toString(toString74,1598
+void Token::setStart(setStart78,1713
+string IntToken::toString(toString84,1853
+string GroupNumberToken::toString(toString95,2010
+string GroupIndexToken::toString(toString106,2175
+string PieceToken::toString(toString117,2339
+PieceDesignatorToken::PieceDesignatorToken(124,2421
+string PieceDesignatorToken::toString(toString131,2605
+void Token::syncLocation(syncLocation142,2866
+void Token::setTrueStartStop(setTrueStartStop148,3017
+string Token::toString(toString157,3359
+string DashToken::toString(toString166,3543
+DashToken::DashToken(176,3771
+EndPathToken::EndPathToken(EndPathToken183,3894
+WildcardStarToken::WildcardStarToken(WildcardStarToken189,4047
+WildcardPlusToken::WildcardPlusToken(WildcardPlusToken195,4210
+bool SpecialToken::isLeftDelimiter(isLeftDelimiter201,4373
+bool SpecialToken::isRightDelimiter(isRightDelimiter207,4491
+bool SpecialToken::isLeftMatchFor(isLeftMatchFor213,4610
+bool Token::isWildcardToken(isWildcardToken221,4877
+BraceRepToken::BraceRepToken(228,5028
+string BraceRepToken::toString(toString233,5187
+void DashToken::fixPrevious(fixPrevious240,5311
+void DashToken::fixNext(fixNext263,5992
+WhiteSpaceToken::WhiteSpaceToken(277,6394
+bool PieceDesignatorToken::hasAa_(hasAa_280,6518
+bool PieceDesignatorToken::hasAa(hasAa284,6596
+bool PieceDesignatorToken::isAa(isAa288,6665
+bool PieceDesignatorToken::hasA(hasA292,6755
+bool PieceDesignatorToken::hasa(hasa297,6912
+bool PieceDesignatorToken::has_(has_302,7068
+bool PieceDesignatorToken::isAll(isAll308,7215
+string KeywordToken::colorizerClass(colorizerClass312,7313
+string SpecialToken::colorizerClass(colorizerClass321,7487
+
+tokens.cpp,292
+string Tokens::toString(toString7,111
+bool Tokens::eof(eof19,379
+Token* Tokens::current(current23,439
+void Tokens::forward(forward28,517
+Tokens::Tokens(33,591
+int Tokens::save(save44,935
+void Tokens::restore(restore48,975
+Node* Tokens::node_from_string(node_from_string53,1070
+
+tomovenode.cpp,168
+bool ToMoveNode::match_position(match_position2,24
+ToMoveNode::ToMoveNode(8,179
+vnode ToMoveNode::children(children12,275
+void ToMoveNode::deepify(deepify13,326
+
+tomovevaluenode.cpp,314
+ToMoveValueNode::ToMoveValueNode(ToMoveValueNode2,29
+bool ToMoveValueNode::match_position(match_position3,66
+bool ToMoveValueNode::match_count(match_count7,184
+vnode ToMoveValueNode::children(children16,427
+void ToMoveValueNode::deepify(deepify19,487
+ToMoveValueNode*ToMoveValueNode::clone(clone21,522
+
+tonode.cpp,75
+ToNode::ToNode(ToNode3,65
+SquareMask ToNode::getSquares(getSquares5,85
+
+toplevel-aux.cpp,391
+SetBase*Tokens::match_setparameter(match_setparameter14,309
+SetBase*Tokens::match_set(match_set24,529
+Node*Tokens::match_numeric(match_numeric38,779
+Node*Tokens::match_sortable(match_sortable47,933
+Node*Tokens::match_string(match_string61,1253
+Node*Tokens::match_string_simple(match_string_simple74,1576
+ComplementNode* Tokens::match_complementnode(match_complementnode83,1735
+
+toplevel.cpp,778
+Node* Tokens::match_node(match_node12,296
+Node* Tokens::match_or_x(match_or_x25,555
+Node* Tokens::match_and_x(match_and_x37,820
+Node* Tokens::match_in_x(match_in_x63,1791
+Node*Tokens::match_relop_x(match_relop_x75,2194
+Node*Tokens::match_addop_x(match_addop_x113,3518
+Node*Tokens::match_mulop_x(match_mulop_x137,4483
+Node*Tokens::match_dash_tie_x(match_dash_tie_x151,4974
+Node*Tokens::match_attackarrow_x(match_attackarrow_x181,6044
+Node*Tokens::match_union_x(match_union_x195,6441
+Node* Tokens::match_intersect_x(match_intersect_x214,7116
+Node*Tokens::match_attack_x(match_attack_x238,7903
+Node*Tokens::match_substring_x(match_substring_x262,8913
+Node*Tokens::match_with_x(match_with_x274,9388
+Node*Tokens::match_primitive(match_primitive293,9872
+
+transform-parse.cpp,352
+OrbitNode* Tokens::match_swapcolortransform(match_swapcolortransform3,38
+OrbitNode* Tokens::match_shifttransform(match_shifttransform14,395
+OrbitNode* Tokens::match_fliptransform(match_fliptransform39,1239
+vector<Transform*>Tokens::match_qtransforms(match_qtransforms76,2616
+Node* Tokens::orbitnode_from_keyword(orbitnode_from_keyword98,3511
+
+transform.cpp,372
+Transform* Transform::transform(transform4,38
+Node* Transform::transform(transform9,158
+DirectionParameter Transform::transform(transform15,270
+pieceT Transform::transformPiece(transformPiece23,513
+colorT Transform::transformColor(transformColor34,802
+Transform* Transform::compose(compose43,1056
+vector<Transform*> Transform::nonidentity(nonidentity48,1165
+
+transform_members.cpp,494
+void ResultNode::transform_members(transform_members18,542
+void PieceLoc::transform_members(transform_members30,826
+void ToMoveNode::transform_members(transform_members43,1250
+void ColorValueNode::transform_members(transform_members47,1336
+void EloNode::transform_members(transform_members56,1630
+void RayNode::transform_members(transform_members60,1713
+void VectorNode::transform_members(transform_members66,1905
+void TagBuiltInNode::transform_members(transform_members72,1996
+
+transformcompare.cpp,977
+bool Direction::operator<(operator<5,67
+bool DirectionParameter::operator<(operator<11,238
+bool OrbitElement::operator<(operator<17,514
+bool Node::transformless(transformless21,621
+bool Node::transformmemberless(transformmemberless49,1791
+bool ResultNode::transformmemberless(transformmemberless53,1861
+bool PieceLoc::transformmemberless(transformmemberless59,2053
+bool ToMoveNode::transformmemberless(transformmemberless73,2549
+bool ColorValueNode::transformmemberless(transformmemberless79,2754
+bool EloNode::transformmemberless(transformmemberless85,2970
+bool RayNode::transformmemberless(transformmemberless92,3215
+bool VectorNode::transformmemberless(transformmemberless98,3413
+bool OrbitNode::transformless(transformless104,3637
+bool NoTransformNode::transformmemberless(transformmemberless112,3990
+bool SquareParityNode::transformmemberless(transformmemberless116,4071
+bool TagBuiltInNode::transformmemberless(transformmemberless124,4308
+
+transformvariable.cpp,238
+void TransformVariable::bindTransform(bindTransform3,32
+Transform* TransformVariable::getValue(getValue9,196
+TransformVariable::TransformVariable(TransformVariable13,262
+bool TransformVariable::match_position(match_position19,374
+
+typenamenode.cpp,241
+TypeNameNode::TypeNameNode(4,68
+vnode TypeNameNode::children(children9,157
+void TypeNameNode::deepify(deepify13,221
+bool TypeNameNode::match_stringvalue(match_stringvalue17,280
+bool TypeNameNode::match_position(match_position34,712
+
+uchar.cpp,788
+int left2bits(7,161
+int left3bits(10,215
+int left4bits(13,269
+int left5bits(16,323
+int right6bits(19,377
+int right5bits(22,427
+int right4bits(25,477
+int right3bits(28,526
+void UChar::printChar(printChar32,577
+UChar::UChar(UChar62,1226
+void UChar::convertEchoFile(convertEchoFile128,2814
+void UChar::echoFile(echoFile146,3383
+UChar UChar::parse(parse191,4627
+int UChar::char2int(char2int217,5657
+int UChar::size(size224,5902
+UChar::UChar(237,6244
+string UChar::toString(toString245,6445
+void UChar::initialize(initialize299,7824
+void UChar::test(test303,7880
+string UChar::name(name315,8297
+string UChar::uname(uname324,8456
+std::ostream& operator<<(331,8632
+bool UChar::isFigurine(isFigurine336,8785
+vector<UChar>UChar::parseChars(parseChars342,8911
+
+unbindnode.cpp,167
+UnbindNode::UnbindNode(2,24
+vnode UnbindNode::children(children5,111
+void UnbindNode::deepify(deepify9,178
+bool UnbindNode::match_position(match_position11,208
+
+unionnode.cpp,215
+UnionNode::UnionNode(2,23
+bool UnionNode::match_position(match_position8,369
+SquareMask UnionNode::getSquares(getSquares12,453
+vnode UnionNode::children(children18,603
+void UnionNode::deepify(deepify22,673
+
+util.cpp,1099
+static int indentlevel;6,82
+void indent(8,107
+void tab(9,138
+void unindent(13,199
+string util::num_to_string(num_to_string18,271
+string util::num_to_string(num_to_string24,359
+bool util::intValue(intValue33,495
+bool util::nonnegativeIntValue(nonnegativeIntValue46,820
+bool util::positiveIntValue(positiveIntValue60,1056
+string util::game_to_string(game_to_string70,1292
+void util::printgame(printgame85,1803
+void util::my_dump_board(my_dump_board96,2201
+int util::squareShiftDirection(squareShiftDirection119,2636
+bool util::directionCompatible(directionCompatible126,2843
+bool util::directionOrthogonal(directionOrthogonal132,3112
+bool util::directionDiagonal(directionDiagonal136,3245
+void util::printgame(printgame140,3395
+string util::squarestring(squarestring145,3514
+string util::downcase(downcase152,3724
+bool util::readPositiveInt(readPositiveInt166,4068
+bool util::readString(readString185,4569
+string util::replaceAll(replaceAll197,4925
+string util::quotestring(quotestring203,5125
+string util::string_from_filename(string_from_filename209,5231
+
+variable-parse.cpp,744
+SquareVariable*Tokens::match_squarevariable(match_squarevariable9,201
+PieceIdVariable*Tokens::match_pieceidvariable(match_pieceidvariable19,536
+PositionVariable*Tokens::match_positionvariable(match_positionvariable31,877
+TransformVariable*Tokens::match_transformvariable(match_transformvariable44,1485
+TransformVariable*Tokens::match_existingtransformvariable(match_existingtransformvariable57,2106
+NumericVariable*Tokens::match_numericvariable(match_numericvariable72,2450
+NumericVariable*Tokens::match_existingnumericvariable(match_existingnumericvariable82,2791
+StringVariable*Tokens::match_stringvariable(match_stringvariable98,3147
+StringVariable*Tokens::match_existingstringvariable(match_existingstringvariable108,3484
+
+variable.cpp,1233
+SquareMask Variable::getSquares(getSquares12,274
+Variable* Variable::clone(clone17,430
+void Variable::reset(reset19,473
+void Variable::unbind(unbind23,522
+bool Variable::eq(eq28,623
+PositionVariable* Variable::asPosition(asPosition35,734
+const PositionVariable* Variable::asPosition(asPosition44,907
+TransformVariable* Variable::asTransform(asTransform53,1098
+const TransformVariable* Variable::asTransform(asTransform62,1275
+SquareVariable* Variable::asSquare(asSquare71,1469
+const SquareVariable* Variable::asSquare(asSquare78,1633
+LambdaVariable* Variable::asLambda(asLambda86,1815
+const LambdaVariable* Variable::asLambda(asLambda94,1980
+PieceIdVariable* Variable::asPieceId(asPieceId102,2162
+const PieceIdVariable* Variable::asPieceId(asPieceId110,2337
+const NumericVariable* Variable::asNumeric(asNumeric118,2530
+NumericVariable* Variable::asNumeric(asNumeric126,2723
+StringVariable* Variable::asString(asString134,2899
+const StringVariable* Variable::asString(asString143,3075
+void Variable::setPersistent(setPersistent152,3268
+string Variable::persistentValueAsString(persistentValueAsString171,3953
+void Variable::assignAny(assignAny188,4487
+Any Variable::getAny(getAny194,4670
+
+vectorconstituent.cpp,150
+VectorConstituent::VectorConstituent(3,27
+vnode VectorConstituent::children(children10,281
+bool VectorConstituent::matchesNull(matchesNull15,390
+
+vectornode.cpp,257
+VectorNode::VectorNode(3,25
+  source=5,122
+vnode VectorNode::children(children8,137
+bool VectorNode::match_position(match_position14,207
+SquareMask VectorNode::getSquares(getSquares18,292
+void VectorNode::makeNeighborhoods(makeNeighborhoods38,789
+
+version.cpp,163
+const char* CqlBuild=1,0
+const char* CqlVersion=2,31
+const char* CqlOptimizeLevel=5,96
+const char* CqlOptimizeLevel=7,144
+const char* CqlOptimizeLevel=10,201
+
+virtualmainlinenode.cpp,62
+bool VirtualMainlineNode::match_position(match_position2,33
+
+whilenode.cpp,163
+WhileNode::WhileNode(2,23
+vnode WhileNode::children(children6,135
+void WhileNode::deepify(deepify12,233
+bool WhileNode::match_position(match_position17,319
+
+withpositionnode.cpp,706
+WithPositionNode::WithPositionNode(2,30
+void WithPositionNode::deepify(deepify7,245
+vnode WithPositionNode::children(children11,345
+bool WithPositionNode::isPosition(isPosition17,483
+bool WithPositionNode::isSet(isSet20,561
+bool WithPositionNode::isNumeric(isNumeric24,630
+bool WithPositionNode::isString(isString28,707
+QPos*WithPositionNode::getPosition(getPosition33,783
+bool WithPositionNode::match_position(match_position43,1019
+bool WithPositionNode::match_count(match_count49,1178
+bool WithPositionNode::match_positionvalue(match_positionvalue55,1346
+bool WithPositionNode::match_stringvalue(match_stringvalue61,1534
+SquareMask WithPositionNode::getSquares(getSquares67,1719
+
+writefilenode.cpp,285
+using std::map;2,27
+using std::ofstream;3,43
+map<string,ofstream*> WriteFileNode::fileMap;5,65
+WriteFileNode::WriteFileNode(6,111
+bool WriteFileNode::match_position(match_position13,350
+vnode WriteFileNode::children(children39,1463
+void WriteFileNode::deepify(deepify46,1609
+
+yearnode.cpp,116
+YearNode::YearNode(2,18
+bool YearNode::match_game(match_game6,101
+bool YearNode::match_count(match_count11,200
+
+nodeheaders.h,0
+
+cqlthread.h,0
+
+cqlglobals.h,0
+
+cql.h,0

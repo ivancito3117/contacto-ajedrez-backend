@@ -1,0 +1,10 @@
+# Linux / gcc flags for CQL
+
+OSFLAGS= -Wno-format-overflow -Wno-sign-compare -Wno-maybe-uninitialized
+
+COMPILE = g++
+LINK = g++
+OPTIMIZE= -O3
+LINUXPTHREADOPTION = -pthread
+
+CPP_FLAGS = ${LINUXPTHREADOPTION} -g ${OPTIMIZE} ${OSFLAGS} -std=c++17 -Wall -Wno-write-strings -Wno-char-subscripts -Wno-parentheses -fdiagnostics-show-option -DASSERTIONS -I. -I./orig
