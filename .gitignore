@@ -62,3 +62,5 @@ chessdb/results/
 # Binarios grandes locales
 cql/cql
 engines/stockfish/stockfish-ubuntu-x86-64
+
+cql/cql_hhdb_link
