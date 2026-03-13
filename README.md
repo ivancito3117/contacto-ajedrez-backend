@@ -181,4 +181,15 @@ El siguiente paso de desarrollo contempla:
 - tablero personal para estudiantes
 - mejoras pedagógicas en los reportes automáticos.
 
+# Instalación
 
+git clone https://github.com/ivancito3117/contacto-ajedrez-backend.git
+
+cd contacto-ajedrez-backend
+
+python -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
