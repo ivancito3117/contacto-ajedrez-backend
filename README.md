@@ -2,6 +2,11 @@
 
 **Autor:** Iván  
 
+```markdown
+# Contacto Ajedrez
+
+Plataforma pedagógica para el análisis automático de partidas de ajedrez utilizando FastAPI, Stockfish y CQL.
+
 Contacto Ajedrez es una plataforma pedagógica de ajedrez que combina análisis automático, seguimiento de estudiantes y exploración de patrones tácticos utilizando herramientas modernas de desarrollo de software.
 
 El sistema integra motores de análisis, bases de datos de partidas y una interfaz interactiva para apoyar procesos de enseñanza y aprendizaje del ajedrez.
@@ -133,6 +138,7 @@ Permite ejecutar consultas de **Chess Query Language** para detectar patrones es
 
 # Estructura del proyecto
 
+
 ├── main.py
 ├── models.py
 ├── schemas.py
@@ -183,6 +189,7 @@ El siguiente paso de desarrollo contempla:
 
 # Instalación
 
+```bash
 git clone https://github.com/ivancito3117/contacto-ajedrez-backend.git
 
 cd contacto-ajedrez-backend
